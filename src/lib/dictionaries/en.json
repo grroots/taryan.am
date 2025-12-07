@@ -1,0 +1,514 @@
+{
+  "navigation": {
+    "about": "Guru",
+    "skills": "Skills",
+    "services": "Services",
+    "portfolio": "Works",
+    "pricing": "Pricing",
+    "contact": "Contacts",
+    "collaboration": "START A PROJECT"
+  },
+  "hero": {
+    "greeting": "CONTENT MANAGER",
+    "name": "Hi! I'm Armen",
+    "title": "Unlock the Full Potential of Your Content",
+    "cta_button": "MANAGE YOUR CONTENT",
+    "cta_button_secondary": "PRICING",
+    "value_prop_1000": "10000+",
+    "value_prop_1000_desc": "products managed",
+    "value_prop_ecommerce": "E-commerce | Marketplace",
+    "value_prop_ecommerce_desc": "focus",
+    "value_prop_9years": "5+ years",
+    "value_prop_9years_desc": "experience"
+  },
+  "about": {
+    "title": "Content Guru",
+    "who_am_i": "Why Trust Me",
+    "three_words": "IN THREE WORDS",
+    "creative": "Creative",
+    "literary": "Quality-Focused",
+    "organized": "Systematic",
+    "description": "Result-driven content manager who speaks to your audience in your language.",
+    "text_creation": "MARKETPLACE CONTENT OPTIMIZATION",
+    "text_creation_desc": "Systematic approach to product content on major platforms.",
+    "content_management": "E-COMMERCE CATALOG MANAGEMENT",
+    "content_management_desc": "Large-scale content management with proven experience.",
+    "cms": "CMS DEVELOPMENT",
+    "cms_desc": "Complete website solutions combining technical development with content optimization across WordPress, Tilda, Wix and other CMS platforms.",
+    "years_in_content": "years Content Manager",
+    "years_content_manager": "products optimized",
+    "countries_partners": "marketplaces",
+    "languages": "successful projects",
+    "specialization_path": "Professional Evolution: FROM SEO TO CONTENT MASTERY",
+    "help_understand": "My journey began with SEO fundamentals, then I specialized in content management for e-commerce platforms.",
+    "start": "SEO Foundation",
+    "start_desc": "Technical optimization, keyword research, content structure basics",
+    "growth": "CMS Mastery",
+    "growth_desc": "WordPress, Tilda, Wix development and content optimization",
+    "senior_path": "International Markets",
+    "senior_desc": "Marketplaces, continuous growth.",
+    "platforms_title": "Specialization in Results-Driven Platforms:",
+    "platform_wildberries": "Wildberries",
+    "platform_wildberries_stat": "500+ products",
+    "platform_ozon": "Ozon",
+    "platform_ozon_stat": "Technical Partner in Armenia 2023",
+    "platform_ebay": "eBay",
+    "platform_ebay_stat": "30+ Partners from Armenia",
+    "platform_ecommerce": "E-commerce",
+    "platform_ecommerce_stat": "10 000+ products"
+  },
+  "skills": {
+    "title": "SKILLS",
+    "subtitle": "What I can do",
+    "principle": "My principle is \"continuous growth, learning new technologies & tools, working on mistakes\".",
+    "mentorship": "Mentorship",
+    "mentorship_desc": "I'm well familiar with the profession's demands in the Armenian job market, as well as the problem of lack of experience and systematicity. Therefore, I'm ready to share theoretical and practical knowledge for industry development. Mentorship formats:",
+    "video_calls": "Video calls",
+    "video_calls_desc": "3-session individual consultations",
+    "courses": "Courses",
+    "courses_desc": "Personal and professional skills",
+    "yearly_mentorship": "Annual mentorship",
+    "yearly_mentorship_desc": "Support throughout the year",
+    "apply_mentorship": "Apply for mentorship",
+    "for_partnership_title": "Ready to apply these skills to your project",
+    "for_partnership_desc": "Combining modern tools with proven methods to help achieve your business goals.",
+    "for_partnership_button": "DISCUSS YOUR PROJECT",
+    "categories": {
+      "web_tech": "Web Technologies | CMS | E-Commerce",
+      "creative": "Creative Tools",
+      "writing": "Text Editing",
+      "analytics": "Analytics Tools",
+      "social": "Social Media",
+      "ai": "AI Tools"
+    }
+  },
+  "services": {
+    "title": "SERVICES",
+    "subtitle": "What I offer",
+    "description": "Comprehensive solutions for the tone of your brand: from concept to implementation.",
+    "cooperation": "Become a Partner",
+    "cooperation_benefits": {
+      "discussion": "Quick discussion of cooperation format",
+      "individual": "Individual approach",
+      "transparent": "Transparent cooperation terms",
+      "discussion_desc": "Quick understanding of your goals and objectives",
+      "individual_desc": "Quality Solutions for your business and specifics",
+      "transparent_desc": "Clear deadlines, flexible prices"
+    },
+    "cooperation_conditions": "Cooperation conditions",
+    "contact_me": "Get in Touch",
+    "specializations": "Main Specializations",
+    "specializations_desc": "Specialized services for specific platforms",
+    "specializations_title": "Main Specializations:",
+    "spec_wildberries": "Wildberries",
+    "spec_ozon": "Ozon",
+    "spec_ebay": "eBay",
+    "spec_wordpress": "WordPress",
+    "spec_ecommerce": "E-commerce",
+    "spec_cms": "CMS",
+    "key_benefits": "Key Benefits",
+    "benefit_speed": "Speed",
+    "benefit_speed_desc": "Fast and quality execution",
+    "benefit_quality": "Quality",
+    "benefit_quality_desc": "High-quality content",
+    "benefit_approach": "Approach",
+    "benefit_approach_desc": "Individual approach to each project",
+    "cta_title": "Ready to start?",
+    "cta_description": "Contact us and find out how we can help your business:",
+    "cta_button": "START COOPERATION",
+    "view_terms": "Cooperation terms",
+    "items": {
+      "copywriting": {
+        "title": "Sales Copy",
+        "description": "Texts that convert visitors into customers.",
+        "features": [
+          "Landing pages and sales pages",
+          "Advertising copy",
+          "Call-to-action (CTA)"
+        ]
+      },
+      "blog": {
+        "title": "Corporate Blog",
+        "description": "Content aimed at audience engagement.",
+        "features": [
+          "Professional articles",
+          "SEO optimization",
+          "Content planning"
+        ]
+      },
+      "smm": {
+        "title": "SMM",
+        "description": "Social media publications.",
+        "features": [
+          "Visual posts | Feed",
+          "Stories",
+          "Reels"
+        ]
+      },
+      "products": {
+        "title": "Product Descriptions",
+        "description": "Product descriptions for e-commerce and marketplaces.",
+        "features": [
+          "Product cards (including photo-video)",
+          "SEO descriptions",
+          "Characteristics trilingual translation",
+          "FAQ"
+        ]
+      },
+      "presentations": {
+        "title": "Presentations",
+        "description": "Creating presentations and commercial proposals",
+        "features": [
+          "Collaboration proposals",
+          "Service presentations",
+          "Pitch decks"
+        ]
+      },
+      "audit": {
+        "title": "Content Audit",
+        "description": "Conducting content audit",
+        "features": [
+          "Existing content analysis",
+          "Competitive analysis",
+          "Quality improvement recommendations",
+          "Development strategy"
+        ]
+      }
+    }
+  },
+  "portfolio": {
+    "title": "PORTFOLIO",
+    "subtitle": "What I do",
+    "description": "Projects in which I was involved in various formats.",
+    "all": "All",
+    "web": "Web",
+    "design": "Design",
+    "projects": "projects",
+    "satisfied_clients": "partners",
+    "cms_sites": "CMS websites",
+    "quality": "products",
+    "results_title": "Results in Numbers",
+    "results_subtitle": "Specific achievements",
+    "approach_title": "Work Approach:",
+    "approach_analysis": "Systematic content analysis",
+    "approach_optimization": "Data-driven optimization",
+    "approach_kpi": "Measurable KPIs",
+    "featured_projects": "Featured Projects",
+    "featured_desc": "More detailed featured projects",
+    "other_projects": "Other Projects",
+    "cta_title": "Have a similar project?",
+    "cta_description": "Tell us about your project and we'll find the best solution together:",
+    "cta_button": "DISCUSS PROJECT",
+    "view_services": "View services",
+    "categories": {
+      "web": "Web",
+      "design": "Design",
+      "mobile": "Mobile",
+      "other": "Other"
+    },
+    "stats": {
+      "projects_count": "15+",
+      "projects_label": "projects",
+      "clients_count": "10+",
+      "clients_label": "partners",
+      "cms_count": "7", 
+      "cms_label": "CMS websites",
+      "products_count": "10 000+",
+      "products_label": "products"
+    },
+    "case_wildberries_title": "Wildberries",
+    "case_wildberries_products": "Products under management:",
+    "case_wildberries_products_count": "500+",
+    "case_wildberries_period": "Work period:",
+    "case_wildberries_period_value": "2022-2024",
+    "case_wildberries_focus": "Focus:",
+    "case_wildberries_focus_value": "SEO + conversion",
+    "case_ecommerce_title": "E-commerce",
+    "case_ecommerce_processed": "Products processed:",
+    "case_ecommerce_processed_count": "10 000+",
+    "case_ecommerce_type": "Work period:",
+    "case_ecommerce_type_value": "2021-2025",
+    "case_ecommerce_specialization": "Focus:",
+    "case_ecommerce_specialization_value": "High-volume content"
+  },
+  "pricing": {
+    "title": "WORKING FORMAT",
+    "subtitle": "I recommend",
+    "description": "Choose the package that suits your business or let's find a personalized solution together.",
+    "not_found": "Didn't find a suitable option?",
+    "not_found_desc": "Describe your tasks and budget — I'll create an individual offer especially for you.",
+    "flexible_terms": "Flexible terms",
+    "flexible_terms_desc": "We'll adapt to your budget and requirements",
+    "quality": "Quality",
+    "quality_desc": "Competent work is the only condition",
+    "result": "Result",
+    "result_desc": "Quality Content = Corresponding Result",
+    "get_offer": "GET AN OFFER",
+    "included_title": "What's included in each package",
+    "included_strategy": "Personal strategy for your business",
+    "included_reporting": "Transparent KPI reporting",
+    "included_support": "Priority support (during business hours)",
+    "included_guarantee": "Quality guarantee and compliance with requirements",
+	"show_more": "More features",
+	"show_less": "Show less",	
+    "packages": {
+      "small": {
+        "name": "SMALL",
+        "price": "from $190",
+        "annual": "annual plan - $150/month",
+        "period": "monthly",
+        "description": "For small business, startups",
+        "features": [
+          "Up to 10 products SEO descriptions",
+          "Audience analysis",
+          "Content planning",
+          "Social media (minimal frequency)"
+        ],
+        "button": "CHOOSE PACKAGE"
+      },
+      "large": {
+        "name": "LARGE",
+        "price": "from $400",
+        "annual": "annual plan - $350/month",
+        "period": "monthly",
+        "description": "For medium and growing companies",
+        "features": [
+          "Up to 5 texts of different formats",
+          "Audience analysis",
+          "Competitor analysis",
+          "Content strategy and planning",
+          "Up to 20 products SEO descriptions"
+        ],
+        "button": "CHOOSE PACKAGE"
+      },
+      "project": {
+        "name": "MAJOR",
+        "price": "contract-based",
+        "annual": "can be discussed",
+        "period": "indefinite | definite",
+        "description": "For long-term projects",
+        "features": [
+          "Corporate texts",
+          "Content audit",
+          "Editorial work",
+          "Content management",
+          "Analytics and reports"
+        ],
+        "button": "DISCUSS TERMS"
+      }
+    }
+  },
+  "contact": {
+    "title": "GET IN TOUCH",
+    "subtitle": "How to find me",
+    "description": "I look forward to your suggestions and questions.",
+    "contact_via": "Get in Touch",
+    "methods": {
+      "email": {
+        "label": "Email",
+        "value": "info@taryan.am",
+        "description": "Quick Response"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+374 33 31-00-61",
+        "description": "Available at 10։00-19։00"
+      },
+      "linkedin": {
+        "label": "LinkedIn",
+        "value": "Professional Content",
+        "description": "About Content and Beyond"
+      },
+      "telegram": {
+        "label": "Telegram",
+        "value": "@armenmkhitaryan",
+        "description": "Better for Discussions"
+      },
+      "whatsapp": {
+        "label": "WhatsApp",
+        "value": "+374 33 31-00-61",
+        "description": "Working Contact"
+      },
+      "instagram": {
+        "label": "Instagram",
+        "value": "Personal Instagram",
+        "description": "Thoughts, Posts..."
+      },
+      "addmail": {
+        "label": "Gmail",
+        "value": "Additional Email",
+        "description": "For Personal Questions",
+		"email": "armenalmkhitaryan@gmail.com"
+      }
+	},
+    "name_placeholder": "Your name | Company name",
+    "message_placeholder": "Describe your task and/or proposal...",
+    "form_title": "Let's Discuss",
+    "name_label": "Name",
+    "email_label": "Email",
+    "subject_label": "Subject",
+    "service_label": "Service package",
+    "message_label": "Message",
+    "send_button": "Send",
+    "sending": "Sending...",
+    "success_message": "Thanks for the message. I'll contact you within 1 business day.",
+    "error_message": "Error. Please try to contact me another way.",
+    "contact_info": "Contact information",
+    "quick_response": "Quick response",
+    "quick_response_desc": "I respond as quickly as possible. Within 2-3 business days, I'm ready to discuss your proposals via video call and answer questions.",
+    "subjects": {
+      "mentorship": "Mentorship",
+      "services": "Services",
+      "proposals": "Proposals or questions"
+    },
+    "packages": {
+      "small": "SMALL",
+      "large": "LARGE",
+      "project": "MAJOR",
+      "custom": "Individual"
+    },
+    "protected_spam": "Form is protected from spam."
+  },
+"terms": {
+    "title": "Terms of Cooperation",
+    "subtitle": "The following terms establish the framework for our professional collaboration, ensuring clarity and mutual understanding throughout our partnership.",
+    "cooperation_terms": {
+      "title": "TERMS OF PARTNERSHIP",
+      "format": {
+        "title": "1. Format",
+        "content": {
+          "0": "I offer collaboration arrangements both as a remote freelancer (individual capacity) and as a registered business entity.",
+          "1": "Multiple payment structures are available to accommodate your preferences: hourly rates, monthly retainers, or project-based pricing.",
+          "2": "During the initial consultation phase, communication may include written correspondence (email, messaging platforms), video conferences, and in-person meetings as needed. For ongoing project work, written communication is the preferred method to ensure clarity and documentation."
+        }
+      },
+      "services": {
+        "title": "2. Services",
+        "provided": {
+          "0": "Services include: comprehensive content creation and management solutions across multiple platforms and formats."
+        },
+        "not_provided": {
+          "0": "Services explicitly excluded: paid advertising management, standalone SEO consulting, and technical services outside the content domain (Google Ads, Meta Ads, and similar platforms)."
+        },
+        "combined_note": "For projects requiring integrated content, graphic design, photography, or videography services, we can establish collaborative partnerships with specialized professionals. Please submit an inquiry through the Contact section to explore multi-disciplinary project possibilities."
+      },
+      "deadlines": {
+        "title": "3. Deadlines",
+        "content": {
+          "0": "Project timelines and delivery schedules are established during the initial project planning phase.",
+          "1": "While we maintain strict adherence to agreed deadlines, unforeseen circumstances may occasionally require scope adjustments or expedited deliverables. Such modifications are subject to additional fees commensurate with the complexity and urgency of the required changes."
+        }
+      },
+      "payment": {
+        "title": "4. Payment",
+        "content": {
+          "0": "Payment options include credit card processing, direct bank transfer (with formal invoicing for business entities), and iDram electronic wallet transfers.",
+          "1": "Advance payment policy: New partnerships require 50% advance payment for short-term or one-time projects before work commencement.",
+          "2": "Established long-term partnerships may qualify for alternative payment arrangements, including post-completion billing options."
+        }
+      },
+      "modifications": {
+        "title": "5. Corrections, task modifications",
+        "content": {
+          "0": "Unless otherwise specified in the initial agreement, modifications requested after project initiation that involve scope changes, deadline adjustments, or priority shifts will be subject to additional charges. Fees are determined based on the complexity and extent of the requested modifications."
+        }
+      },
+      "confidentiality": {
+        "title": "6. Confidentiality",
+        "content": {
+          "0": "All client information, brand materials, strategic discussions, and proprietary content remain strictly confidential throughout our collaboration and beyond project completion.",
+          "1": "Formal Non-Disclosure Agreement (NDA) execution is available upon request for clients requiring additional legal documentation."
+        }
+      },
+      "terms_changes": {
+        "title": "7. Changes to cooperation terms",
+        "content": {
+          "0": "These terms may be updated periodically to reflect evolving business practices and industry standards.",
+          "1": "All modifications will be published on this website section with appropriate notice.",
+          "2": "Terms modifications will not affect existing client agreements established prior to the change, except in cases of regulatory requirements or circumstances beyond our control."
+        }
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": {
+        "0": {
+          "question": "Do you work in narrow professional fields (e.g., medicine, legal field, IT)?",
+          "answer": "Yes, I work with specialized industries when sufficient background materials and domain expertise are available. Initial consultations include detailed discussions of project requirements, target outcomes, and industry-specific considerations."
+        },
+        "1": {
+          "question": "How often do you get in touch?",
+          "answer": "I maintain regular business hours from 10:00/11:00-19:00 on weekdays and respond to communications within one business day. Emergency contact outside standard hours is reserved for urgent project needs only."
+        },
+        "2": {
+          "question": "Do you work under contract?",
+          "answer": "Yes, I accommodate various partnership structures including service agreements for individual clients and formal contracts for business entities. The specific arrangement can be tailored to meet your organizational requirements and preferences."
+        },
+        "3": {
+          "question": "Do you work alone?",
+          "answer": "While I personally handle all content creation and strategy, I can coordinate with additional specialists (designers, marketing professionals, product managers) when projects require expanded capabilities. Team assembly is managed on a project-specific basis."
+        },
+        "4": {
+          "question": "Can you guarantee the quality of the content you write?",
+          "answer": "Quality assurance is maintained through two key principles: professional content development standards and strict adherence to client specifications and brand requirements."
+        }
+      }
+    }
+  },
+  "footer": {
+    "copyright": "Armen Mkhitaryan",
+    "brandname": "Content Manager",
+	"text": "All data on the website is protected."
+  },
+  "seo": {
+    "meta": {
+      "title": "Armen Mkhitaryan | Content Manager",
+      "description": "Content manager with 5 years of experience. Quality and well-written texts, product descriptions, and more.",
+      "keywords": "content, content manager, content management, texts, copywriting, SMM"
+    },
+    "og": {
+      "title": "Armen Mkhitaryan | Content Manager",
+      "description": "Content creation and management services"
+    },
+    "twitter": {
+      "title": "Armen Mkhitaryan | Content Manager",
+      "description": "Content creation and management services"
+    },
+    "schema": {
+      "name": "Armen Mkhitaryan",
+      "job_title": "Content Manager",
+      "description": "Experienced content manager",
+      "address_locality": "Yerevan",
+      "address_region": "Yerevan",
+      "knows_about": [
+        "content management",
+        "copywriting",
+        "SEO optimization",
+        "social media",
+        "blog",
+        "product descriptions"
+      ],
+      "service_type": "Content creation and management",
+      "service_description": "Quality content, optimization, e-commerce management"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "select_theme": "-- select topic --",
+    "select_package": "-- select package --",
+    "required_field": "Field is required.",
+    "min_chars": "Must contain at least {count} characters.",
+    "max_chars": "Cannot exceed {count} characters.",
+    "invalid_email": "Enter a valid email.",
+    "suspicious_activity": "Suspicious activity",
+    "too_many_attempts": "Too many attempts. Try again in 10 minutes.",
+    "open_menu": "Menu",
+    "close_menu": "X",
+	"logo_aria_label": "Taryan - Return to top",
+	"logo_alt": "Taryan logo", 
+	"rate_limit_error": "Please try again later:",
+	"contact_alternative": "Please try contacting us through other means:",
+	"validation_error": "Please check your input data:"
+  }
+}

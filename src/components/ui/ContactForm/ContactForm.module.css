@@ -1,0 +1,470 @@
+/* ContactForm.module.css */
+@reference "../../../app/globals.css";
+
+/* === CONTACT FORM === */
+.contactForm {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-3xl);
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(43, 122, 138, 0.1),
+    rgba(184, 69, 63, 0.05)
+  );
+  pointer-events: none;
+}
+
+/* === FORM HEADER === */
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.formHeaderIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-warm);
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+/* === FORM CONTENT === */
+.formContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroupFull {
+  grid-column: 1 / -1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+/* === FORM INPUTS === */
+.formInput,
+.formTextarea {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-lg);
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  transition: var(--transition-fast);
+  font-family: var(--font-body);
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-warm);
+  box-shadow: 0 0 0 2px rgba(205, 127, 50, 0.2);
+  outline: none;
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.formTextarea {
+  min-height: 120px;
+  resize: vertical;
+  flex-grow: 1;
+}
+
+.formInputError {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+}
+
+/* === SELECT STYLING === */
+.formSelectWrapper {
+  position: relative;
+}
+
+.formSelect {
+  appearance: none;
+  padding-right: 3rem;
+}
+
+.formSelectIcon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+}
+
+/* === FORM MESSAGES === */
+.formSuccess {
+  padding: 1rem;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: var(--border-radius-lg);
+  color: #22c55e;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.formSuccessIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+.formError {
+  padding: 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--border-radius-lg);
+  color: #ef4444;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.formErrorIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* === FIELD ERRORS === */
+.formFieldError {
+  font-size: 0.75rem;
+  color: #ef4444;
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.formFieldErrorIcon {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex-shrink: 0;
+}
+
+.formFieldFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.characterCounter {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* === HONEYPOT === */
+.honeypotField {
+  display: none;
+}
+
+/* === FORM SUBMIT === */
+.formSubmit {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.submitButton {
+  background: var(--color-warm);
+  color: var(--color-main);
+  border: none;
+  border-radius: var(--border-radius-xl);
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.submitButton::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--color-warm-hover), var(--color-warm));
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-base);
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-warm-lg);
+}
+
+.submitButton:hover:not(:disabled)::before {
+  transform: scaleX(1);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submitIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: var(--transition-fast);
+  position: relative;
+  z-index: 1;
+}
+
+.submitButton:hover:not(:disabled) .submitIcon {
+  transform: translateX(2px);
+}
+
+.submitSpinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid var(--color-main);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* === SECURITY NOTICE === */
+.securityNotice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  justify-content: center;
+}
+
+.securityIcon {
+  width: 1rem;
+  height: 1rem;
+  color: var(--color-warm);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .contactForm {
+    padding: 2.5rem;
+  }
+
+  .formGrid {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+    padding: 2rem;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactForm {
+    padding: 1.5rem;
+  }
+
+  .formTitle {
+    font-size: 1.5rem;
+  }
+
+  .formInput,
+  .formTextarea {
+    font-size: 16px; /* Prevent zoom on iOS */
+  }
+
+  .submitButton {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* === ACCESSIBILITY === */
+@media (prefers-reduced-motion: reduce) {
+  .formInput,
+  .formTextarea,
+  .submitButton,
+  .submitIcon {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .submitButton:hover:not(:disabled),
+  .submitButton:hover:not(:disabled) .submitIcon {
+    transform: none !important;
+  }
+
+  .submitButton:hover:not(:disabled)::before {
+    transform: none !important;
+  }
+
+  .submitSpinner {
+    animation: none !important;
+  }
+}
+
+/* === HIGH CONTRAST === */
+@media (prefers-contrast: high) {
+  .contactForm {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border: 2px solid var(--color-text-secondary) !important;
+  }
+
+  .formTitle {
+    color: var(--color-text-secondary) !important;
+  }
+
+  .formLabel {
+    color: var(--color-text-secondary) !important;
+  }
+
+  .formInput,
+  .formTextarea {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 2px solid var(--color-text-secondary) !important;
+    color: var(--color-text-secondary) !important;
+  }
+
+  .formInput::placeholder,
+  .formTextarea::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .submitButton {
+    background: var(--color-warm) !important;
+    border: 2px solid var(--color-text-secondary) !important;
+    color: var(--color-main) !important;
+  }
+}
+
+/* === FOCUS STYLES === */
+.formInput:focus-visible,
+.formTextarea:focus-visible,
+.submitButton:focus-visible {
+  outline: 2px solid var(--color-warm);
+  outline-offset: 2px;
+  border-radius: var(--border-radius-lg);
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .contactForm {
+    background: white !important;
+    border: 1px solid #ccc !important;
+    color: black !important;
+  }
+
+  .contactForm::before {
+    display: none !important;
+  }
+
+  .formTitle {
+    color: black !important;
+  }
+
+  .formLabel {
+    color: black !important;
+  }
+
+  .formInput,
+  .formTextarea {
+    background: white !important;
+    border: 1px solid #ccc !important;
+    color: black !important;
+  }
+
+  .submitButton {
+    background: #ccc !important;
+    color: black !important;
+    border: 1px solid black !important;
+  }
+
+  .formSuccess,
+  .formError {
+    background: #f0f0f0 !important;
+    border: 1px solid #ccc !important;
+    color: black !important;
+  }
+
+  .securityNotice {
+    color: black !important;
+  }
+}

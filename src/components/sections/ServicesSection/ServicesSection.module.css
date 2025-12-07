@@ -1,0 +1,656 @@
+/* ServicesSection.module.css */
+
+/* === SECTION CONTAINER === */
+.servicesSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.servicesSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(43, 122, 138, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(184, 69, 63, 0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* === HEADER SECTION === */
+.servicesHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+  transition: var(--transition-slow);
+}
+
+.headerHidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.headerVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.headerIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.headerSubtitle {
+  color: var(--color-warm);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.servicesTitle {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  color: var(--color-text-secondary);
+}
+
+.servicesDescription {
+  font-size: 1.125rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  color: var(--color-text-secondary);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* === SERVICES GRID === */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding-top: 1rem;
+}
+
+/* === SERVICE CARD WRAPPER === */
+.serviceCardWrapper {
+  position: relative;
+  padding-top: 0.5rem;
+  transition: var(--transition-slow);
+}
+
+.cardHidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.cardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.serviceCardWrapper:nth-child(1) .cardVisible { transition-delay: 0ms; }
+.serviceCardWrapper:nth-child(2) .cardVisible { transition-delay: 100ms; }
+.serviceCardWrapper:nth-child(3) .cardVisible { transition-delay: 200ms; }
+.serviceCardWrapper:nth-child(4) .cardVisible { transition-delay: 300ms; }
+.serviceCardWrapper:nth-child(5) .cardVisible { transition-delay: 400ms; }
+.serviceCardWrapper:nth-child(6) .cardVisible { transition-delay: 500ms; }
+
+/* === PRIORITY BADGE === */
+.priorityBadge {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 2rem;
+  height: 2rem;
+  background: linear-gradient(135deg, var(--color-warm), var(--color-warm-hover));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-warm);
+}
+
+.serviceCardWrapper:hover .priorityBadge {
+  transform: translateX(-50%) scale(1.15) rotate(15deg);
+  box-shadow: var(--shadow-warm-lg);
+}
+
+/* === SERVICE CARD === */
+.serviceCard {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--border-radius-3xl);
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: var(--transition-base);
+  overflow: hidden;
+}
+
+.serviceCard:hover {
+  border-color: var(--color-warm);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-warm-lg);
+}
+
+/* === SERVICE CONTENT === */
+.serviceIconContainer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.serviceIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-warm);
+  border-radius: 50%;
+  color: white;
+  margin-bottom: 1rem;
+  transition: var(--transition-base);
+  box-shadow: var(--shadow-warm);
+}
+
+.serviceCard:hover .serviceIcon {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-warm-lg);
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+  transition: var(--transition-base);
+}
+
+.serviceCard:hover .serviceTitle {
+  color: var(--color-warm);
+}
+
+.serviceDescription {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* === FEATURES === */
+.serviceFeatures {
+  margin-bottom: 1rem;
+}
+
+.featuresList {
+  list-style: none;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  space-y: 0.5rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.25rem 0;
+  transition: var(--transition-fast);
+}
+
+.serviceCard:hover .featureItem {
+  transform: translateX(4px);
+}
+
+.featureDot {
+  width: 0.375rem;
+  height: 0.375rem;
+  background: var(--color-warm);
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.serviceCard:hover .featureDot {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(205, 127, 50, 0.5);
+}
+
+/* === HOVER EFFECTS === */
+.hoverOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(205, 127, 50, 0.05);
+  opacity: 0;
+  transition: var(--transition-base);
+  border-radius: var(--border-radius-3xl);
+  pointer-events: none;
+}
+
+.serviceCard:hover .hoverOverlay {
+  opacity: 1;
+}
+
+.glowEffect {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius-3xl);
+  opacity: 0;
+  transition: var(--transition-base);
+  pointer-events: none;
+}
+
+.glowEffect::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius-3xl);
+  background: rgba(205, 127, 50, 0.2);
+  opacity: 0.2;
+  filter: blur(4px);
+}
+
+.serviceCard:hover .glowEffect {
+  opacity: 1;
+}
+
+/* === COOPERATION SECTION === */
+.cooperationSection {
+  text-align: center;
+  transition: var(--transition-slow);
+}
+
+.cooperationHidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.cooperationVisible {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 600ms;
+}
+
+.cooperationContainer {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cooperationCard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: var(--border-radius-3xl);
+  border: 1px solid rgba(205, 127, 50, 0.2);
+  overflow: hidden;
+  position: relative;
+}
+
+.cooperationCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.8s ease;
+}
+
+.cooperationCard:hover::before {
+  left: 100%;
+}
+
+/* === COOPERATION CONTENT === */
+.cooperationContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.cooperationLeft {
+  flex: 1;
+}
+
+.cooperationTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.cooperationText {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.benefitsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  transition: var(--transition-fast);
+}
+
+.benefitItem:hover {
+  transform: translateX(4px);
+}
+
+.benefitIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: var(--color-warm);
+  border-radius: 50%;
+  color: white;
+  padding: 0.25rem;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.benefitItem:hover .benefitIcon {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-warm);
+}
+
+.benefitTitle {
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.benefitDescription {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* === DIVIDERS === */
+.verticalDivider {
+  display: none;
+}
+
+.horizontalDivider {
+  width: 100%;
+  height: 1px;
+  background: rgba(205, 127, 50, 0.3);
+}
+
+/* === RIGHT SECTION === */
+.cooperationRight {
+  flex: 1;
+  text-align: center;
+}
+
+.specializationsTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.specializationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.specializationItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+  border-radius: var(--border-radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: var(--transition-base);
+  text-align: center;
+  justify-content: center;
+}
+
+.specializationItem:hover {
+  border-color: var(--color-warm);
+  background: rgba(205, 127, 50, 0.1);
+  color: var(--color-warm);
+}
+
+/* === CTA BUTTONS === */
+.ctaButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  border-radius: var(--border-radius-full);
+  transition: var(--transition-base);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.ctaPrimary {
+  background: var(--color-warm);
+  color: white;
+}
+
+.ctaPrimary:hover {
+  background: var(--color-warm-hover);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: var(--shadow-warm-lg);
+}
+
+.ctaSecondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--color-text-secondary);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.ctaSecondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: var(--color-warm);
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (min-width: 1024px) {
+  .cooperationContent {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .cooperationLeft {
+    padding-right: 2rem;
+    text-align: left;
+  }
+
+  .cooperationTitle {
+    justify-content: flex-start;
+  }
+
+  .cooperationText {
+    text-align: left;
+  }
+
+  .cooperationRight {
+    padding-left: 2rem;
+    text-align: left;
+  }
+
+  .verticalDivider {
+    display: block;
+    width: 1px;
+    background: rgba(205, 127, 50, 0.3);
+    margin: 0 1rem;
+  }
+
+  .ctaButtons {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .serviceCard {
+    padding: 1.25rem;
+  }
+
+  .priorityBadge {
+    width: 1.75rem;
+    height: 1.75rem;
+    top: -0.875rem;
+  }
+
+  .cooperationCard {
+    margin: 0 1rem;
+  }
+
+  .cooperationContent {
+    padding: 1.5rem;
+  }
+
+  .ctaButtons {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicesGrid {
+    padding-top: 0.5rem;
+  }
+
+  .serviceCard {
+    padding: 1rem;
+  }
+
+  .serviceIcon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .cooperationContent {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .ctaButtons {
+    padding: 1rem;
+  }
+
+  .specializationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === ACCESSIBILITY === */
+@media (prefers-reduced-motion: reduce) {
+  .servicesHeader,
+  .serviceCardWrapper,
+  .cooperationSection,
+  .serviceCard,
+  .serviceIcon,
+  .priorityBadge,
+  .featureItem,
+  .featureDot,
+  .benefitItem,
+  .benefitIcon,
+  .specializationItem,
+  .ctaPrimary,
+  .ctaSecondary {
+    transition: none !important;
+  }
+
+  .serviceCard:hover,
+  .serviceCard:hover .serviceIcon,
+  .serviceCard:hover .serviceTitle,
+  .serviceCardWrapper:hover .priorityBadge,
+  .serviceCard:hover .featureItem,
+  .serviceCard:hover .featureDot,
+  .benefitItem:hover,
+  .benefitItem:hover .benefitIcon,
+  .ctaPrimary:hover,
+  .ctaSecondary:hover {
+    transform: none !important;
+  }
+
+  .hoverOverlay,
+  .glowEffect {
+    display: none !important;
+  }
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .servicesSection {
+    background: white !important;
+    color: black !important;
+  }
+
+  .servicesSection::before,
+  .cooperationCard::before,
+  .hoverOverlay,
+  .glowEffect {
+    display: none !important;
+  }
+
+  .serviceCard {
+    background: #f5f5f5 !important;
+    border: 1px solid #ccc !important;
+    break-inside: avoid;
+  }
+
+  .servicesTitle,
+  .serviceTitle,
+  .cooperationTitle {
+    color: black !important;
+  }
+
+  .priorityBadge {
+    background: #333 !important;
+    color: white !important;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    display: none !important;
+  }
+}

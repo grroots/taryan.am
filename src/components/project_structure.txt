@@ -1,0 +1,58 @@
++---layout
+|   +---Footer
+|   |       Footer.module.css
+|   |       index.tsx
+|   |       
+|   \---Header
+|           Header.module.css
+|           index.tsx
+|           
++---sections
+|   +---AboutSection
+|   |       AboutSection.module.css
+|   |       index.tsx
+|   |       
+|   +---ContactSection
+|   |       ContactSection.module.css
+|   |       index.tsx
+|   |       
+|   +---HeroSection
+|   |       HeroSection.module.css
+|   |       index.tsx
+|   |       
+|   +---PortfolioSection
+|   |       index.tsx
+|   |       PortfolioSection.module.css
+|   |       
+|   +---PricingSection
+|   |       index.tsx
+|   |       PricingSection.module.css
+|   |       
+|   +---ServicesSection
+|   |       index.tsx
+|   |       ServicesSection.module.css
+|   |       
+|   \---SkillsSection
+|           index.tsx
+|           SkillsSection.module.css
+|           
+\---ui
+    |   LanguageSelector.tsx
+    |   PortfolioCard.tsx
+    |   SkillCard.tsx
+    |   
+    +---Button
+    |       Button.module.css
+    |       index.tsx
+    |       
+    +---ContactForm
+    |       ContactForm.module.css
+    |       index.tsx
+    |       
+    +---PricingCard
+    |       index.tsx
+    |       PricingCard.module.css
+    |       
+    \---TermsModal
+            index.tsx
+            TermsModal.module.css

@@ -1,0 +1,606 @@
+/* AboutSection.module.css */
+@reference "../../../app/globals.css";
+
+/* === SECTION CONTAINER === */
+.aboutSection {
+  background: var(--color-section-light);
+  color: var(--color-text-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutContainer {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-section) var(--container-padding);
+  position: relative;
+  z-index: 2;
+}
+
+/* === SECTION HEADER === */
+.aboutHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.aboutBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.aboutBadgeIcon {
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-primary);
+}
+
+.aboutBadgeText {
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+.aboutTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.aboutTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: var(--border-radius-full);
+}
+
+.aboutWordsGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.aboutWord {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.aboutWordIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-primary);
+}
+
+.aboutWordText {
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.aboutSubtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* === SERVICES SECTION === */
+.aboutServices {
+  margin-bottom: 6rem;
+}
+
+.aboutServicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.aboutServiceCard {
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.aboutServiceContent {
+  background: var(--color-main);
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius-3xl);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--color-accent-border);
+  transition: var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutServiceCard:hover .aboutServiceContent {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-primary-lg);
+  border-color: rgba(43, 122, 138, 0.3);
+}
+
+.aboutServiceBody {
+  text-align: center;
+  flex: 1;
+}
+
+.aboutServiceIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.5rem;
+  color: var(--color-main);
+  transition: var(--transition-base);
+}
+
+.aboutServiceIcon svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.aboutServiceCard:hover .aboutServiceIcon {
+  transform: scale(1.1);
+  background: var(--color-primary-hover);
+  box-shadow: var(--shadow-primary);
+}
+
+.aboutServiceTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+  transition: var(--transition-base);
+}
+
+.aboutServiceCard:hover .aboutServiceTitle {
+  color: var(--color-primary);
+}
+
+.aboutServiceDescription {
+  color: rgba(43, 43, 43, 0.8);
+  line-height: 1.6;
+}
+
+.aboutServiceOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(43, 122, 138, 0.05);
+  opacity: 0;
+  transition: var(--transition-base);
+  border-radius: var(--border-radius-3xl);
+  pointer-events: none;
+}
+
+.aboutServiceCard:hover .aboutServiceOverlay {
+  opacity: 1;
+}
+
+/* === TIMELINE SECTION === */
+.aboutTimeline {
+  margin-bottom: 4rem;
+}
+
+.aboutTimelineCard {
+  background: var(--color-main);
+  border-radius: var(--border-radius-3xl);
+  padding: 3rem;
+  border: 1px solid var(--color-accent-border);
+  box-shadow: var(--shadow-base);
+}
+
+.aboutTimelineHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.aboutTimelineBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.aboutTimelineBadgeIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-primary);
+}
+
+.aboutTimelineTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.aboutTimelineSubtitle {
+  color: rgba(43, 43, 43, 0.8);
+  margin: 0;
+}
+
+.aboutTimelineSteps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.aboutTimelineStep {
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.aboutTimelineYear {
+  width: 5rem;
+  height: 5rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-base);
+}
+
+.aboutTimelineYear span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-main);
+  line-height: 1;
+}
+
+.aboutTimelineStep:hover .aboutTimelineYear {
+  transform: scale(1.1);
+  background: var(--color-primary-hover);
+  box-shadow: var(--shadow-primary-lg);
+}
+
+.aboutTimelineStepTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+  transition: var(--transition-base);
+}
+
+.aboutTimelineStep:hover .aboutTimelineStepTitle {
+  color: var(--color-primary);
+}
+
+.aboutTimelineStepDescription {
+  font-size: 0.875rem;
+  color: rgba(43, 43, 43, 0.7);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* === PLATFORMS SECTION === */
+.aboutPlatforms {
+  background: linear-gradient(135deg, 
+    rgba(245, 245, 245, 0.8) 0%, 
+    var(--color-primary-light) 100%);
+  border-radius: var(--border-radius-3xl);
+  padding: 2rem;
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.aboutPlatformsContent {
+  text-align: center;
+}
+
+.aboutPlatformsTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.aboutPlatformsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.aboutPlatformItem {
+  transition: var(--transition-base);
+}
+
+.aboutPlatformItemContent {
+  background: var(--color-main);
+  border-radius: var(--border-radius-full);
+  padding: 0.75rem 1.25rem;
+  border: 1px solid rgba(229, 229, 229, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition-base);
+}
+
+.aboutPlatformItem:hover .aboutPlatformItemContent {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.aboutPlatformDot {
+  width: 0.75rem;
+  height: 0.75rem;
+  background: var(--color-primary);
+  border-radius: 50%;
+}
+
+.aboutPlatformName {
+  font-weight: 500;
+  color: var(--color-text-primary);
+  transition: var(--transition-base);
+}
+
+.aboutPlatformItem:hover .aboutPlatformName {
+  color: var(--color-primary);
+}
+
+.aboutPlatformStat {
+  font-size: 0.75rem;
+  color: rgba(43, 43, 43, 0.6);
+}
+
+/* === ANIMATIONS === */
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: var(--transition-slow);
+}
+
+/* === SECTION DIVIDER === */
+.aboutDivider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg, 
+    transparent 0%, 
+    rgba(43, 122, 138, 0.3) 50%, 
+    transparent 100%
+  );
+}
+
+/* === BACKGROUND ELEMENTS === */
+.aboutSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(43, 122, 138, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(184, 69, 63, 0.03) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.aboutSection::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: 50%;
+  opacity: 0.05;
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1024px) {
+  .aboutContainer {
+    padding: 4rem var(--container-padding);
+  }
+
+  .aboutServicesGrid {
+    gap: 2rem;
+  }
+
+  .aboutTimelineSteps {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding: 3rem var(--container-padding);
+  }
+
+  .aboutHeader {
+    margin-bottom: 3rem;
+  }
+
+  .aboutServices {
+    margin-bottom: 4rem;
+  }
+
+  .aboutServicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .aboutServiceContent {
+    padding: 2rem 1.5rem;
+  }
+
+  .aboutTimelineCard {
+    padding: 2rem;
+  }
+
+  .aboutTimelineSteps {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .aboutWordsGrid {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .aboutPlatformsList {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutContainer {
+    padding: 2rem 1rem;
+  }
+
+  .aboutTitle {
+    font-size: 2rem;
+  }
+
+  .aboutServiceIcon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .aboutServiceIcon svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .aboutTimelineYear {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .aboutTimelineYear span {
+    font-size: 1.25rem;
+  }
+
+  .aboutPlatforms {
+    padding: 1.5rem;
+  }
+}
+
+/* === ACCESSIBILITY === */
+@media (prefers-reduced-motion: reduce) {
+  .aboutServiceCard,
+  .aboutServiceContent,
+  .aboutServiceIcon,
+  .aboutTimelineStep,
+  .aboutTimelineYear,
+  .aboutPlatformItem,
+  .visible,
+  .hidden {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .aboutServiceCard:hover .aboutServiceContent,
+  .aboutServiceCard:hover .aboutServiceIcon,
+  .aboutTimelineStep:hover .aboutTimelineYear,
+  .aboutPlatformItem:hover .aboutPlatformItemContent {
+    transform: none !important;
+  }
+
+  .aboutServiceOverlay {
+    display: none !important;
+  }
+}
+
+/* === HIGH CONTRAST === */
+@media (prefers-contrast: high) {
+  .aboutSection {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .aboutTitle,
+  .aboutServiceTitle,
+  .aboutTimelineTitle,
+  .aboutTimelineStepTitle,
+  .aboutPlatformsTitle {
+    color: #000 !important;
+  }
+
+  .aboutBadgeText,
+  .aboutWordIcon,
+  .aboutServiceIcon,
+  .aboutTimelineYear {
+    color: #0066cc !important;
+    background: #0066cc !important;
+  }
+
+  .aboutServiceContent,
+  .aboutTimelineCard {
+    border: 2px solid #000 !important;
+  }
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .aboutSection {
+    background: white !important;
+    color: black !important;
+  }
+
+  .aboutSection::before,
+  .aboutSection::after {
+    display: none !important;
+  }
+
+  .aboutServicesGrid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .aboutTimelineSteps {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1rem !important;
+  }
+
+  .aboutServiceContent,
+  .aboutTimelineCard {
+    background: #f9f9f9 !important;
+    border: 1px solid #ddd !important;
+  }
+
+  .aboutServiceIcon,
+  .aboutTimelineYear {
+    background: #333 !important;
+    color: white !important;
+  }
+}

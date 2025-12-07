@@ -1,0 +1,634 @@
+/* shared.module.css - Глобальные анимации для всего проекта */
+
+/* === COMMON ANIMATIONS === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-180deg) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* === SHIMMER ANIMATION === */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40%, 43% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* === UTILITY ANIMATION CLASSES === */
+.fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.fadeInDown {
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.slideInLeft {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.slideInRight {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.scaleIn {
+  animation: scaleIn 0.5s ease-out;
+}
+
+.bounceIn {
+  animation: bounceIn 0.8s ease-out;
+}
+
+.rotateIn {
+  animation: rotateIn 0.6s ease-out;
+}
+
+.zoomIn {
+  animation: zoomIn 0.4s ease-out;
+}
+
+/* === STAGGERED ANIMATIONS === */
+.staggeredFadeIn:nth-child(1) { animation-delay: 0ms; }
+.staggeredFadeIn:nth-child(2) { animation-delay: 100ms; }
+.staggeredFadeIn:nth-child(3) { animation-delay: 200ms; }
+.staggeredFadeIn:nth-child(4) { animation-delay: 300ms; }
+.staggeredFadeIn:nth-child(5) { animation-delay: 400ms; }
+.staggeredFadeIn:nth-child(6) { animation-delay: 500ms; }
+
+.staggeredSlideUp:nth-child(1) { animation-delay: 0ms; }
+.staggeredSlideUp:nth-child(2) { animation-delay: 150ms; }
+.staggeredSlideUp:nth-child(3) { animation-delay: 300ms; }
+.staggeredSlideUp:nth-child(4) { animation-delay: 450ms; }
+.staggeredSlideUp:nth-child(5) { animation-delay: 600ms; }
+.staggeredSlideUp:nth-child(6) { animation-delay: 750ms; }
+
+/* === LOADING STATES === */
+.shimmerEffect {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.shimmerEffectDark {
+  background: linear-gradient(90deg, #2a2a2a 25%, #1a1a1a 50%, #2a2a2a 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.pulseEffect {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.spinEffect {
+  animation: spin 1s linear infinite;
+}
+
+.bounceEffect {
+  animation: bounce 2s infinite;
+}
+
+.swingEffect {
+  animation: swing 1s ease-in-out;
+}
+
+/* === HOVER EFFECTS === */
+.hoverLift {
+  transition: all var(--transition-base);
+}
+
+.hoverLift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.hoverScale {
+  transition: transform var(--transition-base);
+}
+
+.hoverScale:hover {
+  transform: scale(1.05);
+}
+
+.hoverRotate {
+  transition: transform var(--transition-base);
+}
+
+.hoverRotate:hover {
+  transform: rotate(5deg);
+}
+
+.hoverGlow {
+  transition: all var(--transition-base);
+}
+
+.hoverGlow:hover {
+  box-shadow: 0 0 20px var(--color-primary);
+}
+
+/* === GRADIENT EFFECTS === */
+.gradientShift {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradientText {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* === FLOATING EFFECTS === */
+.floatingElement {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floatingElementSlow {
+  animation: floatingSlow 4s ease-in-out infinite;
+}
+
+@keyframes floatingSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* === TYPEWRITER EFFECT === */
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid var(--color-primary);
+  white-space: nowrap;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-primary);
+  }
+}
+
+/* === PARALLAX EFFECTS === */
+.parallaxElement {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* === SCROLL REVEAL EFFECTS === */
+.scrollReveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.scrollReveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scrollRevealLeft {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.8s ease;
+}
+
+.scrollRevealLeft.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scrollRevealRight {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease;
+}
+
+.scrollRevealRight.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scrollRevealScale {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.8s ease;
+}
+
+.scrollRevealScale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* === INTERSECTION OBSERVER ANIMATIONS === */
+.intersectionFade {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.intersectionFade.visible {
+  opacity: 1;
+}
+
+.intersectionSlide {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.intersectionSlide.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === CARD EFFECTS === */
+.cardHover {
+  transition: all var(--transition-base);
+}
+
+.cardHover:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.1),
+    0 0 20px rgba(89, 182, 192, 0.2);
+}
+
+.cardFlip {
+  perspective: 1000px;
+}
+
+.cardFlipInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.cardFlip:hover .cardFlipInner {
+  transform: rotateY(180deg);
+}
+
+.cardFlipFront,
+.cardFlipBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardFlipBack {
+  transform: rotateY(180deg);
+}
+
+/* === MORPHING EFFECTS === */
+.morphButton {
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.morphButton:hover {
+  border-radius: 50px;
+  padding: 12px 24px;
+}
+
+/* === PARTICLE EFFECTS === */
+.particleContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.particleContainer::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(89, 182, 192, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: particleMove 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes particleMove {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* === RESPONSIVE ANIMATIONS === */
+@media (max-width: 768px) {
+  .fadeInUp,
+  .slideInLeft,
+  .slideInRight,
+  .scaleIn,
+  .bounceIn,
+  .rotateIn {
+    animation-duration: 0.4s;
+  }
+
+  .staggeredFadeIn:nth-child(n+4) {
+    animation-delay: 300ms;
+  }
+
+  .staggeredSlideUp:nth-child(n+4) {
+    animation-delay: 450ms;
+  }
+}
+
+/* === ACCESSIBILITY === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .fadeIn,
+  .fadeInUp,
+  .fadeInDown,
+  .slideInLeft,
+  .slideInRight,
+  .scaleIn,
+  .bounceIn,
+  .rotateIn,
+  .zoomIn,
+  .shimmerEffect,
+  .shimmerEffectDark,
+  .pulseEffect,
+  .spinEffect,
+  .bounceEffect,
+  .swingEffect,
+  .gradientShift,
+  .floatingElement,
+  .floatingElementSlow,
+  .typewriter {
+    animation: none !important;
+  }
+
+  .hoverLift:hover,
+  .hoverScale:hover,
+  .hoverRotate:hover,
+  .cardHover:hover {
+    transform: none !important;
+  }
+
+  .scrollReveal,
+  .scrollRevealLeft,
+  .scrollRevealRight,
+  .scrollRevealScale,
+  .intersectionSlide {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .cardFlipInner {
+    transition: none !important;
+  }
+
+  .cardFlip:hover .cardFlipInner {
+    transform: none !important;
+  }
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .fadeIn,
+  .fadeInUp,
+  .fadeInDown,
+  .slideInLeft,
+  .slideInRight,
+  .scaleIn,
+  .bounceIn,
+  .rotateIn,
+  .zoomIn,
+  .shimmerEffect,
+  .shimmerEffectDark,
+  .pulseEffect,
+  .spinEffect,
+  .bounceEffect,
+  .swingEffect,
+  .gradientShift,
+  .floatingElement,
+  .floatingElementSlow,
+  .typewriter,
+  .particleContainer::before {
+    animation: none !important;
+  }
+
+  .scrollReveal,
+  .scrollRevealLeft,
+  .scrollRevealRight,
+  .scrollRevealScale,
+  .intersectionFade,
+  .intersectionSlide {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .cardHover,
+  .hoverLift,
+  .hoverScale,
+  .hoverRotate,
+  .hoverGlow {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}

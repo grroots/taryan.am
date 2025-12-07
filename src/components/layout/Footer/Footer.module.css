@@ -1,0 +1,105 @@
+/* Footer.module.css */
+@reference "../../../app/globals.css";
+
+/* === FOOTER CONTAINER === */
+.footer {
+  background: var(--color-section-dark);
+  color: var(--color-text-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4rem 0; /* Увеличил высоту */
+}
+
+.footerContainer {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+/* === FOOTER CONTENT === */
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.footerText {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+/* === BRAND LINK === */
+.brandLink {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: var(--transition-fast);
+  margin-left: 0.25rem;
+}
+
+.brandLink:hover {
+  color: var(--color-primary);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .copyright {
+    margin-left: 0;
+  }
+  
+  .footerText {
+    margin-right: 0;
+  }
+}
+
+/* === ACCESSIBILITY === */
+@media (prefers-reduced-motion: reduce) {
+  .footer,
+  .footerContainer,
+  .footerBottom,
+  .copyright,
+  .footerText,
+  .brandLink {
+    transition: none !important;
+  }
+}
+
+/* === HIGH CONTRAST === */
+@media (prefers-contrast: high) {
+  .footer {
+    background: #000 !important;
+    border-top: 2px solid #fff !important;
+  }
+
+  .copyright,
+  .footerText {
+    color: #fff !important;
+  }
+}
+
+/* === PRINT STYLES === */
+@media print {
+  .footer {
+    background: white !important;
+    color: #000 !important;
+    border-top: 1px solid #000 !important;
+  }
+
+  .copyright,
+  .footerText {
+    color: #000 !important;
+  }
+}
