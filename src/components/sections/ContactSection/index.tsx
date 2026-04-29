@@ -4,7 +4,7 @@
 import { useTranslations } from 'next-intl';
 import { MessageCircle, Mail, MailPlus, Phone, Clock, User, Linkedin, Instagram, Send } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import ContactForm from '@/components/ui/ContactForm/index.tsx';
+import ContactForm from '@/components/ui/ContactForm';
 import styles from './ContactSection.module.css';
 
 interface ContactSectionProps {

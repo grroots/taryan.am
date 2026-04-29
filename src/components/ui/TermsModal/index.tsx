@@ -1,7 +1,7 @@
 // src/components/ui/TermsModal/index.tsx
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { useTranslations, useMessages } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { 
   X, 
   FileText, 
@@ -84,7 +84,6 @@ const TermsModal: React.FC<TermsModalProps> = ({
   defaultTab = 'terms' 
 }) => {
   const t = useTranslations('terms');
-  const messages = useMessages();
   const [activeTab, setActiveTab] = useState<'terms' | 'faq'>(defaultTab);
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
   const [mounted, setMounted] = useState(false);

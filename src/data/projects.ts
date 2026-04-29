@@ -44,36 +44,42 @@ export const useProjects = (): PortfolioItem[] => {
     {
       id: "agga",
       image: "/assets/img/projects/agga.webp",
+      category: "web" as const,
       tags: ["CMS"],
       url: "#"
     },
     {
       id: "stda",
       image: "/assets/img/projects/saint-twins.webp",
+      category: "design" as const,
       tags: ["SMM", "Պրեզենտացիա"],
       url: "#"
     },
     {
       id: "innotek",
       image: "/assets/img/projects/tsiatsan-innotek.webp",
+      category: "web" as const,
       tags: ["Քոնթենթ-մենեջմենթ", "E-commerce", "Բլոգ", "SMM"],
       url: "#"
     },
     {
       id: "anna-vartanova",
       image: "/assets/img/projects/wildberries-anna-vartanova.webp",
+      category: "design" as const,
       tags: ["Wildberries", "Տեքստ-վիզուալ", "SEO"],
       url: "#"
     },
     {
       id: "eyva",
       image: "/assets/img/projects/eyva-atelier.webp",
+      category: "design" as const,
       tags: ["SMM", "Wildberries"],
       url: "#"
     },
     {
       id: "turkaget",
       image: "/assets/img/projects/turkaget.webp",
+      category: "web" as const,
       tags: ["CMS"],
       url: "#"
     }

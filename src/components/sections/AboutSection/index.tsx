@@ -9,7 +9,8 @@ import {
   Target,
   CircleCheckBig,
   Package,
-  Globe
+  Bot,
+  ClipboardCheck
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import styles from './AboutSection.module.css';
@@ -58,46 +59,28 @@ const AboutSection: React.FC<AboutSectionProps> = ({ className }) => {
       description: t('content_management_desc'),
     },
     {
-      icon: Globe,
+      icon: Bot,
       title: t('cms'),
       description: t('cms_desc'),
     },
   ];
 
-  // Platforms data
-  const platforms = [
-    { 
-      name: t('platform_wildberries'), 
-      stat: t('platform_wildberries_stat') 
-    },
-    { 
-      name: t('platform_ozon'), 
-      stat: t('platform_ozon_stat') 
-    },
-    { 
-      name: t('platform_ebay'), 
-      stat: t('platform_ebay_stat') 
-    },
-    { 
-      name: t('platform_ecommerce'), 
-      stat: t('platform_ecommerce_stat') 
-    }
-  ];
+  const domusResponsibilities = t.raw('domus_responsibilities') as string[];
 
   // Timeline data - полная структура из старого компонента
   const timelineSteps = [
     {
-      year: '2016',
+      year: t('start_year'),
       title: t('start'),
       description: t('start_desc')
     },
     {
-      year: '2018',
+      year: t('growth_year'),
       title: t('growth'),
       description: t('growth_desc')
     },
     {
-      year: '2021',
+      year: t('senior_year'),
       title: t('senior_path'),
       description: t('senior_desc')
     }
@@ -211,20 +194,21 @@ const AboutSection: React.FC<AboutSectionProps> = ({ className }) => {
               ))}
             </div>
 
-            {/* Platforms specialization */}
+            {/* Domus experience */}
             <div className={styles.aboutPlatforms}>
               <div className={styles.aboutPlatformsContent}>
-                <h4 className={styles.aboutPlatformsTitle}>{t('platforms_title')}</h4>
+                <div className={styles.aboutTimelineBadge}>
+                  <ClipboardCheck className={styles.aboutTimelineBadgeIcon} />
+                  <h4 className={styles.aboutPlatformsTitle}>{t('domus_title')}</h4>
+                </div>
+                <p className={styles.aboutTimelineSubtitle}>{t('domus_role')}</p>
                 <div className={styles.aboutPlatformsList}>
-                  {platforms.map((platform, index) => (
+                  {domusResponsibilities.map((responsibility, index) => (
                     <div key={index} className={styles.aboutPlatformItem}>
                       <div className={styles.aboutPlatformItemContent}>
                         <div className={styles.aboutPlatformDot} />
                         <span className={styles.aboutPlatformName}>
-                          {platform.name}
-                        </span>
-                        <span className={styles.aboutPlatformStat}>
-                          ({platform.stat})
+                          {responsibility}
                         </span>
                       </div>
                     </div>

@@ -1,111 +1,148 @@
 {
   "navigation": {
-    "about": "Գուրու",
-    "skills": "Հմտություններ",
-    "services": "Ծառայություններ",
-    "portfolio": "Աշխատանքներ",
-    "pricing": "Գնացուցակ",
+    "about": "Ով եմ ես",
+    "skills": "Կոմպետենցիաներ",
+    "services": "Ինչով կօգնեմ",
+    "portfolio": "Փորձ",
+    "pricing": "Ձևաչափեր",
     "contact": "Կապ",
-    "collaboration": "ՀԱՄԱԳՈՐԾԱԿՑԵԼ"
+    "collaboration": "ՔՆՆԱՐԿԵԼ ՆԱԽԱԳԻԾ"
   },
   "hero": {
-    "greeting": "ՔՈՆԹԵՆԹ-ՄԵՆԵՋԵՐ",
-    "name": "ԱՐՄԵՆ ՄԽԻԹԱՐՅԱՆ",
-    "title": "Բացահայտում եմ Ձեր քոնթենթի ողջ ներուժը",
-    "cta_button": "ԴԱՌՆԱԼ ԳՈՐԾԸՆԿԵՐ",
-    "cta_button_secondary": "ՄԵՆԹՈՐՇԻՓ",
-    "value_prop_1000": "10000+ ապրանք",
-    "value_prop_1000_desc": "մշակված",
-    "value_prop_ecommerce": "E-commerce | Marketplace",
-    "value_prop_ecommerce_desc": "կառավարում",
-    "value_prop_9years": "5+ տարի",
-    "value_prop_9years_desc": "փորձ"
+    "greeting": "E-COMMERCE CONTENT LEAD",
+    "name": "Արմեն Մխիթարյան",
+    "title": "Կառուցում եմ համակարգային e-commerce քոնթենթ՝ կատալոգ, ապրանքային քարտեր, SEO, AI և գործընթացներ։",
+    "cta_button": "ԴԻՏԵԼ ՓՈՐՁԸ",
+    "cta_button_secondary": "ՔՆՆԱՐԿԵԼ ՆԱԽԱԳԻԾ",
+    "value_prop_1000": "10 000+ SKU",
+    "value_prop_1000_desc": "մեծ կատալոգի փորձ",
+    "value_prop_ecommerce": "2025+",
+    "value_prop_ecommerce_desc": "Content Lead, Domus LLC",
+    "value_prop_9years": "2020/2021+",
+    "value_prop_9years_desc": "e-commerce content-ում"
   },
   "about": {
-    "title": "Քոնթենթ-մենեջեր",
+    "title": "E-commerce Content Lead",
     "who_am_i": "Ով եմ ես",
-    "three_words": "ԵՐԵՔ ԲԱՌՈՎ",
-    "creative": "Ստեղծագործ",
-    "literary": "Տառակեր",
-    "organized": "Համակարգային",
-    "description": "Օգնում եմ հասկանալի և ընթեռնելի լինել ձեր լսարանի համար:",
-    "text_creation": "ՏԵՔՍՏԵՐԻ ՕՊՏԻՄԻԶԱՑԻԱ",
-    "text_creation_desc": "Համակարգում եմ ապրանքների բովանդակությունը խոշոր մարքեթփլեյսերում։",
-    "content_management": "E-COMMERCE ԿԱՌԱՎԱՐՈՒՄ",
-    "content_management_desc": "Մշակում և կառավարում եմ քոնթենթը տեղական e-commerce-ների համար:",
-    "cms": "CMS",
-    "cms_desc": "Աշխատում եմ CMS համակարգերի հետ (WordPress, Tilda, Wix...)՝ դիզայնից մինչև տեքստային բովանդակություն:",
-    "years_in_content": "տարի քոնթենթ-մենեջեր",
-    "years_content_manager": "մշակված ապրանք",
-    "countries_partners": "խոշոր հարթակ",
-    "languages": "հաջողված նախագիծ",
-    "specialization_path": "Մասնագիտացման ուղին. SEO-ից՝ ՔՈՆԹԵՆԹԻ ԿԱՌԱՎԱՐՈՒՄ",
-    "help_understand": "Իմ ուղին սկսվել է SEO-ից, ապա վերափոխել եմ մասնագիտացումս դեպի e-commerce հարթակների քոնթենթ-մենեջմենթ։",
-    "start": "SEO հիմունքներ",
-    "start_desc": "Տեխնիկական օպտիմիզացիա, բանալի բառեր, քոնթենթի կառուցվածքի հիմունքներ։",
-    "growth": "CMS հմտություններ",
-    "growth_desc": "CMS հիմքով կայքերի մշակում և բովանդակության կառավարում։",
-    "senior_path": "Միջազգային փորձ",
-    "senior_desc": "Խոշոր մարքեթփլեյսեր, շարունակական աճ:",
-    "platforms_title": "Հիմնական մասնագիտացում՝ վաճառող հարթակներ",
-    "platform_wildberries": "Wildberries",
-    "platform_wildberries_stat": "500+ ապրանք",
-    "platform_ozon": "Ozon",
-    "platform_ozon_stat": "Տեխնիկական գործընկեր 2023թ.",
-    "platform_ebay": "eBay",
-    "platform_ebay_stat": "30+ գործընկեր՝ Հայաստանից",
-    "platform_ecommerce": "E-commerce",
-    "platform_ecommerce_stat": "10 000+ ապրանք"
+    "three_words": "ՔՈՆԹԵՆԹԻ ՀԱՄԱԿԱՐԳ",
+    "creative": "Կատալոգ",
+    "literary": "Գործընթացներ",
+    "organized": "AI և թիմ",
+    "description": "Ես միայն տեքստեր գրող կամ ապրանքային քարտեր լրացնող մասնագետ չեմ։ Իմ մասնագիտացումը e-commerce քոնթենթի համակարգային զարգացումն է՝ կատալոգի կառուցվածք, քարտերի որակ, SEO տրամաբանություն, թիմային գործընթացներ, ավտոմատացում և AI գործիքներ։",
+    "text_creation": "E-commerce content",
+    "text_creation_desc": "Ապրանքային քարտեր, կատեգորիաներ, SKU կառուցվածք, SEO տրամաբանություն և բազմալեզու քոնթենթ առցանց կատալոգի համար։",
+    "content_management": "Content operations",
+    "content_management_desc": "Գործընթացներ, առաջադրանքների ստանդարտներ, որակի չեք-լիստեր, քարտերի QA և թիմի համակարգում։",
+    "cms": "AI & automation",
+    "cms_desc": "AI մոտեցումներ՝ սևագրերի, շաբլոնների, քարտերի ամբողջականության ստուգման, ադապտացիայի և ռուտին գործերի արագացման համար։",
+    "years_in_content": "e-commerce content-ում",
+    "years_content_manager": "SKU փորձ",
+    "countries_partners": "Domus LLC",
+    "languages": "content systems",
+    "specialization_path": "Աճի ուղի․ SKU-ից դեպի CONTENT OPERATIONS",
+    "help_understand": "Իմ e-commerce content ուղին աճել է ապրանքային քարտերից և SEO կառուցվածքից մինչև գործընթացներ, ստանդարտներ, AI գործիքներ և թիմային համակարգում։",
+    "start": "Սկիզբ e-commerce content-ում",
+    "start_desc": "Ապրանքային քարտեր, SEO տեքստեր, քոնթենթի կառուցվածք և զանգվածային SKU աշխատանքի առաջին գործընթացներ։",
+    "growth": "Աճ e-commerce և marketplace content-ում",
+    "growth_desc": "Կատալոգ, մարքեթփլեյսներ, CMS, վերլուծություն, կատեգորիաներ և մեծածավալ ապրանքային քոնթենթ։",
+    "senior_path": "E-commerce Content Lead, Domus LLC",
+    "senior_desc": "Թիմ, գործընթացներ, AI, ավտոմատացում, ստանդարտներ և առցանց կատալոգի քոնթենթի որակ։",
+    "platforms_title": "Domus LLC Experience",
+    "platform_wildberries": "Domus LLC",
+    "platform_wildberries_stat": "E-commerce Content Lead",
+    "platform_ozon": "Catalog",
+    "platform_ozon_stat": "structure and attributes",
+    "platform_ebay": "AI",
+    "platform_ebay_stat": "automation and QA",
+    "platform_ecommerce": "Team",
+    "platform_ecommerce_stat": "coordination and standards",
+    "start_year": "2020/21",
+    "growth_year": "2022-24",
+    "senior_year": "2025+",
+    "domus_title": "Domus LLC Experience",
+    "domus_role": "E-commerce Content Lead, 2025-ից մինչ այժմ",
+    "domus_responsibilities": [
+      "առցանց կատալոգի քոնթենթի զարգացում",
+      "ապրանքային քարտերի ստանդարտացում",
+      "կատեգորիաներ, ատրիբուտներ և SEO տրամաբանություն",
+      "քոնթենթ թիմի, լուսանկարիչների և խմբագիրների համակարգում",
+      "AI մոտեցումներ քոնթենթի արտադրության մեջ",
+      "կրկնվող գործընթացների ավտոմատացում",
+      "տվյալների որակ և ապրանքների վիզուալ ներկայացում"
+    ]
   },
   "skills": {
-    "title": "ՀՄՏՈՒԹՅՈՒՆՆԵՐ",
-    "subtitle": "Ինչ եմ կարողանում",
-    "principle": "Իմ սկզբունքն է՝ «մշտական աճ, նոր տեխնոլոգիաների, գործիքների յուրացում, սխալների վրա աշխատանք»:",
-    "mentorship": "Մենթորշիփ",
-    "mentorship_desc": "Քաոս, համակարգային մոտեցման բացակայություն, փորձի պակաս, լճացող միջավայրեր.սրանք խնդիրներ են, որոնց բախվում են քոնթենթի, հատկապես՝ քոնթենթ-մենեջմենթի մասնագետները։ Ունենալով տեսական և պրակտիկ գիտելիքների պաշար՝ կարևոր եմ համարում դրանցով կիսվելը, քանի որ ոլորտում փորձ չունեցող կամ սկսնակ մասնագետների մասնագիտական որակների բարձրացումը, ավելի մրցունակ դառնալը հենց կարող են օգնել ունենալու ավելի որակյալ աշխատաշուկա, ավելի արագ զարգացող բիզնեսներ, ավելի կայուն տնտեսություն։ Մենթորշիփի ձևաչափերը.",
-    "video_calls": "Վիդեո-զանգեր",
-    "video_calls_desc": "Անհատական խորհրդատվություն և «հարցուպատասխան»",
-    "courses": "Դասընթացներ",
-    "courses_desc": "Անձնական և մասնագիտական հմտություններ",
-    "yearly_mentorship": "Մեկամյա մենթորշիփ",
-    "yearly_mentorship_desc": "Աջակցություն և ուղեկցում 1 տարվա ընթացքում",
-    "apply_mentorship": "ԳՐԱՆՑԻՐ ԱՃ ԱՅՍՕՐՎԱՆԻՑ",
-    "for_partnership_title": "",
-    "for_partnership_desc": "",
-    "for_partnership_button": "",
+    "title": "ԿՈՄՊԵՏԵՆՑԻԱՆԵՐ",
+    "subtitle": "Համակարգ, ոչ թե գործիքների ցուցակ",
+    "principle": "Ֆոկուսը ոչ թե առանձին ծրագրերն են, այլ e-commerce content system-ի կառուցումը՝ ապրանքային քարտից մինչև թիմի գործընթաց, SEO-ից մինչև AI։",
+    "mentorship": "Mentorship & Team Development",
+    "mentorship_desc": "Օգնում եմ քոնթենթ-մենեջերներին աշխատել ոչ թե մեխանիկորեն, այլ համակարգային՝ հասկանալ e-commerce տրամաբանությունը, ապրանքային քարտի կառուցվածքը, SEO խնդիրները, լուսանկարների, ատրիբուտների, ֆիլտրերի և user journey-ի դերը։",
+    "video_calls": "Քոնթենթ-մենեջերների ուսուցում",
+    "video_calls_desc": "E-commerce տրամաբանություն, քարտեր, կատեգորիաներ և user journey",
+    "courses": "Չեք-լիստեր և ստանդարտներ",
+    "courses_desc": "Առաջադրանքների ձևակերպում, սխալների վերլուծություն և որակի վերահսկում",
+    "yearly_mentorship": "AI գործիքներ թիմի համար",
+    "yearly_mentorship_desc": "Պրոմպտեր, շաբլոններ, ստուգումներ և պատասխանատվություն արդյունքի համար",
+    "apply_mentorship": "ՔՆՆԱՐԿԵԼ ԹԻՄԻ ԶԱՐԳԱՑՈՒՄԸ",
+    "for_partnership_title": "AI & Automation in E-commerce Content",
+    "for_partnership_desc": "AI-ն ինքնուրույն չի լուծում որակի խնդիրը։ Այն աշխատում է միայն այն ժամանակ, երբ կան կառուցվածք, կատեգորիաներ, ատրիբուտներ, կանոններ, tone of voice և վերահսկում։",
+    "for_partnership_button": "ՔՆՆԱՐԿԵԼ AI ԳՈՐԾԸՆԹԱՑՆԵՐԸ",
     "categories": {
-      "web_tech": "Վեբ տեխնոլոգիաներ | CMS | E-Commerce",
-      "creative": "Ստեղծագործական գործիքներ",
-      "writing": "Տեքստերի խմբագրիչներ",
-      "analytics": "Վերլուծական գործիքներ",
-      "social": "Սոցիալական ցանցեր",
-      "ai": "AI գործիքներ"
+      "web_tech": "E-commerce Content Management",
+      "creative": "Content Operations",
+      "writing": "AI & Automation",
+      "analytics": "Analytics & SEO",
+      "social": "CMS / E-commerce Platforms",
+      "ai": "Mentorship / Team Development"
+    },
+    "items": {
+      "product_cards": "Product cards",
+      "category_content": "Category content",
+      "sku_structure": "SKU structure",
+      "multilingual_content": "Multilingual content",
+      "content_quality_control": "Content quality control",
+      "workflows": "Workflows",
+      "team_coordination": "Team coordination",
+      "task_standards": "Task standards",
+      "qa_processes": "QA processes",
+      "prompt_systems": "Prompt systems",
+      "bulk_generation": "Bulk content generation",
+      "content_review": "Content review",
+      "seo_structure": "SEO content structure",
+      "search_intent": "Search intent",
+      "marketplace_tools": "Marketplace tools",
+      "admin_panels": "Website admin panels",
+      "catalog_systems": "Catalog systems",
+      "training": "Content manager training",
+      "checklists": "Quality checklists",
+      "error_review": "Error review",
+      "ai_training": "AI-tool training"
     }
   },
   "services": {
-    "title": "ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ",
-    "subtitle": "Ինչ եմ առաջարկում",
-    "description": "Ամբողջական լուծումներ ձեր բիզնեսի տոնայնության համար՝ գաղափարից մինչև իրականացում:",
-    "cooperation": "Դարձիր գործընկեր",
+    "title": "ԻՆՉՈՎ ԿԱՐՈՂ ԵՄ ՕԳՆԵԼ",
+    "subtitle": "Content system e-commerce-ի համար",
+    "description": "Ոչ թե մեկ ապրանքի նկարագրություն գրել, այլ ստեղծել ստանդարտներ և գործընթացներ, որոնցով թիմը կարող է կայուն արտադրել որակյալ քոնթենթ։",
+    "cooperation": "AI & Automation in E-commerce Content",
     "cooperation_benefits": {
-      "discussion": "Համագործակցության ձևաչափի արագ քննարկում",
-      "individual": "Անհատական մոտեցում",
-      "transparent": "Թափանցիկ պայմաններ",
-      "discussion_desc": "Ձեր նպատակների և խնդիրների արագ հասկացում",
-      "individual_desc": "Արդյունավետ լուծումներ ձեր բիզնեսի համար",
-      "transparent_desc": "Հստակ ժամկետներ, ճկուն գնային քաղաքականություն"
+      "discussion": "Կառուցվածք՝ նախքան գեներացիան",
+      "individual": "AI-ը որպես գործընթացի գործիք",
+      "transparent": "Որակի վերահսկում",
+      "discussion_desc": "Կատեգորիաները, ատրիբուտները, կանոններն ու tone of voice-ը պետք է ձևակերպված լինեն մինչև ավտոմատացումը։",
+      "individual_desc": "Սևագրերը, շաբլոնները, ստուգումները և ադապտացիան արագացնում են թիմին՝ առանց փորձագիտությունը փոխարինելու։",
+      "transparent_desc": "Քարտերի ամբողջականությունը, SEO տրամաբանությունը, վիզուալն ու տվյալները պահանջում են պարբերական QA։"
     },
     "cooperation_conditions": "Համագործակցության պայմաններ",
-    "contact_me": "Կապ հաստատել",
+    "contact_me": "Քննարկել նախագիծ",
     "specializations": "Հիմնական մասնագիտացումներ",
     "specializations_desc": "Մասնագիտացած ծառայություններ կոնկրետ հարթակների համար",
-    "specializations_title": "Հիմնական մասնագիտացումներ՝",
-    "spec_wildberries": "Wildberries",
-    "spec_ozon": "Ozon",
-    "spec_ebay": "eBay",
-    "spec_wordpress": "WordPress",
-    "spec_ecommerce": "E-commerce",
-    "spec_cms": "CMS",
+    "specializations_title": "Աշխատանքի ֆոկուսը՝",
+    "spec_wildberries": "Catalog strategy",
+    "spec_ozon": "Product standards",
+    "spec_ebay": "AI workflows",
+    "spec_wordpress": "Team mentoring",
+    "spec_ecommerce": "SEO structure",
+    "spec_cms": "QA processes",
     "key_benefits": "Հիմնական առավելությունները",
     "benefit_speed": "Արագություն",
     "benefit_speed_desc": "Արագ և որակյալ կատարում",
@@ -119,67 +156,65 @@
     "view_terms": "Համագործակցության պայմաններ",
     "items": {
       "copywriting": {
-        "title": "Վաճառող տեքստեր",
-        "description": "Տեքստեր, որոնք գեներացնում են գնորդներ:",
+        "title": "E-commerce content strategy",
+        "description": "Քոնթենթի ռազմավարություն առցանց կատալոգի, կատեգորիաների և ապրանքային քարտերի համար։",
         "features": [
-          "Լենդինգներ և վաճառող էջեր",
-          "Գովազդային տեքստեր",
-          "Գործողության կոչեր (CTA)"
+          "կատալոգի կառուցվածք",
+          "քոնթենթի դերը user journey-ում",
+          "կատեգորիաների առաջնահերթություններ"
         ]
       },
       "blog": {
-        "title": "Բլոգ",
-        "description": "Լսարանի ներգրավվածությանն ուղղված տեքստեր:",
+        "title": "Product content standards",
+        "description": "Նկարագրությունների, ատրիբուտների, լուսանկարների, SEO բլոկների և քարտերի որակի ստանդարտներ։",
         "features": [
-          "Մասնագիտական հոդվածներ",
-          "SEO-օպտիմիզացիա",
-          "Քոնթենթի պլանավորում"
+          "քարտերի շաբլոններ",
+          "նկարագրությունների կանոններ",
+          "որակի չեք-լիստեր"
         ]
       },
       "smm": {
-        "title": "Սոցիալական ցանցեր",
-        "description": "Հրապարակումներ սոցիալական ցանցերում:",
+        "title": "AI implementation for content teams",
+        "description": "AI մոտեցումներ՝ քոնթենթի արտադրությունն արագացնելու և ստանդարտացնելու համար։",
         "features": [
-          "Վիզուալ հրապարակումներ | Ֆիդ",
-          "Սթորիներ",
-          "Ռիլեր"
+          "prompt systems",
+          "bulk drafts",
+          "քարտերի ամբողջականության ստուգում"
         ]
       },
       "products": {
-        "title": "Ապրանքների տեսքտեր",
-        "description": "E-commerce հարթակների և մարքեթփլեյսերի համար:",
+        "title": "Catalog and category content audit",
+        "description": "Կատալոգի կառուցվածքի, կատեգորիաների, ֆիլտրերի, ատրիբուտների և քարտերի աուդիտ։",
         "features": [
-          "Քարտեր (ներառյալ՝ ֆոտո-վիդեո)",
-          "SEO-նկարագրություններ",
-          "Բնութագրերի թարգմանություն",
-          "Հաճախ տրվող հարցեր"
+          "կատեգորիաներ և ֆիլտրեր",
+          "ատրիբուտներ",
+          "SEO տրամաբանություն"
         ]
       },
       "presentations": {
-        "title": "Պրեզենտացիաներ",
-        "description": "B2B պրեզենտացիաների և կոմերցիոն առաջարկների կազմում",
+        "title": "Content team mentoring",
+        "description": "Քոնթենթ-մենեջերների զարգացում, առաջադրանքների ստանդարտներ և պատասխանատվություն արդյունքի համար։",
         "features": [
-          "Համագործակցության առաջարկներ",
-          "Ծառայությունների պրեզենտացիաներ",
-          "Pitch deck-եր (ստարտափերի համար)"
+          "թիմի ուսուցում",
+          "սխալների վերլուծություն",
+          "առաջադրանքների ձևակերպում"
         ]
       },
       "audit": {
-        "title": "Քոնթենթ-աուդիտ",
-        "description": "Բովանդակության որակի հետազոտության իրականացում",
+        "title": "Content workflow automation",
+        "description": "Կրկնվող գործընթացների ավտոմատացում՝ առանց որակի վերահսկումը կորցնելու։",
         "features": [
-          "Առկա բովանդակության վերլուծություն",
-          "Մրցակիցների վերլուծություն",
-          "Որակի բարելավման առաջարկներ",
-          "Զարգացման ռազմավարություն"
+          "ռուտին սցենարներ",
+          "շաբլոններ",
+          "QA գործընթացներ"
         ]
       }
     }
   },
   "portfolio": {
-    "title": "ՊՈՐՏՖՈԼԻՈ",
-    "subtitle": "Ինչ եմ անում",
-    "description": "Նախագծեր, որոնցում ներգրավվել եմ տարբեր ֆորմատներով:",
+    "title": "ՓՈՐՁ ԵՎ ՔԵՅՍԵՐ",
+    "subtitle": "Մասնագիտական հենակետեր",
+    "description": "Փորձ e-commerce content-ում՝ մարքեթփլեյսներից և CMS-ից մինչև E-commerce Content Lead դեր Domus LLC-ում։",
     "all": "Բոլորը",
     "web": "Վեբ",
     "design": "Դիզայն",
@@ -187,12 +222,12 @@
     "satisfied_clients": "գործընկերներ",
     "cms_sites": "CMS կայքեր",
     "quality": "ապրանք",
-    "results_title": "Արդյունքները՝ թվերով",
-    "results_subtitle": "Ձեռքբերումները",
-    "approach_title": "Աշխատանքային մոտեցումը.",
-    "approach_analysis": "Քոնթենթի համակարգային վերլուծություն",
-    "approach_optimization": "Օպտիմիզացիա՝ տվյալների հիման վրա",
-    "approach_kpi": "Չափելի KPI-ներ",
+    "results_title": "Փորձը՝ ֆոկուսներով",
+    "results_subtitle": "Առանց չհաստատված կոմերցիոն խոստումների․ միայն ազդեցության գոտիներ և համակարգային աշխատանք։",
+    "approach_title": "Մոտեցում e-commerce content-ին՝",
+    "approach_analysis": "Կատալոգի և կատեգորիաների կառուցվածք",
+    "approach_optimization": "Քարտերի ստանդարտներ և QA",
+    "approach_kpi": "AI, ավտոմատացում և թիմ",
     "featured_projects": "Ընտրված նախագծեր",
     "featured_desc": "Ավելի մանրամասն ներկայացրած նախագծեր",
     "other_projects": "Այլ նախագծեր",
@@ -206,15 +241,15 @@
       "mobile": "Մոբայլ",
       "other": "Այլ"
     },
-	"stats": {
-      "projects_count": "15+",
-      "projects_label": "նախագիծ",
-      "clients_count": "10+", 
-      "clients_label": "գործընկեր",
-      "cms_count": "7",
-      "cms_label": "CMS կայք", 
-      "products_count": "10 000+",
-      "products_label": "ապրանք"
+    "stats": {
+      "projects_count": "2020/21+",
+      "projects_label": "e-commerce content-ում",
+      "clients_count": "2025+",
+      "clients_label": "Content Lead",
+      "cms_count": "10 000+",
+      "cms_label": "SKU փորձ",
+      "products_count": "AI + QA",
+      "products_label": "գործընթացներ"
     },
     "case_wildberries_title": "Wildberries",
     "case_wildberries_products": "Մշակված ապրանքներ՝",
@@ -223,20 +258,27 @@
     "case_wildberries_period_value": "2022-2024",
     "case_wildberries_focus": "Հիմնական գործառույթներ՝",
     "case_wildberries_focus_value": "SEO-օպտիմիզացիա և կոնվերսիա",
-    "case_ecommerce_title": "E-commerce",
-    "case_ecommerce_processed": "Մշակված ապրանքներ՝",
-    "case_ecommerce_processed_count": "10 000+",
-    "case_ecommerce_type": "Աշխատանքի ժամանակահատվածը՝",
-    "case_ecommerce_type_value": "2021-2025",
-    "case_ecommerce_specialization": "Հիմնական գործառույթներ՝",
-    "case_ecommerce_specialization_value": "Մեծածավալ բովանդակություն"
+    "case_ecommerce_title": "Marketplace projects",
+    "case_ecommerce_processed": "Ֆոկուս՝",
+    "case_ecommerce_processed_count": "Wildberries / Ozon / eBay",
+    "case_ecommerce_type": "Խնդիրներ՝",
+    "case_ecommerce_type_value": "քարտեր, SEO, օպտիմիզացիա",
+    "case_ecommerce_specialization": "Մոտեցում՝",
+    "case_ecommerce_specialization_value": "մեծածավալ ապրանքային քոնթենթ",
+    "case_domus_title": "Domus LLC",
+    "case_domus_role": "Դեր՝",
+    "case_domus_role_value": "E-commerce Content Lead",
+    "case_domus_period": "Ժամանակահատված՝",
+    "case_domus_period_value": "2025-ից մինչ այժմ",
+    "case_domus_focus": "Ֆոկուս՝",
+    "case_domus_focus_value": "կատալոգ, ստանդարտներ, AI, թիմ"
   },
   "pricing": {
-    "title": "ԱՇԽԱՏԱՆՔԻ ՁԵՎԱՉԱՓԵՐ",
-    "subtitle": "Առաջարկում եմ",
-    "description": "Ընտրեք ձեր բիզնեսին հարմար փաթեթը կամ միասին գտնենք անհատական լուծում:",
-    "not_found": "Չե՞ք գտել համապատասխան տարբերակ",
-    "not_found_desc": "Նկարագրեք ձեր խնդիրներն ու բյուջեն և ձեզ համար կուղարկեմ հատուկ անհատական առաջարկ:",
+    "title": "ՀԱՄԱԳՈՐԾԱԿՑՈՒԹՅԱՆ ՁԵՎԱՉԱՓԵՐ",
+    "subtitle": "E-commerce content systems-ի համար",
+    "description": "Կարող ենք քննարկել աուդիտ, քարտերի ստանդարտներ, AI գործընթացներ, թիմի ուսուցում կամ համալիր աշխատանք content system-ի վրա։",
+    "not_found": "Պե՞տք է այլ ձևաչափ",
+    "not_found_desc": "Նկարագրեք կատալոգը, թիմը, ընթացիկ գործընթացները և նպատակը․ կառաջարկեմ համապատասխան ձևաչափ։",
     "flexible_terms": "Ճկուն պայմաններ",
     "flexible_terms_desc": "Կհարմարեցնեմ ձեր բյուջեին և պահանջներին",
     "quality": "Որակ",
@@ -244,13 +286,13 @@
     "result": "Արդյունք",
     "result_desc": "Որակյալ քոնթենթ = համապատասխան արդյունք",
     "get_offer": "ՍՏԱՆԱԼ ԱՌԱՋԱՐԿ",
-    "included_title": "Ի՞նչ է ներառված յուրաքանչյուր փաթեթում",
-    "included_strategy": "Անհատական ռազմավարություն ձեր բիզնեսի համար",
-    "included_reporting": "Թափանցիկ հաշվետվություն՝ KPI-ներով",
-    "included_support": "Մշտական աջակցություն (աշխատանքային ժամերին)",
-    "included_guarantee": "Որակի և տեխնիկական առաջադրանքների համապատասխանության երաշխիք",
-	"show_more": "Ցուցադրել ավելին",
-	"show_less": "Փակել",
+    "included_title": "Ինչն է կարևոր յուրաքանչյուր ձևաչափում",
+    "included_strategy": "կատալոգի կառուցվածքի և բիզնես խնդրի ընկալում",
+    "included_reporting": "պատասխանատվության և սպասելիքների հստակություն",
+    "included_support": "ստանդարտներ, չեք-լիստեր և որակի վերահսկում",
+    "included_guarantee": "ֆոկուս համակարգի վրա, ոչ թե մեկանգամյա տեքստերի",
+    "show_more": "Ցուցադրել ավելին",
+    "show_less": "Փակել",
     "packages": {
       "small": {
         "name": "ՓՈՔՐ",
@@ -339,9 +381,9 @@
         "label": "Gmail",
         "value": "Լրացուցիչ էլ. հասցե",
         "description": "Անձնական և այլ հարցեր քննարկելու",
-		"email": "armenalmkhitaryan@gmail.com"
+        "email": "armenalmkhitaryan@gmail.com"
       }
-	},
+    },
     "name_placeholder": "Ձեր անունը | Ընկերության անվանումը",
     "message_placeholder": "Նկարագրեք ձեր խնդիրը և/կամ առաջարկը...",
     "form_title": "Քննարկե՞նք",
@@ -370,7 +412,7 @@
     },
     "protected_spam": "Պաշտպանված է սպամից:"
   },
-"terms": {
+  "terms": {
     "title": "Համագործակցության պայմաններ",
     "subtitle": "Ստորև ներկայացված են ինձ հետ համագործակցության պայմանները։ Դրանք նպատակ ունեն համագործակցությունը դարձնելու երկկողմանիորեն թափանցիկ և արդյունավետ։",
     "cooperation_terms": {
@@ -458,14 +500,14 @@
   },
   "footer": {
     "copyright": "Արմեն Մխիթարյան",
-    "brandname": "Քոնթենթ-մենեջեր",
-	"text": "Կայքում բոլոր տվյալները պաշտպանված են։"
+    "brandname": "E-commerce Content Lead",
+    "text": "Content Operations | AI for E-commerce Content | Product Content Standards"
   },
   "seo": {
     "meta": {
-      "title": "Արմեն Մխիթարյան | Քոնթենթ-մենեջեր",
-      "description": "Կառավարում եմ Ձեր բիզնեսի քոնթենթը՝ որակյալ և գրագետ տեքստեր, ապրանքների նկարագրություններ և ավելին:",
-      "keywords": "բովանդակություն, քոնթենթ, քոնթենթ-մենեջեր, քոնթենթի կառավարում, տեքստեր, քոփիրայթինգ, SMM, սոց.ցանցեր, բլոգ, վաճառող տեքստեր"
+      "title": "Արմեն Մխիթարյան | E-commerce Content Lead",
+      "description": "E-commerce Content Lead՝ առցանց կատալոգների, ապրանքային քարտերի, SEO քոնթենթի, AI գործիքների, գործընթացների ավտոմատացման և քոնթենթ թիմերի մենթորության համակարգային զարգացում։",
+      "keywords": "e-commerce content lead, content operations, catalog content strategy, product content standards, AI for e-commerce content, content team mentorship"
     },
     "og": {
       "title": "Արմեն Մխիթարյան | Քոնթենթ-մենեջեր",
@@ -476,21 +518,8 @@
       "description": "Քոնթենթի ստեղծման և կառավարման ծառայություններ"
     },
     "schema": {
-      "name": "Արմեն Մխիթարյան",
-      "job_title": "Քոնթենթ-մենեջեր",
-      "description": "5 տարվա փորձով մասնագետ",
-      "address_locality": "Երևան",
-      "address_region": "Երևան",
-      "knows_about": [
-        "քոնթենթի կառավարում",
-        "քոփիրայթինգ",
-        "SEO-օպտիմիզացիա",
-        "սոցիալական ցանցեր",
-        "բլոգ",
-        "ապրանքների նկարագրություն"
-      ],
-      "service_type": "Քոնթենթի ստեղծում և կառավարում",
-      "service_description": "Որակյալ քոնթենթ, օպտիմիզացիա, e-commerce քոնթենթ-մենեջմենթ"
+      "job_title": "E-commerce Content Lead",
+      "description": "E-commerce content-ի, առցանց կատալոգների, AI գործիքների և content operations-ի համակարգային զարգացման մասնագետ։"
     }
   },
   "common": {
@@ -506,10 +535,10 @@
     "too_many_attempts": "Չափազանց շատ փորձեր: Կրկին փորձեք 10 րոպե անց:",
     "open_menu": "Մենյու",
     "close_menu": "X",
-	"logo_aria_label": "Taryan - Դեպի վեր",
-	"logo_alt": "Taryan լոգո",
-	"rate_limit_error": "Փորձեք ավելի ուշ:",
-	"contact_alternative": "Փորձեք կապ հաստատել այլ եղանակով:",
-	"validation_error": "Ստուգեք մուտքագրված տվյալների ճշգրտությունը:"
+    "logo_aria_label": "Taryan - Դեպի վեր",
+    "logo_alt": "Taryan լոգո",
+    "rate_limit_error": "Փորձեք ավելի ուշ:",
+    "contact_alternative": "Փորձեք կապ հաստատել այլ եղանակով:",
+    "validation_error": "Ստուգեք մուտքագրված տվյալների ճշգրտությունը:"
   }
 }

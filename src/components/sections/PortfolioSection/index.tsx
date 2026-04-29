@@ -146,7 +146,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ className }) => {
                       slideIndex * itemsPerSlide,
                       (slideIndex + 1) * itemsPerSlide
                     )
-                    .map((project, index) => (
+                    .map((project) => (
                       <div
                         key={project.id}
                         className={cn(
@@ -248,31 +248,31 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ className }) => {
           isVisible && styles.visible
         )}>
           <div className={styles.portfolioCaseGrid}>
-            {/* Wildberries Success */}
+            {/* Domus Experience */}
             <div className={styles.portfolioCaseBlock}>
               <div className={styles.portfolioCaseHeader}>
                 <div className={styles.portfolioCaseIconWrapper}>
-                  <span className={styles.portfolioCaseIconText}>WB</span>
+                  <span className={styles.portfolioCaseIconText}>D</span>
                 </div>
-                <h4 className={styles.portfolioCaseTitle}>{t('case_wildberries_title')}</h4>
+                <h4 className={styles.portfolioCaseTitle}>{t('case_domus_title')}</h4>
               </div>
               <div className={styles.portfolioCaseContent}>
                 <div className={styles.portfolioCaseRow}>
-                  <span className={styles.portfolioCaseLabel}>{t('case_wildberries_products')}</span>
-                  <span className={styles.portfolioCaseValue}>{t('case_wildberries_products_count')}</span>
+                  <span className={styles.portfolioCaseLabel}>{t('case_domus_role')}</span>
+                  <span className={styles.portfolioCaseValue}>{t('case_domus_role_value')}</span>
                 </div>
                 <div className={styles.portfolioCaseRow}>
-                  <span className={styles.portfolioCaseLabel}>{t('case_wildberries_period')}</span>
-                  <span className={styles.portfolioCaseValue}>{t('case_wildberries_period_value')}</span>
+                  <span className={styles.portfolioCaseLabel}>{t('case_domus_period')}</span>
+                  <span className={styles.portfolioCaseValue}>{t('case_domus_period_value')}</span>
                 </div>
                 <div className={styles.portfolioCaseRow}>
-                  <span className={styles.portfolioCaseLabel}>{t('case_wildberries_focus')}</span>
-                  <span className={styles.portfolioCaseValue}>{t('case_wildberries_focus_value')}</span>
+                  <span className={styles.portfolioCaseLabel}>{t('case_domus_focus')}</span>
+                  <span className={styles.portfolioCaseValue}>{t('case_domus_focus_value')}</span>
                 </div>
               </div>
             </div>
 
-            {/* E-commerce Database */}
+            {/* Marketplace content */}
             <div className={styles.portfolioCaseBlock}>
               <div className={styles.portfolioCaseHeader}>
                 <div className={styles.portfolioCaseIconWrapper}>

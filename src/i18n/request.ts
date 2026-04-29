@@ -9,7 +9,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
   console.log('🔍 DEBUG: requestLocale:', locale);
   
   // Fallback для невалидных локалей
-  if (!locale || !routing.locales.includes(locale as any)) {
+  if (!locale || !routing.locales.some((supportedLocale) => supportedLocale === locale)) {
     console.log('❌ Invalid locale, using fallback');
     locale = routing.defaultLocale;
   }

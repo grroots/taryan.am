@@ -1,7 +1,6 @@
 // src/components/sections/PricingSection/index.tsx
 'use client';
 
-import { useState, useEffect } from "react";
 import { useTranslations } from 'next-intl';
 import { useAnalytics } from '@/lib/hooks/useAnalytics';
 import { Check, Star, DollarSign, Zap, Target } from "lucide-react";
@@ -18,12 +17,7 @@ interface PricingSectionProps {
 const PricingSection: React.FC<PricingSectionProps> = ({ className }) => {
   const t = useTranslations('pricing');
   const { trackPackageSelect, trackButtonClick } = useAnalytics();
-  const [isVisible, setIsVisible] = useState(false);
   const packages = usePackages();
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
 
   // Проверяем что пакеты загрузились
   if (!packages || packages.length === 0) {

@@ -1,19 +1,16 @@
-// src/app/[locale]/page.tsx - ТЕСТОВАЯ ВЕРСИЯ
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 
-// Server Components (статичные)
-import ServerServicesSection from '@/components/sections/ServicesSection/ServerServicesSection';
 import Header from '@/components/layout/Header/index';
 import Footer from '@/components/layout/Footer/index';
-
-// Client Components (интерактивные) - пока оставляем как есть
+import HeroSection from '@/components/sections/HeroSection/index';
+import AboutSection from '@/components/sections/AboutSection/index';
+import ServicesSection from '@/components/sections/ServicesSection/index';
+import PortfolioSection from '@/components/sections/PortfolioSection/index';
 import SkillsSection from '@/components/sections/SkillsSection/index';
+import PricingSection from '@/components/sections/PricingSection/index';
 import ContactSection from '@/components/sections/ContactSection/index';
-
-// Client wrapper для интерактивности
-import ClientPageWrapper from '@/components/client/ClientPageWrapper';
 
 import { routing } from '@/i18n/routing';
 
@@ -41,8 +38,8 @@ export async function generateMetadata({
     const currentUrl = locale === 'hy' ? siteUrl : `${siteUrl}/${locale}`;
 
     return {
-      title: t.seo?.meta?.title || "Armen Mkhitaryan | Content Manager",
-      description: t.seo?.meta?.description || "Content manager with 5+ years of experience",
+      title: t.seo?.meta?.title || "Armen Mkhitaryan | E-commerce Content Lead",
+      description: t.seo?.meta?.description || "E-commerce Content Lead with focus on content operations, catalog structure and AI",
       
       // Канонические URL
       alternates: {
@@ -60,7 +57,7 @@ export async function generateMetadata({
         title: t.seo?.meta?.title,
         description: t.seo?.meta?.description,
         url: currentUrl,
-        siteName: "Armen Mkhitaryan - Content Manager",
+        siteName: "Armen Mkhitaryan - E-commerce Content Lead",
         locale: locale === 'hy' ? 'hy_AM' : locale === 'ru' ? 'ru_RU' : 'en_US',
         type: 'website',
       },
@@ -81,8 +78,8 @@ export async function generateMetadata({
   } catch (error) {
     console.error('Error loading metadata translations:', error);
     return {
-      title: "Armen Mkhitaryan | Content Manager",
-      description: "Content manager with 5+ years of experience",
+      title: "Armen Mkhitaryan | E-commerce Content Lead",
+      description: "E-commerce Content Lead with focus on content operations, catalog structure and AI",
     };
   }
 }
@@ -92,7 +89,7 @@ export default async function Page({ params }: PageProps) {
   const { locale } = await params;
 
   // Валидация локали
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.some((supportedLocale) => supportedLocale === locale)) {
     notFound();
   }
 
@@ -110,8 +107,8 @@ export default async function Page({ params }: PageProps) {
       "@type": "Person",
       "name": "Armen Mkhitaryan",
       "alternateName": ["Армен Мхитарян", "Արմեն Մխիթարյան"],
-      "jobTitle": "Content Manager",
-      "description": t.seo?.schema?.description || "Experienced content manager",
+      "jobTitle": t.seo?.schema?.job_title || "E-commerce Content Lead",
+      "description": t.seo?.schema?.description || "Specialist in systematic e-commerce content and content operations",
       "url": locale === 'hy' ? 'https://taryan.am' : `https://taryan.am/${locale}`,
       "sameAs": [
         "https://linkedin.com/in/taryan",
@@ -122,10 +119,12 @@ export default async function Page({ params }: PageProps) {
         "name": "Freelance"
       },
       "knowsAbout": [
-        "Content Management",
-        "Copywriting", 
-        "SEO",
-        "E-commerce"
+        "E-commerce Content",
+        "Content Operations",
+        "Catalog Content Strategy",
+        "Product Content Standards",
+        "AI for E-commerce Content",
+        "SEO"
       ],
       "address": {
         "@type": "PostalAddress",
@@ -147,46 +146,19 @@ export default async function Page({ params }: PageProps) {
         }}
       />
 
-      {/* Header - остается Client Component */}
       <Header locale={locale} />
 
-      {/* Основной контент */}
       <main id="main-content" role="main">
-        
-        {/* Тестовая Server Section - Services */}
-        <section
-          id="services"
-          className="section-light"
-          aria-label="Services section"
-        >
-          <ServerServicesSection locale={locale} />
-        </section>
-
-        {/* Client Components в обертке для интерактивности */}
-        <ClientPageWrapper locale={locale}>
-          {/* Skills Section - Client Component */}
-          <section
-            id="skills"
-            className="section-dark"
-            aria-label="Skills section"
-          >
-            <SkillsSection />
-          </section>
-
-          {/* Contact Section - Client Component */}
-          <section
-            id="contact"
-            className="section-light"
-            aria-label="Contact section"
-          >
-            <ContactSection />
-          </section>
-        </ClientPageWrapper>
-
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <PortfolioSection />
+        <SkillsSection />
+        <PricingSection />
+        <ContactSection />
       </main>
 
-      {/* Footer */}
-      <Footer />
+      <Footer locale={locale} />
     </div>
   );
 }

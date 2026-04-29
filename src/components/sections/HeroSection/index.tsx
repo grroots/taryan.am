@@ -3,18 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
-import { useLocale } from 'next-intl';
-import Image from 'next/image';
 import { 
-  Download, 
-  MessageCircle, 
-  Code2, 
-  Palette, 
-  Smartphone, 
-  Globe,
-  Award,
-  Users,
-  Coffee,
   Zap,
   Mail,
   Linkedin,
@@ -25,71 +14,14 @@ import {
   Target
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import Button from '@/components/ui/Button';
 import styles from './HeroSection.module.css';
 
 interface HeroSectionProps {
   className?: string;
 }
 
-interface CounterProps {
-  end: number;
-  duration?: number;
-  suffix?: string;
-  prefix?: string;
-}
-
-const Counter: React.FC<CounterProps> = ({ 
-  end, 
-  duration = 2000, 
-  suffix = '', 
-  prefix = '' 
-}) => {
-  const [count, setCount] = useState(0);
-  const [hasStarted, setHasStarted] = useState(false);
-
-  useEffect(() => {
-    if (!hasStarted) {
-      const timer = setTimeout(() => setHasStarted(true), 1000);
-      return () => clearTimeout(timer);
-    }
-
-    if (!hasStarted) return;
-
-    let startTime: number;
-    let animationFrame: number;
-
-    const animate = (currentTime: number) => {
-      if (!startTime) startTime = currentTime;
-      const progress = Math.min((currentTime - startTime) / duration, 1);
-      
-      setCount(Math.floor(progress * end));
-      
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
-      }
-    };
-
-    animationFrame = requestAnimationFrame(animate);
-
-    return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
-      }
-    };
-  }, [hasStarted, end, duration]);
-
-  return (
-    <span>
-      {prefix}{count}{suffix}
-    </span>
-  );
-};
-
 const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
   const t = useTranslations('hero');
-  const locale = useLocale();
-  const [imageLoaded, setImageLoaded] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -115,37 +47,18 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
     }
   ];
 
-  // Tech stack data
-  const techStack = [
-    { name: 'React', icon: Code2 },
-    { name: 'Next.js', icon: Globe },
-    { name: 'TypeScript', icon: Code2 },
-    { name: 'Node.js', icon: Globe },
-    { name: 'Design', icon: Palette },
-    { name: 'Mobile', icon: Smartphone }
-  ];
-
   // Логика кнопок как в старых файлах
   const handlePrimaryCtaClick = () => {
-    const servicesSection = document.getElementById('services');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    const portfolioSection = document.getElementById('portfolio');
+    if (portfolioSection) {
+      portfolioSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   const handleSecondaryCtaClick = () => {
-    if (locale === 'hy') {
-      // Армянский - переход к навыкам (менторшип)
-      const skillsSection = document.getElementById('skills');
-      if (skillsSection) {
-        skillsSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      // Другие языки - переход к ценам
-      const pricingSection = document.getElementById('pricing');
-      if (pricingSection) {
-        pricingSection.scrollIntoView({ behavior: 'smooth' });
-      }
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -280,7 +193,6 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
               alt={`${t('name')} - ${t('title')}`}
               className={styles.heroImage}
               loading="eager"
-              onLoad={() => setImageLoaded(true)}
             />
             {/* Image overlay effects */}
             <div className={styles.heroImageOverlay} aria-hidden="true"></div>

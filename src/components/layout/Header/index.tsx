@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ locale, className }) => {
   const getSafeTranslation = (key: string, fallback: string = '') => {
     try {
       return t(key);
-    } catch (error) {
+    } catch {
       console.warn(`Translation missing for key: navigation.${key}`);
       return fallback || key;
     }

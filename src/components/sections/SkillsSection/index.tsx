@@ -170,6 +170,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className }) => {
         >
           {activeSkills.map((skill, index) => {
             const isVisible = visibleSkills.has(skill.id);
+            const skillLevel = skill.level ?? 0;
             
             return (
               <div
@@ -198,7 +199,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className }) => {
                       styles.skillProgressBar,
                       isVisible && styles.skillProgressBarVisible
                     )}
-                    data-skill-level={skill.level}
+                    data-skill-level={skillLevel}
                     data-skill-color={skill.color}
                   />
                 </div>
@@ -210,7 +211,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className }) => {
                       key={i}
                       className={cn(
                         styles.skillLevelDot,
-                        i < skill.level && styles.skillLevelDotActive
+                        i < skillLevel && styles.skillLevelDotActive
                       )}
                     />
                   ))}

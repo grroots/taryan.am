@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import "../globals.css";
 
+import { analyticsConfig } from '@/lib/analytics';
 import { routing } from '@/i18n/routing';
 
 export async function generateMetadata({ 
@@ -14,22 +16,22 @@ export async function generateMetadata({
   const { locale } = await params;
   
   const defaultMetadata = {
-    title: "Արմեն Մխիթարյան | Քոնթենթ-մենեջեր",
-    description: "Կառավարում եմ Ձեր բիզնեսի քոնթենթը՝ որակյալ և գրագետ տեքստեր, ապրանքների նկարագրություններ և ավելին",
+    title: "Արմեն Մխիթարյան | E-commerce Content Lead",
+    description: "E-commerce content-ի, առցանց կատալոգների, AI գործիքների և content operations-ի համակարգային զարգացում",
   };
 
   const metadataByLocale: Record<string, typeof defaultMetadata> = {
     hy: {
-      title: "Արմեն Մխիթարյան | Քոնթենթ-մենեջեր",
-      description: "Կառավարում եմ Ձեր բիզնեսի քոնթենթը՝ որակյալ և գրագետ տեքստեր, ապրանքների նկարագրություններ և ավելին",
+      title: "Արմեն Մխիթարյան | E-commerce Content Lead",
+      description: "E-commerce content-ի, առցանց կատալոգների, AI գործիքների և content operations-ի համակարգային զարգացում",
     },
     ru: {
-      title: "Армен Мхитарян | Контент-менеджер",
-      description: "Управляю контентом вашего бизнеса: качественные и грамотные тексты, описания товаров и многое другое",
+      title: "Армен Мхитарян | E-commerce Content Lead",
+      description: "Системное развитие онлайн-каталогов, карточек товаров, SEO-контента, AI-инструментов и content operations",
     },
     en: {
-      title: "Armen Mkhitaryan | Content Manager",
-      description: "Managing your business content: quality and professional texts, product descriptions and more",
+      title: "Armen Mkhitaryan | E-commerce Content Lead",
+      description: "Systematic development of online catalogs, product content standards, SEO content, AI tools and content operations",
     },
   };
 
@@ -40,6 +42,11 @@ export async function generateMetadata({
     description: currentMetadata.description,
     keywords: [
       "content manager",
+      "e-commerce content lead",
+      "content operations",
+      "catalog content strategy",
+      "product content standards",
+      "AI for e-commerce content",
       "քոնթենթ մենեջեր", 
       "контент менеджер",
       "copywriting",
@@ -170,6 +177,56 @@ export default async function RootLayout({
         <link rel="alternate" hrefLang="x-default" href="https://taryan.am" />
       </head>
       <body className="antialiased bg-body text-main min-h-screen overflow-x-hidden">
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','${analyticsConfig.googleTagManagerId}');
+            `,
+          }}
+        />
+        <Script
+          id="yandex-metrika"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+              m[i].l=1*new Date();
+              for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+              k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+              (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+              ym(${analyticsConfig.yandexMetrikaId}, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+              });
+            `,
+          }}
+        />
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${analyticsConfig.googleTagManagerId}`}
+            height="0"
+            width="0"
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
+        <noscript>
+          <div>
+            <img
+              src={`https://mc.yandex.ru/watch/${analyticsConfig.yandexMetrikaId}`}
+              style={{ position: 'absolute', left: '-9999px' }}
+              alt=""
+            />
+          </div>
+        </noscript>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

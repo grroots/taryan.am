@@ -67,7 +67,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
     }
   ];
 
-  const handleServiceClick = (serviceId: string) => {
+  const handleServiceClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -114,7 +114,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
 
         {/* Services Grid */}
         <div className={styles.servicesGrid}>
-          {services.map((service, index) => {
+          {services.map((service) => {
             const isPriority = priorityServices.includes(service.id);
             
             return (
@@ -134,12 +134,12 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
 
                 <div 
                   className={styles.serviceCard}
-                  onClick={() => handleServiceClick(service.id)}
+                  onClick={handleServiceClick}
                   role="button"
                   tabIndex={0}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
-                      handleServiceClick(service.id);
+                      handleServiceClick();
                     }
                   }}
                 >

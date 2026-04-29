@@ -1,26 +1,24 @@
 // src/data/skills.ts
 import { useTranslations } from 'next-intl';
 import { createElement } from "react";
+import {
+  BarChart3,
+  Bot,
+  Boxes,
+  BrainCircuit,
+  ClipboardCheck,
+  Database,
+  FileText,
+  Languages,
+  ListChecks,
+  Search,
+  Tags,
+  Users,
+  Workflow,
+} from "lucide-react";
 import type { SkillCategory } from "@/types";
 
-// React Icons импорты
-import {
-  SiWordpress,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiGoogleanalytics,
-  SiYoutube,
-  SiInstagram,
-  SiFacebook,
-  SiTelegram,
-  SiLinkedin,
-  SiGrammarly,
-  SiEbay,
-  SiOpenai,
-  SiAdobephotoshop,
-  SiFigma
-} from "react-icons/si";
+const iconClassName = "w-8 h-8";
 
 export const useSkills = (): SkillCategory[] => {
   const t = useTranslations('skills');
@@ -31,87 +29,39 @@ export const useSkills = (): SkillCategory[] => {
       title: t('categories.web_tech'),
       skills: [
         {
-          id: "wordpress",
-          name: "WordPress",
-          icon: createElement(SiWordpress, { className: "w-8 h-8" }),
-          color: "#21759B",
+          id: "product-cards",
+          name: t('items.product_cards'),
+          icon: createElement(FileText, { className: iconClassName }),
+          color: "#2B7A8A",
+          level: 5,
+        },
+        {
+          id: "category-content",
+          name: t('items.category_content'),
+          icon: createElement(Tags, { className: iconClassName }),
+          color: "#1A6B7A",
+          level: 5,
+        },
+        {
+          id: "sku-structure",
+          name: t('items.sku_structure'),
+          icon: createElement(Boxes, { className: iconClassName }),
+          color: "#CD7F32",
+          level: 5,
+        },
+        {
+          id: "multilingual-content",
+          name: t('items.multilingual_content'),
+          icon: createElement(Languages, { className: iconClassName }),
+          color: "#B8453F",
           level: 4,
         },
         {
-          id: "tilda",
-          name: "Tilda",
-          icon: createElement("img", {
-            src: "/assets/img/logos/tilda.webp",
-            alt: "Tilda",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#000",
-          level: 4,
-        },
-        {
-          id: "wix",
-          name: "WIX",
-          icon: createElement("img", {
-            src: "/assets/img/logos/wix.webp",
-            alt: "WIX",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#fcbe73",
-          level: 4,
-        },
-        {
-          id: "html",
-          name: "HTML5",
-          icon: createElement(SiHtml5, { className: "w-8 h-8" }),
-          color: "#E34F26",
-          level: 4,
-        },
-        {
-          id: "css",
-          name: "CSS3",
-          icon: createElement(SiCss3, { className: "w-8 h-8" }),
-          color: "#1572B6",
-          level: 4,
-        },
-        {
-          id: "javascript",
-          name: "JavaScript",
-          icon: createElement(SiJavascript, { className: "w-8 h-8" }),
-          color: "#F7DF1E",
-          level: 3,
-        },
-        {
-          id: "wildberries",
-          name: "Wildberries",
-          icon: createElement("img", {
-            src: "/assets/img/logos/wildberries.webp",
-            alt: "Wildberries",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#CB11AB",
-          level: 4,
-        },
-        {
-          id: "ozon",
-          name: "Ozon",
-          icon: createElement("img", {
-            src: "/assets/img/logos/ozon.webp",
-            alt: "Ozon",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#005BFF",
-          level: 4,
-        },
-        {
-          id: "ebay",
-          name: "eBay",
-          icon: createElement(SiEbay, { className: "w-8 h-8" }),
-          color: "#E53238",
-          level: 3,
+          id: "content-qa",
+          name: t('items.content_quality_control'),
+          icon: createElement(ClipboardCheck, { className: iconClassName }),
+          color: "#2B7A8A",
+          level: 5,
         },
       ],
     },
@@ -120,66 +70,32 @@ export const useSkills = (): SkillCategory[] => {
       title: t('categories.creative'),
       skills: [
         {
-          id: "photoshop",
-          name: "Photoshop",
-          icon: createElement(SiAdobephotoshop, { className: "w-8 h-8" }),
-          color: "#31A8FF",
-          level: 3,
-        },
-        {
-          id: "premiere-pro",
-          name: "Premiere Pro",
-          icon: createElement("img", {
-            src: "/assets/img/logos/premiere-pro.webp",
-            alt: "Premiere Pro",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#9999FF",
-          level: 3,
-        },
-        {
-          id: "illustrator",
-          name: "Illustrator",
-          icon: createElement("img", {
-            src: "/assets/img/logos/illustrator.webp",
-            alt: "Illustrator",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#FF9A00",
-          level: 3,
-        },
-        {
-          id: "figma",
-          name: "Figma",
-          icon: createElement(SiFigma, { className: "w-8 h-8" }),
-          color: "#F24E1E",
-          level: 4,
-        },
-        {
-          id: "canva",
-          name: "Canva",
-          icon: createElement("img", {
-            src: "/assets/img/logos/canva.webp",
-            alt: "Canva",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#00C4CC",
+          id: "workflows",
+          name: t('items.workflows'),
+          icon: createElement(Workflow, { className: iconClassName }),
+          color: "#2B7A8A",
           level: 5,
         },
         {
-          id: "capcut",
-          name: "CapCut",
-          icon: createElement("img", {
-            src: "/assets/img/logos/capcut-logo.webp",
-            alt: "CapCut",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#000000",
-          level: 4,
+          id: "team-coordination",
+          name: t('items.team_coordination'),
+          icon: createElement(Users, { className: iconClassName }),
+          color: "#CD7F32",
+          level: 5,
+        },
+        {
+          id: "task-standards",
+          name: t('items.task_standards'),
+          icon: createElement(ListChecks, { className: iconClassName }),
+          color: "#B8453F",
+          level: 5,
+        },
+        {
+          id: "qa-processes",
+          name: t('items.qa_processes'),
+          icon: createElement(ClipboardCheck, { className: iconClassName }),
+          color: "#1A6B7A",
+          level: 5,
         },
       ],
     },
@@ -188,40 +104,39 @@ export const useSkills = (): SkillCategory[] => {
       title: t('categories.writing'),
       skills: [
         {
-          id: "microsoft-office",
-          name: "MS Office",
-          icon: createElement("img", {
-            src: "/assets/img/logos/office.webp",
-            alt: "Microsoft Office",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#D83B01",
+          id: "chatgpt",
+          name: "ChatGPT",
+          icon: createElement(Bot, { className: iconClassName }),
+          color: "#10A37F",
           level: 5,
         },
         {
-          id: "notepad-plus",
-          name: "Notepad+",
-          icon: createElement("img", {
-            src: "/assets/img/logos/notepadplusplus.webp",
-            alt: "Notepad++",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#90E59A",
+          id: "claude",
+          name: "Claude",
+          icon: createElement(BrainCircuit, { className: iconClassName }),
+          color: "#CC785C",
+          level: 5,
+        },
+        {
+          id: "prompt-systems",
+          name: t('items.prompt_systems'),
+          icon: createElement(ListChecks, { className: iconClassName }),
+          color: "#2B7A8A",
+          level: 5,
+        },
+        {
+          id: "bulk-generation",
+          name: t('items.bulk_generation'),
+          icon: createElement(Database, { className: iconClassName }),
+          color: "#CD7F32",
           level: 4,
         },
         {
-          id: "vscode",
-          name: "VS Code",
-          icon: createElement("img", {
-            src: "/assets/img/logos/vs-code.webp",
-            alt: "VS Code",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#007ACC",
-          level: 4,
+          id: "content-review",
+          name: t('items.content_review'),
+          icon: createElement(ClipboardCheck, { className: iconClassName }),
+          color: "#B8453F",
+          level: 5,
         },
       ],
     },
@@ -230,35 +145,39 @@ export const useSkills = (): SkillCategory[] => {
       title: t('categories.analytics'),
       skills: [
         {
-          id: "google-analytics",
-          name: "GA",
-          icon: createElement(SiGoogleanalytics, { className: "w-8 h-8" }),
+          id: "ga4",
+          name: "GA4",
+          icon: createElement(BarChart3, { className: iconClassName }),
           color: "#E37400",
           level: 4,
         },
         {
-          id: "yandex-metrika",
-          name: "Я.Метрика",
-          icon: createElement("img", {
-            src: "/assets/img/logos/ya-metrika.webp",
-            alt: "Яндекс.Метрика",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
+          id: "gsc",
+          name: "Google Search Console",
+          icon: createElement(Search, { className: iconClassName }),
+          color: "#4285F4",
+          level: 4,
+        },
+        {
+          id: "yandex-metrica",
+          name: "Yandex Metrica",
+          icon: createElement(BarChart3, { className: iconClassName }),
           color: "#FF6B35",
           level: 4,
         },
         {
-          id: "text-ru",
-          name: "text.ru",
-          icon: createElement("img", {
-            src: "/assets/img/logos/text-ru.webp",
-            alt: "text.ru",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#4A90E2",
+          id: "seo-structure",
+          name: t('items.seo_structure'),
+          icon: createElement(Tags, { className: iconClassName }),
+          color: "#2B7A8A",
           level: 5,
+        },
+        {
+          id: "search-intent",
+          name: t('items.search_intent'),
+          icon: createElement(Search, { className: iconClassName }),
+          color: "#B8453F",
+          level: 4,
         },
       ],
     },
@@ -267,39 +186,32 @@ export const useSkills = (): SkillCategory[] => {
       title: t('categories.social'),
       skills: [
         {
-          id: "youtube",
-          name: "YouTube",
-          icon: createElement(SiYoutube, { className: "w-8 h-8" }),
-          color: "#FF0000",
-          level: 3,
-        },
-        {
-          id: "instagram",
-          name: "Instagram",
-          icon: createElement(SiInstagram, { className: "w-8 h-8" }),
-          color: "#E4405F",
-          level: 5,
-        },
-        {
-          id: "facebook",
-          name: "Facebook",
-          icon: createElement(SiFacebook, { className: "w-8 h-8" }),
-          color: "#1877F2",
-          level: 5,
-        },
-        {
-          id: "telegram",
-          name: "Telegram",
-          icon: createElement(SiTelegram, { className: "w-8 h-8" }),
-          color: "#26A5E4",
+          id: "wordpress",
+          name: "WordPress",
+          icon: createElement(Database, { className: iconClassName }),
+          color: "#21759B",
           level: 4,
         },
         {
-          id: "linkedin",
-          name: "LinkedIn",
-          icon: createElement(SiLinkedin, { className: "w-8 h-8" }),
-          color: "#0A66C2",
+          id: "marketplace-tools",
+          name: t('items.marketplace_tools'),
+          icon: createElement(Boxes, { className: iconClassName }),
+          color: "#CB11AB",
           level: 4,
+        },
+        {
+          id: "admin-panels",
+          name: t('items.admin_panels'),
+          icon: createElement(Database, { className: iconClassName }),
+          color: "#2B7A8A",
+          level: 5,
+        },
+        {
+          id: "catalog-systems",
+          name: t('items.catalog_systems'),
+          icon: createElement(Workflow, { className: iconClassName }),
+          color: "#CD7F32",
+          level: 5,
         },
       ],
     },
@@ -308,66 +220,32 @@ export const useSkills = (): SkillCategory[] => {
       title: t('categories.ai'),
       skills: [
         {
-          id: "chatgpt",
-          name: "ChatGPT",
-          icon: createElement(SiOpenai, { className: "w-8 h-8" }),
+          id: "training",
+          name: t('items.training'),
+          icon: createElement(Users, { className: iconClassName }),
+          color: "#2B7A8A",
+          level: 5,
+        },
+        {
+          id: "checklists",
+          name: t('items.checklists'),
+          icon: createElement(ListChecks, { className: iconClassName }),
+          color: "#CD7F32",
+          level: 5,
+        },
+        {
+          id: "error-review",
+          name: t('items.error_review'),
+          icon: createElement(ClipboardCheck, { className: iconClassName }),
+          color: "#B8453F",
+          level: 5,
+        },
+        {
+          id: "ai-training",
+          name: t('items.ai_training'),
+          icon: createElement(Bot, { className: iconClassName }),
           color: "#10A37F",
           level: 5,
-        },
-        {
-          id: "claude",
-          name: "Claude",
-          icon: createElement("img", {
-            src: "/assets/img/logos/claude.webp",
-            alt: "Claude",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#CC785C",
-          level: 5,
-        },
-        {
-          id: "deepseek",
-          name: "DeepSeek",
-          icon: createElement("img", {
-            src: "/assets/img/logos/deepseek.webp",
-            alt: "DeepSeek",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#1E3A8A",
-          level: 4,
-        },
-        {
-          id: "qwen",
-          name: "QwenLM",
-          icon: createElement("img", {
-            src: "/assets/img/logos/qwen.webp",
-            alt: "QwenLM",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#FF6A00",
-          level: 4,
-        },
-        {
-          id: "copy-ai",
-          name: "Copy.ai",
-          icon: createElement("img", {
-            src: "/assets/img/logos/copy-ai.webp",
-            alt: "Copy.ai",
-            className: "w-8 h-8",
-            loading: "lazy"
-          }),
-          color: "#8B5CF6",
-          level: 4,
-        },
-        {
-          id: "grammarly",
-          name: "Grammarly",
-          icon: createElement(SiGrammarly, { className: "w-8 h-8" }),
-          color: "#15C39A",
-          level: 4,
         },
       ],
     },

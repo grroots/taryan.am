@@ -1,5 +1,4 @@
-import { ExternalLink, Star } from "lucide-react";
-import { useTranslations } from 'next-intl';
+import { Star } from "lucide-react";
 import Image from 'next/image';
 import { cn } from "@/lib/utils";
 import type { PortfolioItem } from "@/types";

@@ -1,5 +1,6 @@
 // src/lib/hooks/useAnalytics.ts
 import { useCallback } from 'react';
+import { analyticsConfig } from '@/lib/analytics';
 
 interface AnalyticsEvent {
   action: string;
@@ -24,7 +25,7 @@ export const useAnalytics = () => {
 
     // Yandex.Metrika
     if (typeof window !== 'undefined' && window.ym) {
-      window.ym(102385962, 'reachGoal', eventData.action, {
+      window.ym(analyticsConfig.yandexMetrikaId, 'reachGoal', eventData.action, {
         category: eventData.category,
         label: eventData.label,
         value: eventData.value,

@@ -46,6 +46,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
   // Level indicators (1-5 stars/dots)
   const renderLevel = () => {
     if (!skill.level || !showTooltip) return null;
+    const level = skill.level;
     
     return (
       <div className="flex gap-1 mt-2">
@@ -54,7 +55,7 @@ const SkillCard: React.FC<SkillCardProps> = ({
             key={index}
             className={cn(
               "w-1.5 h-1.5 rounded-full transition-all duration-300",
-              index < skill.level
+              index < level
                 ? "bg-current opacity-100"
                 : "bg-current opacity-20"
             )}

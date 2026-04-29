@@ -94,6 +94,7 @@ export function getMetaLocale(locale: Locale): string {
  * Получить направление текста для локали
  */
 export function getTextDirection(locale: Locale): 'ltr' | 'rtl' {
+  void locale;
   return 'ltr';
 }
 
