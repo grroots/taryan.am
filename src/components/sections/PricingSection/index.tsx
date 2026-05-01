@@ -3,7 +3,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useAnalytics } from '@/lib/hooks/useAnalytics';
-import { Check, Star, DollarSign, Zap, Target } from "lucide-react";
+import { Check, CalendarClock, SearchCheck, ShieldCheck, Target } from "lucide-react";
 import { usePackages } from "@/data/packages";
 import PricingCard from "@/components/ui/PricingCard";
 import Button from "@/components/ui/Button";
@@ -105,7 +105,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({ className }) => {
         {/* Header */}
         <div className={cn(styles.pricingHeader, "fadeInUp")}>
           <div className={styles.subtitleContainer}>
-            <DollarSign className={styles.subtitleIcon} />
+            <CalendarClock className={styles.subtitleIcon} />
             <span className={styles.subtitle}>
               {t('subtitle')}
             </span>
@@ -190,7 +190,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({ className }) => {
                 <div className={styles.benefitsGrid}>
                   <div className={cn(styles.benefitItem, "staggeredFadeIn")}>
                     <div className={cn(styles.benefitIcon, "hoverScale")}>
-                      <Zap className={styles.benefitIconSvg} />
+                      <SearchCheck className={styles.benefitIconSvg} />
                     </div>
                     <h4 className={styles.benefitTitle}>
                       {t('flexible_terms')}
@@ -214,7 +214,7 @@ const PricingSection: React.FC<PricingSectionProps> = ({ className }) => {
                   
                   <div className={cn(styles.benefitItem, "staggeredFadeIn")}>
                     <div className={cn(styles.benefitIcon, "hoverScale")}>
-                      <Star className={styles.benefitIconSvg} />
+                      <ShieldCheck className={styles.benefitIconSvg} />
                     </div>
                     <h4 className={styles.benefitTitle}>
                       {t('result')}

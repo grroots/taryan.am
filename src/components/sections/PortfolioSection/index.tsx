@@ -2,15 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { 
-  Eye, 
   ChevronLeft,
   ChevronRight,
-  ChartNoAxesCombined,
+  FolderKanban,
   Globe,
   Handshake,
   FolderOpen,
-  Package
+  Package,
+  Workflow
 } from 'lucide-react';
 import { useProjects } from '@/data/projects';
 import PortfolioCard from '@/components/ui/PortfolioCard';
@@ -87,7 +88,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ className }) => {
           isVisible && styles.visible
         )}>
           <div className={styles.portfolioSubtitleContainer}>
-            <Eye className={styles.portfolioIcon} />
+            <FolderKanban className={styles.portfolioIcon} />
             <span className={styles.portfolioSubtitle}>
               {t('subtitle')}
             </span>
@@ -191,7 +192,7 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ className }) => {
           <div className={styles.portfolioStatsContainer}>
             <div className={styles.portfolioStatsHeader}>
               <h3 className={styles.portfolioStatsTitle}>
-                <ChartNoAxesCombined className={styles.portfolioStatsIcon} />
+                <Workflow className={styles.portfolioStatsIcon} />
                 {t('results_title')}
               </h3>
               <p className={styles.portfolioStatsSubtitle}>
@@ -222,7 +223,9 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ className }) => {
 
             {/* Approach section */}
             <div className={styles.portfolioApproachSection}>
-              <h4 className={styles.portfolioApproachTitle}>{t('approach_title')}</h4>
+              {t('approach_title') && (
+                <h4 className={styles.portfolioApproachTitle}>{t('approach_title')}</h4>
+              )}
               <div className={styles.portfolioApproachGrid}>
                 <div className={styles.portfolioApproachItem}>
                   <div className={styles.portfolioApproachDot} />
@@ -252,7 +255,13 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ className }) => {
             <div className={styles.portfolioCaseBlock}>
               <div className={styles.portfolioCaseHeader}>
                 <div className={styles.portfolioCaseIconWrapper}>
-                  <span className={styles.portfolioCaseIconText}>D</span>
+                  <Image
+                    src="/assets/img/logos/domus-logo.png"
+                    alt=""
+                    width={40}
+                    height={40}
+                    className={styles.portfolioCaseIconImage}
+                  />
                 </div>
                 <h4 className={styles.portfolioCaseTitle}>{t('case_domus_title')}</h4>
               </div>
@@ -276,7 +285,13 @@ const PortfolioSection: React.FC<PortfolioSectionProps> = ({ className }) => {
             <div className={styles.portfolioCaseBlock}>
               <div className={styles.portfolioCaseHeader}>
                 <div className={styles.portfolioCaseIconWrapper}>
-                  <span className={styles.portfolioCaseIconText}>E</span>
+                  <Image
+                    src="/assets/img/logos/innotek-logo.png"
+                    alt=""
+                    width={40}
+                    height={40}
+                    className={styles.portfolioCaseIconImage}
+                  />
                 </div>
                 <h4 className={styles.portfolioCaseTitle}>{t('case_ecommerce_title')}</h4>
               </div>

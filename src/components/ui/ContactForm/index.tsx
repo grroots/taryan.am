@@ -13,6 +13,7 @@ interface FormData {
   email: string;
   subject: string;
   service: string;
+  mentorshipType: string;
   message: string;
   honeypot: string;
 }
@@ -22,6 +23,7 @@ interface FormErrors {
   email?: string;
   subject?: string;
   service?: string;
+  mentorshipType?: string;
   message?: string;
   general?: string;
 }
@@ -35,6 +37,7 @@ const ContactForm: React.FC = () => {
     email: "",
     subject: "",
     service: "",
+    mentorshipType: "",
     message: "",
     honeypot: "",
   });
@@ -58,7 +61,12 @@ const ContactForm: React.FC = () => {
     { value: "small", label: t('packages.small') },
     { value: "large", label: t('packages.large') },
     { value: "project", label: t('packages.project') },
-    { value: "custom", label: t('packages.custom') },
+  ];
+
+  const mentorshipTypes = [
+    { value: "", label: common('select_package') },
+    { value: "team", label: t('mentorship_types.team') },
+    { value: "individual", label: t('mentorship_types.individual') },
   ];
 
   // Handle preset form from URL or events
@@ -128,6 +136,10 @@ const ContactForm: React.FC = () => {
       newErrors.service = common('required_field');
     }
 
+    if (formData.subject === "mentorship" && !formData.mentorshipType) {
+      newErrors.mentorshipType = common('required_field');
+    }
+
     if (!formData.message.trim()) {
       newErrors.message = common('required_field');
     } else if (formData.message.length < 10) {
@@ -149,14 +161,15 @@ const ContactForm: React.FC = () => {
     const { name, value } = e.target;
 
     let sanitizedValue = value;
-    if (name !== "message" && name !== "subject" && name !== "service") {
+    if (name !== "message" && name !== "subject" && name !== "service" && name !== "mentorshipType") {
       sanitizedValue = value.replace(/<[^>]*>/g, "").replace(/[<>\"']/g, "");
     }
 
     setFormData((prev) => ({
       ...prev,
       [name]: sanitizedValue,
-      ...(name === "subject" && value !== "services" ? { service: "" } : {})
+      ...(name === "subject" && value !== "services" ? { service: "" } : {}),
+      ...(name === "subject" && value !== "mentorship" ? { mentorshipType: "" } : {})
     }));
 
     if (errors[name as keyof FormErrors]) {
@@ -191,8 +204,10 @@ const ContactForm: React.FC = () => {
       const subjectLabel = subjects.find(s => s.value === formData.subject)?.label || formData.subject;
       const serviceLabel = formData.service ? 
         ` - ${servicePackages.find(s => s.value === formData.service)?.label}` : '';
+      const mentorshipTypeLabel = formData.mentorshipType ?
+        ` - ${mentorshipTypes.find(s => s.value === formData.mentorshipType)?.label}` : '';
       
-      const emailSubject = `${subjectLabel}${serviceLabel} - ${formData.name}`;
+      const emailSubject = `${subjectLabel}${serviceLabel}${mentorshipTypeLabel} - ${formData.name}`;
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -209,6 +224,7 @@ const ContactForm: React.FC = () => {
           replyto: formData.email,
           inquiry_type: subjectLabel,
           service_package: serviceLabel,
+          mentorship_type: mentorshipTypeLabel,
           botcheck: formData.honeypot,
         }),
       });
@@ -220,7 +236,7 @@ const ContactForm: React.FC = () => {
       }
 
       setSubmitStatus("success");
-      setFormData({ name: "", email: "", subject: "", service: "", message: "", honeypot: "" });
+      setFormData({ name: "", email: "", subject: "", service: "", mentorshipType: "", message: "", honeypot: "" });
       setRateLimitCount((prev) => prev + 1);
 
       setTimeout(() => {
@@ -398,6 +414,38 @@ const ContactForm: React.FC = () => {
               <p className={styles.formFieldError}>
                 <AlertCircle className={styles.formFieldErrorIcon} />
                 {errors.service}
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* Mentorship Type Field */}
+        {formData.subject === "mentorship" && (
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>
+              {t('mentorship_type_label')} *
+            </label>
+            <div className={styles.formSelectWrapper}>
+              <select
+                name="mentorshipType"
+                value={formData.mentorshipType}
+                onChange={handleInputChange}
+                className={cn(styles.formInput, styles.formSelect, errors.mentorshipType && styles.formInputError)}
+                required
+                disabled={isSubmitting}
+              >
+                {mentorshipTypes.map((type) => (
+                  <option key={type.value} value={type.value}>
+                    {type.label}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className={styles.formSelectIcon} />
+            </div>
+            {errors.mentorshipType && (
+              <p className={styles.formFieldError}>
+                <AlertCircle className={styles.formFieldErrorIcon} />
+                {errors.mentorshipType}
               </p>
             )}
           </div>

@@ -199,8 +199,8 @@
 .heroSubtitle {
   position: relative;
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  font-weight: 700;
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  font-weight: 600;
   color: var(--color-primary);
   padding: 0.75rem 1.5rem;
   border: 1px solid rgba(43, 122, 138, 0.3);
@@ -530,8 +530,8 @@
   padding: 0.5rem 1rem;
   backdrop-filter: blur(10px);
   font-family: var(--font-display);
-  font-size: clamp(1.25rem, 5vw, 1.5rem);
-  font-weight: 700;
+  font-size: clamp(0.875rem, 4vw, 1.125rem);
+  font-weight: 600;
   color: var(--color-main);
   margin: 0;
   letter-spacing: 0.05em;

@@ -38,8 +38,8 @@ export async function generateMetadata({
     const currentUrl = locale === 'hy' ? siteUrl : `${siteUrl}/${locale}`;
 
     return {
-      title: t.seo?.meta?.title || "Armen Mkhitaryan | E-commerce Content Lead",
-      description: t.seo?.meta?.description || "E-commerce Content Lead with focus on content operations, catalog structure and AI",
+      title: t.seo?.meta?.title || "Armen Mkhitaryan | Operational Content Leader",
+      description: t.seo?.meta?.description || "Operational Content Leader focused on catalog systems, SEO, filtering, UI/UX, visuals and team leadership",
       
       // Канонические URL
       alternates: {
@@ -57,7 +57,7 @@ export async function generateMetadata({
         title: t.seo?.meta?.title,
         description: t.seo?.meta?.description,
         url: currentUrl,
-        siteName: "Armen Mkhitaryan - E-commerce Content Lead",
+        siteName: "Armen Mkhitaryan - Operational Content Leader",
         locale: locale === 'hy' ? 'hy_AM' : locale === 'ru' ? 'ru_RU' : 'en_US',
         type: 'website',
       },
@@ -78,8 +78,8 @@ export async function generateMetadata({
   } catch (error) {
     console.error('Error loading metadata translations:', error);
     return {
-      title: "Armen Mkhitaryan | E-commerce Content Lead",
-      description: "E-commerce Content Lead with focus on content operations, catalog structure and AI",
+      title: "Armen Mkhitaryan | Operational Content Leader",
+      description: "Operational Content Leader focused on catalog systems, SEO, filtering, UI/UX, visuals and team leadership",
     };
   }
 }
@@ -107,8 +107,8 @@ export default async function Page({ params }: PageProps) {
       "@type": "Person",
       "name": "Armen Mkhitaryan",
       "alternateName": ["Армен Мхитарян", "Արմեն Մխիթարյան"],
-      "jobTitle": t.seo?.schema?.job_title || "E-commerce Content Lead",
-      "description": t.seo?.schema?.description || "Specialist in systematic e-commerce content and content operations",
+      "jobTitle": t.seo?.schema?.job_title || "Operational Content Leader",
+      "description": t.seo?.schema?.description || "Operational leader in e-commerce content systems, catalog structure, SEO, filtering, UI/UX, visuals and team leadership",
       "url": locale === 'hy' ? 'https://taryan.am' : `https://taryan.am/${locale}`,
       "sameAs": [
         "https://linkedin.com/in/taryan",
@@ -119,10 +119,14 @@ export default async function Page({ params }: PageProps) {
         "name": "Freelance"
       },
       "knowsAbout": [
-        "E-commerce Content",
+        "Operational Content Leadership",
         "Content Operations",
+        "Content Team Leadership",
         "Catalog Content Strategy",
         "Product Content Standards",
+        "E-commerce Filtering",
+        "UI/UX Content",
+        "Product Visuals",
         "AI for E-commerce Content",
         "SEO"
       ],

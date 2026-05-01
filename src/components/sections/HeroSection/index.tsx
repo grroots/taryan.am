@@ -4,14 +4,14 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { 
-  Zap,
+  Boxes,
+  CalendarClock,
+  FolderKanban,
   Mail,
   Linkedin,
   PenTool,
   NotebookPen,
   ArrowRight,
-  TrendingUp,
-  Target
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import styles from './HeroSection.module.css';
@@ -116,9 +116,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
                 {stats.map((stat, index) => (
                   <div key={stat.key} className={styles.valueProp}>
                     <div className={styles.valuePropIcon}>
-                      {index === 0 && <TrendingUp className={styles.valuePropIconSvg} />}
-                      {index === 1 && <Target className={styles.valuePropIconSvg} />}
-                      {index === 2 && <Zap className={styles.valuePropIconSvg} />}
+                      {index === 0 && <CalendarClock className={styles.valuePropIconSvg} />}
+                      {index === 1 && <Boxes className={styles.valuePropIconSvg} />}
+                      {index === 2 && <FolderKanban className={styles.valuePropIconSvg} />}
                     </div>
                     <span className={styles.valuePropValue}>
                       {stat.value}
@@ -252,9 +252,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
                   {stats.map((stat, index) => (
                     <div key={stat.key} className={styles.heroMobileValueProp}>
                       <div className={styles.heroMobileValuePropIcon}>
-                        {index === 0 && <TrendingUp className={styles.heroMobileValuePropIconSvg} />}
-                        {index === 1 && <Target className={styles.heroMobileValuePropIconSvg} />}
-                        {index === 2 && <Zap className={styles.heroMobileValuePropIconSvg} />}
+                        {index === 0 && <CalendarClock className={styles.heroMobileValuePropIconSvg} />}
+                        {index === 1 && <Boxes className={styles.heroMobileValuePropIconSvg} />}
+                        {index === 2 && <FolderKanban className={styles.heroMobileValuePropIconSvg} />}
                       </div>
                       <div className={styles.heroMobileValuePropValue}>{stat.value}</div>
                       <div className={styles.heroMobileValuePropLabel}>{stat.label}</div>

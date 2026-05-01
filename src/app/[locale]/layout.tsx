@@ -16,22 +16,22 @@ export async function generateMetadata({
   const { locale } = await params;
   
   const defaultMetadata = {
-    title: "Արմեն Մխիթարյան | E-commerce Content Lead",
-    description: "E-commerce content-ի, առցանց կատալոգների, AI գործիքների և content operations-ի համակարգային զարգացում",
+    title: "Արմեն Մխիթարյան | Քոնթենթի օպերացիոն լիդ",
+    description: "E-commerce քոնթենթի քաոսը համակարգի վերածում՝ կատալոգ, SEO, ֆիլտրացիա, UI/UX, վիզուալներ և թիմի առաջնորդություն",
   };
 
   const metadataByLocale: Record<string, typeof defaultMetadata> = {
     hy: {
-      title: "Արմեն Մխիթարյան | E-commerce Content Lead",
-      description: "E-commerce content-ի, առցանց կատալոգների, AI գործիքների և content operations-ի համակարգային զարգացում",
+      title: "Արմեն Մխիթարյան | Քոնթենթի օպերացիոն լիդ",
+      description: "E-commerce քոնթենթի քաոսը համակարգի վերածում՝ կատալոգ, SEO, ֆիլտրացիա, UI/UX, վիզուալներ և թիմի առաջնորդություն",
     },
     ru: {
-      title: "Армен Мхитарян | E-commerce Content Lead",
-      description: "Системное развитие онлайн-каталогов, карточек товаров, SEO-контента, AI-инструментов и content operations",
+      title: "Армен Мхитарян | Операционный контент-лид",
+      description: "Превращаю хаос e-commerce контента в систему: каталог, SEO, фильтрация, UI/UX, визуалы, стандарты и команда",
     },
     en: {
-      title: "Armen Mkhitaryan | E-commerce Content Lead",
-      description: "Systematic development of online catalogs, product content standards, SEO content, AI tools and content operations",
+      title: "Armen Mkhitaryan | Operational Content Leader",
+      description: "Turning e-commerce content chaos into a system: catalog, SEO, filtering, UI/UX, visuals, standards and team leadership",
     },
   };
 
@@ -42,10 +42,14 @@ export async function generateMetadata({
     description: currentMetadata.description,
     keywords: [
       "content manager",
-      "e-commerce content lead",
+      "operational content leader",
       "content operations",
+      "content team leadership",
       "catalog content strategy",
       "product content standards",
+      "UI UX content",
+      "e-commerce filtering",
+      "product visuals",
       "AI for e-commerce content",
       "քոնթենթ մենեջեր", 
       "контент менеджер",
@@ -77,7 +81,7 @@ export async function generateMetadata({
       url: `https://taryan.am${locale === 'hy' ? '' : `/${locale}`}`,
       title: currentMetadata.title,
       description: currentMetadata.description,
-      siteName: "Armen Mkhitaryan - Content Manager",
+      siteName: "Armen Mkhitaryan - Operational Content Leader",
       images: [
         {
           url: "https://taryan.am/og-image.webp",
@@ -164,7 +168,7 @@ export default async function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         
         {/* Theme colors */}
-        <meta name="theme-color" content="#2B7A8A" />
+        <meta name="theme-color" content="#162032" />
         
         {/* Performance hints */}
         <link rel="preload" href="/assets/fonts/DejaVuSans.woff2" as="font" type="font/woff2" crossOrigin="" />

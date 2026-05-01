@@ -4,17 +4,20 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { 
-  ShoppingCart, 
-  Zap,
-  Settings,
+  Boxes,
+  ClipboardList,
+  FileQuestion,
+  Filter,
+  LayoutTemplate,
+  Palette,
+  Send,
+  ShieldCheck,
   Target,
-  FileText,
   Pen,
-  CheckCircle,
-  ShoppingBag,
-  Globe,
-  Monitor,
-  Package
+  SearchCheck,
+  Tags,
+  Users,
+  Wrench
 } from 'lucide-react';
 import { useServices } from '@/data/services';
 import { cn } from '@/lib/utils';
@@ -40,28 +43,28 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
 
   // Специализации
   const specializations = [
-    { name: t('spec_wildberries'), icon: ShoppingCart },
-    { name: t('spec_ozon'), icon: ShoppingBag },
-    { name: t('spec_ebay'), icon: Globe },
-    { name: t('spec_wordpress'), icon: Monitor },
-    { name: t('spec_ecommerce'), icon: Package },
-    { name: t('spec_cms'), icon: Settings }
+    { name: t('spec_wildberries'), icon: Boxes },
+    { name: t('spec_ozon'), icon: Tags },
+    { name: t('spec_ebay'), icon: Filter },
+    { name: t('spec_wordpress'), icon: LayoutTemplate },
+    { name: t('spec_ecommerce'), icon: Palette },
+    { name: t('spec_cms'), icon: Users }
   ];
 
   // Преимущества сотрудничества
   const cooperationBenefits = [
     {
-      icon: CheckCircle,
+      icon: SearchCheck,
       title: t('cooperation_benefits.discussion'),
       description: t('cooperation_benefits.discussion_desc')
     },
     {
-      icon: Target,
+      icon: ClipboardList,
       title: t('cooperation_benefits.individual'),
       description: t('cooperation_benefits.individual_desc')
     },
     {
-      icon: FileText,
+      icon: ShieldCheck,
       title: t('cooperation_benefits.transparent'),
       description: t('cooperation_benefits.transparent_desc')
     }
@@ -97,7 +100,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
           isVisible ? styles.headerVisible : styles.headerHidden
         )}>
           <div className={styles.headerIcon}>
-            <Settings className="w-8 h-8 text-warm" />
+            <Wrench className="w-8 h-8 text-warm" />
             <span className={styles.headerSubtitle}>
               {t('subtitle')}
             </span>
@@ -197,7 +200,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
                 {/* Left Part - Benefits */}
                 <div className={styles.cooperationLeft}>
                   <h3 className={styles.cooperationTitle}>
-                    <Zap className="w-6 h-6 text-warm" />
+                    <Target className="w-6 h-6 text-warm" />
                     {t('cooperation')}
                   </h3>
                   
@@ -251,7 +254,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
                   onClick={handleTermsClick}
                   className={styles.ctaPrimary}
                 >
-                  <FileText className="w-4 h-4" />
+                  <FileQuestion className="w-4 h-4" />
                   {t('cooperation_conditions')}
                 </button>
                 
@@ -259,7 +262,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
                   onClick={handleContactClick}
                   className={styles.ctaSecondary}
                 >
-                  <Settings className="w-4 h-4" />
+                  <Send className="w-4 h-4" />
                   {t('contact_me')}
                 </button>
               </div>

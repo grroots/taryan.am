@@ -4,13 +4,13 @@
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { 
-  ShoppingBag,
-  User,
-  Target,
+  Boxes,
+  ClipboardList,
+  Compass,
+  GitBranch,
+  Layers3,
+  Network,
   CircleCheckBig,
-  Package,
-  Bot,
-  ClipboardCheck
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import styles from './AboutSection.module.css';
@@ -49,17 +49,17 @@ const AboutSection: React.FC<AboutSectionProps> = ({ className }) => {
   // About items 
   const aboutItems = [
     {
-      icon: Package,
+      icon: Boxes,
       title: t('text_creation'),
       description: t('text_creation_desc'),
     },
     {
-      icon: ShoppingBag,
+      icon: ClipboardList,
       title: t('content_management'),
       description: t('content_management_desc'),
     },
     {
-      icon: Bot,
+      icon: Layers3,
       title: t('cms'),
       description: t('cms_desc'),
     },
@@ -98,7 +98,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ className }) => {
           isVisible ? styles.visible : styles.hidden
         )}>
           <div className={styles.aboutBadge}>
-            <User className={styles.aboutBadgeIcon} />
+            <Network className={styles.aboutBadgeIcon} />
             <span className={styles.aboutBadgeText}>
               {t('who_am_i')}
             </span>
@@ -168,7 +168,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ className }) => {
           <div className={styles.aboutTimelineCard}>
             <div className={styles.aboutTimelineHeader}>
               <div className={styles.aboutTimelineBadge}>
-                <Target className={styles.aboutTimelineBadgeIcon} />
+                <Compass className={styles.aboutTimelineBadgeIcon} />
                 <h3 className={styles.aboutTimelineTitle}>
                   {t('specialization_path')}
                 </h3>
@@ -198,7 +198,7 @@ const AboutSection: React.FC<AboutSectionProps> = ({ className }) => {
             <div className={styles.aboutPlatforms}>
               <div className={styles.aboutPlatformsContent}>
                 <div className={styles.aboutTimelineBadge}>
-                  <ClipboardCheck className={styles.aboutTimelineBadgeIcon} />
+                  <GitBranch className={styles.aboutTimelineBadgeIcon} />
                   <h4 className={styles.aboutPlatformsTitle}>{t('domus_title')}</h4>
                 </div>
                 <p className={styles.aboutTimelineSubtitle}>{t('domus_role')}</p>

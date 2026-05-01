@@ -313,13 +313,17 @@
 
 .aboutPlatformsContent {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: stretch;
 }
 
 .aboutPlatformsTitle {
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-text-primary);
-  margin-bottom: 1.5rem;
+  margin: 0;
 }
 
 .aboutPlatformsList {
@@ -327,6 +331,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 1rem;
+  margin-top: 0.25rem;
 }
 
 .aboutPlatformItem {

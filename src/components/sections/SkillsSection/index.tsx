@@ -4,14 +4,15 @@ import { useState, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import { 
-  Brain,
-  Video,
-  MessageSquare,
+  Bot,
+  Boxes,
+  BrainCircuit,
+  ChartNoAxesCombined,
+  ClipboardList,
   Users,
-  Globe,
-  Palette,
   FileText,
-  BarChart3
+  Network,
+  ShieldCheck,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSkills } from '@/data/skills';
@@ -33,28 +34,27 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className }) => {
 
   // Категории с иконками
   const categoriesConfig = [
-    { id: 'web-tech', icon: Globe },
-    { id: 'creative', icon: Palette },
+    { id: 'web-tech', icon: Boxes },
+    { id: 'creative', icon: Network },
     { id: 'writing', icon: FileText },
-    { id: 'analytics', icon: BarChart3 },
-    { id: 'social', icon: Users },
-    { id: 'ai', icon: Brain }
+    { id: 'analytics', icon: ChartNoAxesCombined },
+    { id: 'ai', icon: BrainCircuit }
   ];
 
   // Форматы менторства (только для армянского)
   const mentorshipFormats = [
     {
-      icon: Video,
+      icon: ClipboardList,
       formatKey: 'video_calls',
       descriptionKey: 'video_calls_desc',
     },
     {
-      icon: Users,
+      icon: ShieldCheck,
       formatKey: 'courses',
       descriptionKey: 'courses_desc',
     },
     {
-      icon: MessageSquare,
+      icon: Bot,
       formatKey: 'yearly_mentorship',
       descriptionKey: 'yearly_mentorship_desc',
     },
@@ -120,7 +120,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className }) => {
         {/* Заголовок секции */}
         <div className={styles.skillsHeader}>
           <div className={styles.skillsBadge}>
-            <Brain className={styles.skillsBadgeIcon} />
+            <Network className={styles.skillsBadgeIcon} />
             <span className={styles.skillsBadgeText}>
               {t('subtitle')}
             </span>
@@ -279,7 +279,7 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className }) => {
           <div className={styles.partnershipSection}>
             <div className={styles.partnershipCard}>
               <div className={styles.partnershipHeader}>
-                <Brain className={styles.partnershipIcon} />
+                <BrainCircuit className={styles.partnershipIcon} />
                 <h3 className={styles.partnershipTitle}>
                   {t('for_partnership_title')}
                 </h3>

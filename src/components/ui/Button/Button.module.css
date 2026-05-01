@@ -334,6 +334,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.2;
 }
 
 .buttonIcon {

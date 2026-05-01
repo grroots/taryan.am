@@ -15,6 +15,12 @@ export const useProjects = (): PortfolioItem[] => {
       "Wildberries": "Wildberries",
       "Տեքստ-վիզուալ": "Տեքստ-վիզուալ",
       "SEO": "SEO"
+      ,"Domus": "Domus"
+      ,"Ozon": "Ozon"
+      ,"eBay": "eBay"
+      ,"Աուդիտ": "Աուդիտ"
+      ,"Կատալոգ": "Կատալոգ"
+      ,"Ստանդարտներ": "Ստանդարտներ"
     },
     ru: {
       "CMS": "CMS",
@@ -26,6 +32,12 @@ export const useProjects = (): PortfolioItem[] => {
       "Wildberries": "Wildberries",
       "Տեքստ-վիզուալ": "Тексты-инфографики",
       "SEO": "SEO"
+      ,"Domus": "Domus"
+      ,"Ozon": "Ozon"
+      ,"eBay": "eBay"
+      ,"Աուդիտ": "Аудит"
+      ,"Կատալոգ": "Каталог"
+      ,"Ստանդարտներ": "Стандарты"
     },
     en: {
       "CMS": "CMS",
@@ -37,29 +49,21 @@ export const useProjects = (): PortfolioItem[] => {
       "Wildberries": "Wildberries",
       "Տեքստ-վիզուալ": "Text-Infographics",
       "SEO": "SEO"
+      ,"Domus": "Domus"
+      ,"Ozon": "Ozon"
+      ,"eBay": "eBay"
+      ,"Աուդիտ": "Audit"
+      ,"Կատալոգ": "Catalog"
+      ,"Ստանդարտներ": "Standards"
     }
   } as const;
 
   const baseProjects = [
     {
-      id: "agga",
-      image: "/assets/img/projects/agga.webp",
-      category: "web" as const,
-      tags: ["CMS"],
-      url: "#"
-    },
-    {
-      id: "stda",
-      image: "/assets/img/projects/saint-twins.webp",
-      category: "design" as const,
-      tags: ["SMM", "Պրեզենտացիա"],
-      url: "#"
-    },
-    {
       id: "innotek",
       image: "/assets/img/projects/tsiatsan-innotek.webp",
       category: "web" as const,
-      tags: ["Քոնթենթ-մենեջմենթ", "E-commerce", "Բլոգ", "SMM"],
+      tags: ["Քոնթենթ-մենեջմենթ", "Կատալոգ", "Ստանդարտներ"],
       url: "#"
     },
     {
@@ -77,27 +81,33 @@ export const useProjects = (): PortfolioItem[] => {
       url: "#"
     },
     {
-      id: "turkaget",
+      id: "domus",
+      image: "/assets/img/projects/agga.webp",
+      category: "web" as const,
+      tags: ["Domus", "Կատալոգ", "Ստանդարտներ"],
+      url: "#"
+    },
+    {
+      id: "ozon-partner",
+      image: "/assets/img/logos/ozon.webp",
+      category: "web" as const,
+      tags: ["Ozon", "E-commerce", "Քոնթենթ-մենեջմենթ"],
+      url: "#"
+    },
+    {
+      id: "aec-ebay",
       image: "/assets/img/projects/turkaget.webp",
       category: "web" as const,
-      tags: ["CMS"],
+      tags: ["eBay", "E-commerce", "Աուդիտ"],
       url: "#"
     }
   ];
 
   const projectTranslations = {
     hy: {
-      agga: {
-        title: "agga.am",
-        description: "CMS կայքի ստեղծում։ Տեխնիկական սպասարկում:"
-      },
-      stda: {
-        title: "Saint Twins Detective Armenia",
-        description: "SMM (instagram, facebook, telegram), կորպորատիվ առաջարկի կազմում:"
-      },
       innotek: {
-        title: "ԾԻԱԾԱՆ (այժմ՝ ԻՆՆՈՏԵԿ)",
-        description: "Իքոմերսի քոնթենթ-մենեջմենթ՝ ապրանքների նկարագրություններ, բլոգ, սոց.ցանցեր։"
+        title: "ԻՆՆՈԹԵԿ",
+        description: "2023-2025․ ստանդարտների բացակայության և կատեգորիզացիայի քաոսի ուղղում թիմային ճշգրտումներով։"
       },
       "anna-vartanova": {
         title: "ԱՁ Աննա Վարտանովա",
@@ -107,23 +117,23 @@ export const useProjects = (): PortfolioItem[] => {
         title: "EYVA atelier & more",
         description: "SMM (facebook, instagram), քոնթենթ-ստրատեգիա, Wildberries:"
       },
-      turkaget: {
-        title: "Թյուրքագետ Վարուժան Գեղամյան",
-        description: "Կայք-այցեքարտի պատրաստում (CMS)"
+      domus: {
+        title: "ԴՈՄՈՒՍ",
+        description: "2025+․ քոնթենթ-լիդ, օպերացիոն համակարգում, շաբլոններ, արշավներ, լեյաութներ և ստանդարտիզացիա։"
+      },
+      "ozon-partner": {
+        title: "Ozon տեխնիկական գործընկեր",
+        description: "Տեխնիկական և քոնթենթային աջակցություն Ozon ուղղությամբ՝ քարտեր, կառուցվածք և աշխատանքային պրոցես։"
+      },
+      "aec-ebay": {
+        title: "Armenian Export Center eBay նախագիծ",
+        description: "eBay ուղղությամբ կատալոգի, ապրանքների քարտերի և քոնթենթային ներկայացման աշխատանքային նախագիծ։"
       }
     },
     ru: {
-      agga: {
-        title: "agga.am",
-        description: "Создание CMS сайта. Техническое обслуживание."
-      },
-      stda: {
-        title: "Saint Twins Detective Armenia",
-        description: "SMM (instagram, facebook, telegram), составление корпоративного предложения."
-      },
       innotek: {
-        title: "ЦИАЦАН (ныне - INNOTEK)",
-        description: "Контент-менеджмент интернет-магазина: от описаний товаров до блога и текстов для соцсетей."
+        title: "INNOTEK",
+        description: "2023-2025: исправление хаоса в стандартах и категоризации через командную настройку процессов."
       },
       "anna-vartanova": {
         title: "ИП Анна Вартанова",
@@ -133,23 +143,23 @@ export const useProjects = (): PortfolioItem[] => {
         title: "EYVA atelier & more",
         description: "SMM (facebook, instagram), контент-стратегия, Wildberries."
       },
-      turkaget: {
-        title: "Тюрколог Варужан Гегамян",
-        description: "Создание сайта-визитки (CMS)"
+      domus: {
+        title: "DOMUS",
+        description: "2025+: контент-лид, операционная система, шаблоны, кампании, layouts и стандартизация."
+      },
+      "ozon-partner": {
+        title: "Технический партнер Ozon",
+        description: "Техническая и контентная поддержка Ozon-направления: карточки, структура и рабочий процесс."
+      },
+      "aec-ebay": {
+        title: "Armenian Export Center eBay project",
+        description: "Проект по каталогу, карточкам товаров и контентному представлению в eBay-направлении."
       }
     },
     en: {
-      agga: {
-        title: "agga.am",
-        description: "CMS website development. Technical support."
-      },
-      stda: {
-        title: "Saint Twins Detective Armenia",
-        description: "SMM (instagram, facebook, telegram), corporate proposal development."
-      },
       innotek: {
-        title: "TSIATSAN (now INNOTEK)",
-        description: "E-commerce content management: from product descriptions to blog and social media texts."
+        title: "INNOTEK",
+        description: "2023-2025: fixing standardization gaps and categorization chaos through team-level process alignment."
       },
       "anna-vartanova": {
         title: "IE Anna Vartanova",
@@ -159,9 +169,17 @@ export const useProjects = (): PortfolioItem[] => {
         title: "EYVA atelier & more",
         description: "SMM (facebook, instagram), content strategy, Wildberries."
       },
-      turkaget: {
-        title: "Turkologist Varuzhan Geghamyan",
-        description: "Business card website development (CMS)."
+      domus: {
+        title: "DOMUS",
+        description: "2025+: content lead role, operating system, templates, campaigns, layouts and standardization."
+      },
+      "ozon-partner": {
+        title: "Ozon technical partner",
+        description: "Technical and content support for Ozon: product cards, structure and working process."
+      },
+      "aec-ebay": {
+        title: "Armenian Export Center eBay project",
+        description: "Project around catalog, product cards and content presentation for eBay."
       }
     }
   } as const;

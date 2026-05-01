@@ -89,17 +89,17 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         {/* Project Tags - фиксированная позиция внизу */}
         <div className="mt-auto">
           {project.tags && project.tags.length > 0 && (
-            <div className="flex flex-wrap gap-2 justify-center">
+            <div className="flex flex-wrap gap-1.5 justify-center">
               {project.tags.slice(0, 3).map((tag, index) => (
                 <span
                   key={index}
-                  className="text-sm font-bold px-5 py-2.5 bg-accent text-main rounded-full transition-all duration-300"
+                  className="text-xs font-semibold px-3 py-1.5 bg-accent/10 text-accent border border-accent/20 rounded-md transition-all duration-300 leading-tight"
                 >
                   {tag}
                 </span>
               ))}
               {project.tags.length > 3 && (
-                <span className="text-sm font-bold px-5 py-2.5 bg-gray-100 text-text-primary/60 rounded-full">
+                <span className="text-xs font-semibold px-3 py-1.5 bg-gray-100 text-text-primary/60 border border-gray-200 rounded-md leading-tight">
                   +{project.tags.length - 3}
                 </span>
               )}

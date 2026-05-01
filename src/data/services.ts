@@ -1,12 +1,12 @@
 // src/data/services.ts
 import { useTranslations } from 'next-intl';
 import {
+  Bot,
+  Boxes,
+  ClipboardList,
   FileText,
-  TrendingUp,
-  Users,
-  Eye,
-  BarChart3,
-  Search,
+  LayoutTemplate,
+  Palette,
 } from "lucide-react";
 import { createElement } from "react";
 import type { Service } from "@/types";
@@ -17,42 +17,42 @@ export const useServices = (): Service[] => {
   const services: Service[] = [
     {
       id: "copywriting",
-      icon: createElement(FileText, { className: "w-8 h-8" }),
+      icon: createElement(Boxes, { className: "w-8 h-8" }),
       title: t('items.copywriting.title'),
       description: t('items.copywriting.description'),
       features: [],
     },
     {
       id: "blog",
-      icon: createElement(TrendingUp, { className: "w-8 h-8" }),
+      icon: createElement(ClipboardList, { className: "w-8 h-8" }),
       title: t('items.blog.title'),
       description: t('items.blog.description'),
       features: [],
     },
     {
       id: "products",
-      icon: createElement(Eye, { className: "w-8 h-8" }),
+      icon: createElement(FileText, { className: "w-8 h-8" }),
       title: t('items.products.title'),
       description: t('items.products.description'),
       features: [],
     },
     {
       id: "smm",
-      icon: createElement(Users, { className: "w-8 h-8" }),
+      icon: createElement(LayoutTemplate, { className: "w-8 h-8" }),
       title: t('items.smm.title'),
       description: t('items.smm.description'),
       features: [],
     },
     {
       id: "presentations",
-      icon: createElement(BarChart3, { className: "w-8 h-8" }),
+      icon: createElement(Palette, { className: "w-8 h-8" }),
       title: t('items.presentations.title'),
       description: t('items.presentations.description'),
       features: [],
     },
     {
       id: "audit",
-      icon: createElement(Search, { className: "w-8 h-8" }),
+      icon: createElement(Bot, { className: "w-8 h-8" }),
       title: t('items.audit.title'),
       description: t('items.audit.description'),
       features: [],

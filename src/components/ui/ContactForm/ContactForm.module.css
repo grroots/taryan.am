@@ -133,6 +133,11 @@
   padding-right: 3rem;
 }
 
+.formSelect option {
+  color: var(--color-text-primary);
+  background: var(--color-main);
+}
+
 .formSelectIcon {
   position: absolute;
   right: 1rem;

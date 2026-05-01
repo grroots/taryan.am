@@ -1,52 +1,52 @@
 {
   "navigation": {
-    "about": "Who I am",
-    "skills": "Competencies",
-    "services": "How I help",
-    "portfolio": "Experience",
-    "pricing": "Formats",
-    "contact": "Contacts",
-    "collaboration": "DISCUSS PROJECT"
+    "about": "Build",
+    "skills": "Skills",
+    "services": "Solutions",
+    "portfolio": "Cases",
+    "pricing": "Discuss",
+    "contact": "Contact",
+    "collaboration": "DISCUSS SYSTEM"
   },
   "hero": {
-    "greeting": "E-COMMERCE CONTENT LEAD",
+    "greeting": "Operational Content Leader",
     "name": "Armen Mkhitaryan",
-    "title": "I build systematic e-commerce content: catalog structure, product cards, SEO, AI and workflows.",
-    "cta_button": "VIEW EXPERIENCE",
-    "cta_button_secondary": "DISCUSS PROJECT",
-    "value_prop_1000": "10,000+ SKU",
-    "value_prop_1000_desc": "large catalog experience",
-    "value_prop_ecommerce": "2025+",
-    "value_prop_ecommerce_desc": "Content Lead, Domus LLC",
-    "value_prop_9years": "2020/2021+",
-    "value_prop_9years_desc": "in e-commerce content"
+    "title": "From Chaos to System: Catalog, Product Cards, SEO, UI/UX, Standards",
+    "cta_button": "VIEW CASES",
+    "cta_button_secondary": "MENTORSHIP",
+    "value_prop_1000": "40,000+",
+    "value_prop_1000_desc": "Big Catalog Experience",
+    "value_prop_ecommerce": "4+",
+    "value_prop_ecommerce_desc": "Big Projects",
+    "value_prop_9years": "6 Years",
+    "value_prop_9years_desc": "in E-commerce"
   },
   "about": {
-    "title": "E-commerce Content Lead",
-    "who_am_i": "Who I am",
-    "three_words": "CONTENT SYSTEM",
-    "creative": "Catalog",
-    "literary": "Operations",
-    "organized": "AI & team",
-    "description": "I do not only write texts or fill product cards. My specialization is systematic e-commerce content development: catalog structure, product card quality, SEO logic, team workflows, automation and AI tools.",
-    "text_creation": "E-commerce content",
-    "text_creation_desc": "Product cards, category content, SKU structure, SEO logic and multilingual content for online catalogs.",
-    "content_management": "Content operations",
-    "content_management_desc": "Workflows, task standards, quality checklists, product card QA and team coordination.",
-    "cms": "AI & automation",
-    "cms_desc": "AI approaches for drafts, templates, completeness checks, adaptation and faster routine work.",
-    "years_in_content": "in e-commerce content",
+    "title": "Operational Content Leader",
+    "who_am_i": "Build",
+    "three_words": "FROM CHAOS TO SYSTEM",
+    "creative": "System",
+    "literary": "Team",
+    "organized": "Result",
+    "description": "I build content systems where there is chaos: from categories, filters, SEO and product cards to standards, website visual logic, UI/UX connection and large-team coordination.",
+    "text_creation": "Catalog structure",
+    "text_creation_desc": "Categories, filtering, attributes, product cards and SEO logic should work as one system, not as isolated tasks.",
+    "content_management": "Operational management",
+    "content_management_desc": "Standards, ownership, priorities, QA, task setting and team coordination turn chaotic work into a managed process.",
+    "cms": "Content + UI/UX + visuals",
+    "cms_desc": "Content must connect with interface, user scenario and visual assets so the site helps people choose and buy.",
+    "years_in_content": "in e-commerce operations",
     "years_content_manager": "SKU experience",
-    "countries_partners": "Domus LLC",
-    "languages": "content systems",
-    "specialization_path": "Growth path: FROM SKU TO CONTENT OPERATIONS",
-    "help_understand": "My e-commerce content path grew from product cards and SEO structure to workflows, standards, AI tools and team coordination.",
-    "start": "Start in e-commerce content",
-    "start_desc": "Product cards, SEO texts, content structure and first mass-SKU workflows.",
-    "growth": "Growth in e-commerce and marketplace content",
-    "growth_desc": "Catalogs, marketplaces, CMS, analytics, categories and high-volume product content.",
-    "senior_path": "E-commerce Content Lead, Domus LLC",
-    "senior_desc": "Team, workflows, AI, automation, standards and online catalog content quality.",
+    "countries_partners": "team",
+    "languages": "people",
+    "specialization_path": "FROM CHAOTIC TASKS TO OPERATIONAL SYSTEM",
+    "help_understand": "My path grew from product cards and SEO into catalog structure, website visual logic, standards, AI workflows and team leadership.",
+    "start": "E-commerce Content Manager",
+    "start_desc": "Product cards, SEO text, categories, bulk SKU work and first quality standards.",
+    "growth": "Catalog and coordination",
+    "growth_desc": "Categorization, attributes, filters, CMS, marketplaces and content management.",
+    "senior_path": "Operational Content Leader",
+    "senior_desc": "Large-team coordination, standards, quality, AI automation and operational content development.",
     "platforms_title": "Domus LLC Experience",
     "platform_wildberries": "Domus LLC",
     "platform_wildberries_stat": "E-commerce Content Lead",
@@ -56,93 +56,102 @@
     "platform_ebay_stat": "automation and QA",
     "platform_ecommerce": "Team",
     "platform_ecommerce_stat": "coordination and standards",
-    "start_year": "2020/21",
-    "growth_year": "2022-24",
-    "senior_year": "2025+",
-    "domus_title": "Domus LLC Experience",
-    "domus_role": "E-commerce Content Lead, 2025-present",
+    "start_year": "2020",
+    "growth_year": "2022",
+    "senior_year": "2025",
+    "domus_title": "OPERATIONAL RESPONSIBILITY",
+    "domus_role": "2025+ · Content Lead · Domus LLC",
     "domus_responsibilities": [
-      "online catalog content development",
-      "product card standardization",
-      "categories, attributes and SEO logic",
-      "coordination of content team, photographers and editors",
-      "AI approaches in content production",
-      "automation of repetitive workflows",
-      "data quality and product visual presentation"
+      "content team coordination",
+      "product card and category standards",
+      "categorization, filters, attributes and SEO logic",
+      "systematic solving of website and catalog problems",
+      "content connection with UI/UX",
+      "AI and automation of recurring workflows",
+      "ownership control and quality retention"
     ]
   },
   "skills": {
-    "title": "COMPETENCIES",
-    "subtitle": "A system, not a list of tools",
-    "principle": "The focus is not on isolated software, but on building an e-commerce content system: from product card to team workflow, from SEO to AI.",
+    "title": "CONTENT SYSTEMS MANAGEMENT",
+    "subtitle": "Thinking and coordination",
+    "principle": "The focus is not on tools, but first on the ability to assemble a system: content audit, problem diagnosis, standards implementation, team development and content strengthening through connection with SEO, UI/UX and analytics tools.",
     "mentorship": "Mentorship & Team Development",
-    "mentorship_desc": "I help content managers work systematically: understand e-commerce logic, product card structure, SEO tasks, the role of photos, attributes, filters and the user journey.",
-    "video_calls": "Content manager training",
-    "video_calls_desc": "E-commerce logic, product cards, categories and user journey",
-    "courses": "Checklists and standards",
-    "courses_desc": "Task setting, error review and quality control",
-    "yearly_mentorship": "AI tools for teams",
-    "yearly_mentorship_desc": "Prompts, templates, checks and ownership of results",
-    "apply_mentorship": "DISCUSS TEAM DEVELOPMENT",
-    "for_partnership_title": "AI & Automation in E-commerce Content",
-    "for_partnership_desc": "AI does not solve quality by itself. It works only when there is structure: categories, attributes, rules, tone of voice and control.",
-    "for_partnership_button": "DISCUSS AI WORKFLOWS",
+    "mentorship_desc": "I do not teach people to write good texts. I provide paths and guides that help create and develop content through systemic thinking, avoiding demotivating chaos.",
+    "video_calls": "System",
+    "video_calls_desc": "Thinking and structure for getting out of chaos",
+    "courses": "Standards",
+    "courses_desc": "Guides, checklists and quality control",
+    "yearly_mentorship": "AI toolkit",
+    "yearly_mentorship_desc": "Assistants, instructions, automation and audit",
+    "apply_mentorship": "APPLY",
+    "for_partnership_title": "Leadership through systems",
+    "for_partnership_desc": "Result does not come from more tasks. It comes from structure: right categories, clear standards, a strong team, quality control and content connected to user experience.",
+    "for_partnership_button": "DISCUSS APPROACH",
     "categories": {
-      "web_tech": "E-commerce Content Management",
-      "creative": "Content Operations",
-      "writing": "AI & Automation",
-      "analytics": "Analytics & SEO",
-      "social": "CMS / E-commerce Platforms",
-      "ai": "Mentorship / Team Development"
+      "web_tech": "Catalog & categories",
+      "creative": "Operational processes",
+      "writing": "SEO & cards",
+      "analytics": "Analytics tools",
+      "social": "Visuals & website",
+      "ai": "AI & automation"
     },
     "items": {
-      "product_cards": "Product cards",
-      "category_content": "Category content",
-      "sku_structure": "SKU structure",
+      "product_cards": "Card structure",
+      "category_content": "Categories",
+      "sku_structure": "SKU logic",
       "multilingual_content": "Multilingual content",
-      "content_quality_control": "Content quality control",
-      "workflows": "Workflows",
+      "content_quality_control": "Content QA",
+      "workflows": "Operational workflows",
       "team_coordination": "Team coordination",
       "task_standards": "Task standards",
       "qa_processes": "QA processes",
       "prompt_systems": "Prompt systems",
-      "bulk_generation": "Bulk content generation",
-      "content_review": "Content review",
-      "seo_structure": "SEO content structure",
-      "search_intent": "Search intent",
-      "marketplace_tools": "Marketplace tools",
-      "admin_panels": "Website admin panels",
-      "catalog_systems": "Catalog systems",
-      "training": "Content manager training",
+      "bulk_generation": "Bulk scenarios",
+      "content_review": "Result review",
+      "seo_structure": "SEO structure",
+      "search_intent": "User intent",
+      "marketplace_tools": "Analytics",
+      "admin_panels": "GA4",
+      "catalog_systems": "GTAG",
+      "training": "Team training",
       "checklists": "Quality checklists",
       "error_review": "Error review",
-      "ai_training": "AI-tool training"
+      "ai_training": "AI for team",
+      "visual_standards": "Visual standards",
+      "graphic_assets": "Graphic visuals",
+      "google_search_console": "GSC",
+      "yandex_metrica": "Yandex Metrica",
+      "gemini": "Gemini",
+      "chatgpt": "ChatGPT",
+      "claude": "Claude",
+      "automation_scripts": "Automation scripts",
+      "ai_audits": "AI audits"
     }
   },
   "services": {
-    "title": "HOW I CAN HELP",
-    "subtitle": "Content system for e-commerce",
-    "description": "Not “write one product description”, but create standards and workflows that help a team consistently produce quality content.",
-    "cooperation": "AI & Automation in E-commerce Content",
+    "title": "WHAT I SOLVE",
+    "subtitle": "Solutions",
+    "description": "My work is not texts, but noticing systemic problems in catalog and filtering, product cards, SEO, UI/UX, graphic design and the team, then turning them into a working process.",
+    "cooperation": "How chaos becomes a system",
     "cooperation_benefits": {
-      "discussion": "Structure before generation",
-      "individual": "AI as a workflow tool",
-      "transparent": "Quality control",
-      "discussion_desc": "Categories, attributes, rules and tone of voice need to be defined before automation.",
-      "individual_desc": "Drafts, templates, checks and adaptation speed up the team without replacing expertise.",
-      "transparent_desc": "Product card completeness, SEO logic, visuals and data need regular QA."
+      "discussion": "Root-cause diagnosis",
+      "individual": "Standards and ownership",
+      "transparent": "Result control",
+      "discussion_desc": "First, identify where the system breaks: catalog structure, filters, product cards, SEO, visuals, team or task flow.",
+      "individual_desc": "After diagnosis come rules: ownership, card standards, quality checks and team decision logic.",
+      "transparent_desc": "A system works only with regular checks: card QA, attributes, visual logic, SEO and user journey."
     },
-    "cooperation_conditions": "Cooperation terms",
-    "contact_me": "Discuss project",
+    "cooperation_conditions": "FORMATS & FAQ",
+    "contact_me": "APPLY",
     "specializations": "Main Specializations",
     "specializations_desc": "Specialized services for specific platforms",
-    "specializations_title": "Work focus:",
-    "spec_wildberries": "Catalog strategy",
-    "spec_ozon": "Product standards",
-    "spec_ebay": "AI workflows",
-    "spec_wordpress": "Team mentoring",
-    "spec_ecommerce": "SEO structure",
-    "spec_cms": "QA processes",
+    "specializations_title": "Operational focus areas:",
+    "spec_wildberries": "Catalog",
+    "spec_ozon": "SEO",
+    "spec_ebay": "Filters",
+    "spec_wordpress": "UI/UX",
+    "spec_ecommerce": "Visuals",
+    "spec_cms": "Team",
     "key_benefits": "Key Benefits",
     "benefit_speed": "Speed",
     "benefit_speed_desc": "Fast and quality execution",
@@ -156,65 +165,65 @@
     "view_terms": "Cooperation terms",
     "items": {
       "copywriting": {
-        "title": "E-commerce content strategy",
-        "description": "Content strategy for online catalogs, categories and product cards.",
+        "title": "Catalog without structure",
+        "description": "When categories, subcategories, attributes and filters do not help users find products.",
         "features": [
-          "catalog structure",
-          "content role in user journey",
-          "category priorities"
+          "category tree audit",
+          "filtering logic",
+          "attribute rules"
         ]
       },
       "blog": {
-        "title": "Product content standards",
-        "description": "Standards for descriptions, attributes, photos, SEO blocks and product card quality.",
+        "title": "Team without standards",
+        "description": "When tasks are done differently, quality depends on individuals and ownership is unclear.",
         "features": [
-          "product card templates",
-          "description rules",
-          "quality checklists"
+          "task standards",
+          "ownership areas",
+          "QA checklists"
         ]
       },
       "smm": {
-        "title": "AI implementation for content teams",
-        "description": "AI approaches for faster and more standardized content production.",
+        "title": "Content and UI disconnected",
+        "description": "When copy, filters, page blocks and visuals live separately from the user scenario.",
         "features": [
-          "prompt systems",
-          "bulk drafts",
-          "product card completeness checks"
+          "UI/UX logic",
+          "content blocks",
+          "product choice journey"
         ]
       },
       "products": {
-        "title": "Catalog and category content audit",
-        "description": "Audit of catalog structure, categories, filters, attributes and product cards.",
+        "title": "Product cards without system",
+        "description": "When SEO, descriptions, specs, photos and visual blocks are not connected into one product logic.",
         "features": [
-          "categories and filters",
-          "attributes",
-          "SEO logic"
+          "card templates",
+          "SEO structure",
+          "visual completeness"
         ]
       },
       "presentations": {
-        "title": "Content team mentoring",
-        "description": "Development of content managers, task standards and ownership of results.",
+        "title": "Visuals without meaning",
+        "description": "When graphic assets exist but do not explain the product, category or advantage.",
         "features": [
-          "team training",
-          "error review",
-          "task setting"
+          "visual standards",
+          "banner logic",
+          "quality control"
         ]
       },
       "audit": {
-        "title": "Content workflow automation",
-        "description": "Automation of repetitive workflows without losing quality control.",
+        "title": "AI without process",
+        "description": "When AI is used chaotically, without rules, review, templates and ownership.",
         "features": [
-          "routine scenarios",
-          "templates",
-          "QA processes"
+          "prompt systems",
+          "bulk scenarios",
+          "quality review"
         ]
       }
     }
   },
   "portfolio": {
-    "title": "EXPERIENCE & CASES",
-    "subtitle": "Professional anchors",
-    "description": "E-commerce content experience: from marketplaces and CMS to E-commerce Content Lead at Domus LLC.",
+    "title": "PROJECTS",
+    "subtitle": "System approach",
+    "description": "Not a project list, but examples of areas where chaos becomes a managed process: catalog, team, SEO, filters, UI/UX and visuals.",
     "all": "All",
     "web": "Web",
     "design": "Design",
@@ -222,12 +231,12 @@
     "satisfied_clients": "partners",
     "cms_sites": "CMS websites",
     "quality": "products",
-    "results_title": "Experience in focus areas",
-    "results_subtitle": "No unsupported commercial claims — only areas of influence and systematic work.",
-    "approach_title": "Approach to e-commerce content:",
-    "approach_analysis": "Catalog and category structure",
-    "approach_optimization": "Product card standards and QA",
-    "approach_kpi": "AI, automation and team",
+    "results_title": "Operational scale",
+    "results_subtitle": "Areas that require quality management, not one-off text writing.",
+    "approach_title": "",
+    "approach_analysis": "Find where the structure breaks",
+    "approach_optimization": "Introduce standards and process",
+    "approach_kpi": "Retain quality through QA, team and AI",
     "featured_projects": "Featured Projects",
     "featured_desc": "More detailed featured projects",
     "other_projects": "Other Projects",
@@ -242,14 +251,14 @@
       "other": "Other"
     },
     "stats": {
-      "projects_count": "2020/21+",
-      "projects_label": "in e-commerce content",
-      "clients_count": "2025+",
-      "clients_label": "Content Lead",
-      "cms_count": "10,000+",
+      "projects_count": "2020+",
+      "projects_label": "operational experience",
+      "clients_count": "6+",
+      "clients_label": "projects",
+      "cms_count": "40,000+",
       "cms_label": "SKU experience",
       "products_count": "AI + QA",
-      "products_label": "workflows"
+      "products_label": "process control"
     },
     "case_wildberries_title": "Wildberries",
     "case_wildberries_products": "Products under management:",
@@ -258,92 +267,92 @@
     "case_wildberries_period_value": "2022-2024",
     "case_wildberries_focus": "Focus:",
     "case_wildberries_focus_value": "SEO + conversion",
-    "case_ecommerce_title": "Marketplace projects",
-    "case_ecommerce_processed": "Focus:",
-    "case_ecommerce_processed_count": "Wildberries / Ozon / eBay",
-    "case_ecommerce_type": "Tasks:",
-    "case_ecommerce_type_value": "cards, SEO, optimization",
-    "case_ecommerce_specialization": "Approach:",
-    "case_ecommerce_specialization_value": "high-volume product content",
-    "case_domus_title": "Domus LLC",
-    "case_domus_role": "Role:",
-    "case_domus_role_value": "E-commerce Content Lead",
-    "case_domus_period": "Period:",
-    "case_domus_period_value": "2025-present",
+    "case_ecommerce_title": "INNOTEK · 2023-2025 · Content Manager",
+    "case_ecommerce_processed": "Problem:",
+    "case_ecommerce_processed_count": "missing standards and chaotic categorization",
+    "case_ecommerce_type": "Solution:",
+    "case_ecommerce_type_value": "team-level standardization and categorization cleanup",
+    "case_ecommerce_specialization": "Focus:",
+    "case_ecommerce_specialization_value": "catalog, categorization, templates and content process",
+    "case_domus_title": "DOMUS · 2025+ · Content Lead",
+    "case_domus_role": "Problem:",
+    "case_domus_role_value": "operational chaos in team and workflow",
+    "case_domus_period": "Solution:",
+    "case_domus_period_value": "guides, templates, clear tasks, campaigns, layouts, standardization and product-card smart process",
     "case_domus_focus": "Focus:",
-    "case_domus_focus_value": "catalog, standards, AI, team"
+    "case_domus_focus_value": "operational coordination and quality retention"
   },
   "pricing": {
-    "title": "COOPERATION FORMATS",
-    "subtitle": "For e-commerce content systems",
-    "description": "We can discuss audits, product card standards, AI workflows, team training or complex work on a content system.",
+    "title": "LET’S DISCUSS",
+    "subtitle": "I do not sell knowledge, I share experience",
+    "description": "The format depends on the problem: diagnosis, mentorship or operational participation.",
     "not_found": "Need another format?",
-    "not_found_desc": "Describe your catalog, team, current workflows and goal — I will suggest a suitable format.",
-    "flexible_terms": "Flexible terms",
-    "flexible_terms_desc": "We'll adapt to your budget and requirements",
-    "quality": "Quality",
-    "quality_desc": "Competent work is the only condition",
-    "result": "Result",
-    "result_desc": "Quality Content = Corresponding Result",
-    "get_offer": "GET AN OFFER",
-    "included_title": "What matters in every format",
-    "included_strategy": "understanding catalog structure and business task",
-    "included_reporting": "clear responsibilities and expectations",
-    "included_support": "standards, checklists and quality control",
-    "included_guarantee": "focus on system, not one-off texts",
+    "not_found_desc": "Describe where the chaos is: catalog, team, filters, SEO, cards, UI/UX or visuals.",
+    "flexible_terms": "Diagnosis",
+    "flexible_terms_desc": "First cause, then solution",
+    "quality": "Standards",
+    "quality_desc": "The team should understand quality",
+    "result": "System",
+    "result_desc": "Should work after implementation",
+    "get_offer": "DISCUSS FORMAT",
+    "included_title": "Included in every format",
+    "included_strategy": "current chaos and root cause review",
+    "included_reporting": "clear solution structure and priorities",
+    "included_support": "standards, checklists, roles and QA",
+    "included_guarantee": "focus on a result that can be retained",
     "show_more": "More features",
     "show_less": "Show less",
     "packages": {
       "small": {
-        "name": "SMALL",
-        "price": "from $190",
-        "annual": "annual plan - $150/month",
-        "period": "monthly",
-        "description": "For small business, startups",
+        "name": "DIAGNOSIS",
+        "price": "SYSTEM",
+        "annual": "audit of catalog, team and process",
+        "period": "",
+        "description": "For situations where the site, catalog or team works chaotically and the cause is unclear.",
         "features": [
-          "Up to 10 products SEO descriptions",
-          "Audience analysis",
-          "Content planning",
-          "Social media (minimal frequency)"
+          "catalog and category structure",
+          "filters, attributes and SEO",
+          "cards, visuals and UI/UX",
+          "problem map and priorities"
         ],
-        "button": "CHOOSE PACKAGE"
+        "button": "DISCUSS"
       },
       "large": {
-        "name": "LARGE",
-        "price": "from $400",
-        "annual": "annual plan - $350/month",
-        "period": "monthly",
-        "description": "For medium and growing companies",
+        "name": "MENTORSHIP",
+        "price": "TEAM",
+        "annual": "content manager development and standards",
+        "period": "",
+        "description": "For a team that needs rules, ownership, checklists and systematic thinking.",
         "features": [
-          "Up to 5 texts of different formats",
-          "Audience analysis",
-          "Competitor analysis",
-          "Content strategy and planning",
-          "Up to 20 products SEO descriptions"
+          "team training",
+          "task standards",
+          "error review",
+          "QA and ownership",
+          "AI as a working tool"
         ],
-        "button": "CHOOSE PACKAGE"
+        "button": "APPLY"
       },
       "project": {
-        "name": "MAJOR",
-        "price": "contract-based",
-        "annual": "can be discussed",
-        "period": "indefinite | definite",
-        "description": "For long-term projects",
+        "name": "OPERATIONS",
+        "price": "RESULT",
+        "annual": "operational participation in small e-commerce projects",
+        "period": "",
+        "description": "For small e-commerce projects that need coordination of content, website and workflow.",
         "features": [
-          "Corporate texts",
-          "Content audit",
-          "Editorial work",
-          "Content management",
-          "Analytics and reports"
+          "operational coordination",
+          "catalog and UI/UX logic",
+          "SEO and filtering",
+          "visual standards",
+          "result control"
         ],
-        "button": "DISCUSS TERMS"
+        "button": "DISCUSS"
       }
     }
   },
   "contact": {
-    "title": "GET IN TOUCH",
-    "subtitle": "How to find me",
-    "description": "I look forward to your suggestions and questions.",
+    "title": "CONTACT",
+    "subtitle": "For solving problems",
+    "description": "Write if you want to discuss content system, team, catalog, website or mentorship.",
     "contact_via": "Get in Touch",
     "methods": {
       "email": {
@@ -377,19 +386,20 @@
         "description": "Thoughts, Posts..."
       },
       "addmail": {
-        "label": "Gmail",
+        "label": "Yandex",
         "value": "Additional Email",
         "description": "For Personal Questions",
-        "email": "armenalmkhitaryan@gmail.com"
+        "email": "armtaryan@yandex.ru"
       }
     },
     "name_placeholder": "Your name | Company name",
-    "message_placeholder": "Describe your task and/or proposal...",
-    "form_title": "Let's Discuss",
+    "message_placeholder": "What is not working now: catalog, cards, team, SEO, filters, UI/UX, visuals or processes?",
+    "form_title": "Apply a Form",
     "name_label": "Name",
     "email_label": "Email",
     "subject_label": "Subject",
-    "service_label": "Service package",
+    "service_label": "Format",
+    "mentorship_type_label": "Mentorship format",
     "message_label": "Message",
     "send_button": "Send",
     "sending": "Sending...",
@@ -397,77 +407,81 @@
     "error_message": "Error. Please try to contact me another way.",
     "contact_info": "Contact information",
     "quick_response": "Quick response",
-    "quick_response_desc": "I respond as quickly as possible. Within 2-3 business days, I'm ready to discuss your proposals via video call and answer questions.",
+    "quick_response_desc": "I respond as quickly as possible. I prefer written communication, but if needed we can organize a video call within 3 days.",
     "subjects": {
       "mentorship": "Mentorship",
-      "services": "Services",
-      "proposals": "Proposals or questions"
+      "services": "Content system",
+      "proposals": "Proposal or question"
+    },
+    "mentorship_types": {
+      "team": "Team",
+      "individual": "Individual"
     },
     "packages": {
-      "small": "SMALL",
-      "large": "LARGE",
-      "project": "MAJOR",
-      "custom": "Individual"
+      "small": "Diagnosis",
+      "large": "Consultation",
+      "project": "Operations",
+      "custom": "Custom format"
     },
     "protected_spam": "Form is protected from spam."
   },
   "terms": {
-    "title": "Terms of Cooperation",
-    "subtitle": "The following terms establish the framework for our professional collaboration, ensuring clarity and mutual understanding throughout our partnership.",
+    "title": "Mentorship, consultation and content audit",
+    "subtitle": "Formats for teams and small e-commerce websites that need to turn chaos into a clear system.",
     "cooperation_terms": {
-      "title": "TERMS OF PARTNERSHIP",
+      "title": "FORMATS AND TERMS",
       "format": {
-        "title": "1. Format",
+        "title": "1. Mentorship",
         "content": {
-          "0": "I offer collaboration arrangements both as a remote freelancer (individual capacity) and as a registered business entity.",
-          "1": "Multiple payment structures are available to accommodate your preferences: hourly rates, monthly retainers, or project-based pricing.",
-          "2": "During the initial consultation phase, communication may include written correspondence (email, messaging platforms), video conferences, and in-person meetings as needed. For ongoing project work, written communication is the preferred method to ensure clarity and documentation."
+          "0": "For content managers and small teams that need standards, logic and systematic thinking.",
+          "1": "We can work individually or with the team using real tasks and mistakes.",
+          "2": "The focus is practical rules, checklists and working approaches."
         }
       },
       "services": {
-        "title": "2. Services",
+        "title": "2. Consultation and audit",
         "provided": {
-          "0": "Services include: comprehensive content creation and management solutions across multiple platforms and formats."
+          "0": "Review of catalog, product cards, SEO, filtering, UI/UX, visuals and team workflows."
         },
         "not_provided": {
-          "0": "Services explicitly excluded: paid advertising management, standalone SEO consulting, and technical services outside the content domain (Google Ads, Meta Ads, and similar platforms)."
+          "0": "I do not replace full-service marketing, development, targeting or Ads management."
         },
-        "combined_note": "For projects requiring integrated content, graphic design, photography, or videography services, we can establish collaborative partnerships with specialized professionals. Please submit an inquiry through the Contact section to explore multi-disciplinary project possibilities."
+        "combined_note": "For small e-commerce websites, a short audit with a problem map and priorities is possible."
       },
       "deadlines": {
-        "title": "3. Deadlines",
+        "title": "3. Timing",
         "content": {
-          "0": "Project timelines and delivery schedules are established during the initial project planning phase.",
-          "1": "While we maintain strict adherence to agreed deadlines, unforeseen circumstances may occasionally require scope adjustments or expedited deliverables. Such modifications are subject to additional fees commensurate with the complexity and urgency of the required changes."
+          "0": "Timing depends on the format and scope.",
+          "1": "For audits, pages, categories or workflows are agreed in advance."
         }
       },
       "payment": {
         "title": "4. Payment",
         "content": {
-          "0": "Payment options include credit card processing, direct bank transfer (with formal invoicing for business entities), and iDram electronic wallet transfers.",
-          "1": "Advance payment policy: New partnerships require 50% advance payment for short-term or one-time projects before work commencement.",
-          "2": "Established long-term partnerships may qualify for alternative payment arrangements, including post-completion billing options."
+          "0": "Format and cost are agreed in advance.",
+          "1": "Short formats may require prepayment.",
+          "2": "Long-term mentorship is discussed separately."
         }
       },
       "modifications": {
-        "title": "5. Corrections, task modifications",
+        "title": "5. Outcome",
         "content": {
-          "0": "Unless otherwise specified in the initial agreement, modifications requested after project initiation that involve scope changes, deadline adjustments, or priority shifts will be subject to additional charges. Fees are determined based on the complexity and extent of the requested modifications."
+          "0": "The outcome can be a problem map, standard, checklist, guideline or action plan."
         }
       },
       "confidentiality": {
         "title": "6. Confidentiality",
         "content": {
-          "0": "All client information, brand materials, strategic discussions, and proprietary content remain strictly confidential throughout our collaboration and beyond project completion.",
-          "1": "Formal Non-Disclosure Agreement (NDA) execution is available upon request for clients requiring additional legal documentation."
+          "0": "Information about the site, catalog, team and internal workflows is not published without permission.",
+          "1": "NDA can be discussed if needed."
         }
       },
       "terms_changes": {
-        "title": "7. Changes to cooperation terms",
+        "title": "7. Limits",
         "content": {
-          "0": "These terms may be updated periodically to reflect evolving business practices and industry standards.",
-          "1": "All modifications will be published on this website section with appropriate notice.",
-          "2": "Terms modifications will not affect existing client agreements established prior to the change, except in cases of regulatory requirements or circumstances beyond our control."
+          "0": "Mentorship requires team involvement to produce results.",
+          "1": "Consultation gives direction; implementation remains with the business or team.",
+          "2": "Content audit does not replace technical SEO or full-stack audit."
         }
       }
     },
@@ -475,50 +489,50 @@
       "title": "FAQ",
       "items": {
         "0": {
-          "question": "Do you work in narrow professional fields (e.g., medicine, legal field, IT)?",
-          "answer": "Yes, I work with specialized industries when sufficient background materials and domain expertise are available. Initial consultations include detailed discussions of project requirements, target outcomes, and industry-specific considerations."
+          "question": "Who is mentorship for?",
+          "answer": "For content managers, junior/middle specialists and small teams that need systematic work."
         },
         "1": {
-          "question": "How often do you get in touch?",
-          "answer": "I maintain regular business hours from 10:00/11:00-19:00 on weekdays and respond to communications within one business day. Emergency contact outside standard hours is reserved for urgent project needs only."
+          "question": "What is included in consultation?",
+          "answer": "Review of a specific problem: catalog, cards, SEO, filters, visuals, process or AI."
         },
         "2": {
-          "question": "Do you work under contract?",
-          "answer": "Yes, I accommodate various partnership structures including service agreements for individual clients and formal contracts for business entities. The specific arrangement can be tailored to meet your organizational requirements and preferences."
+          "question": "What is an audit for small e-commerce?",
+          "answer": "A quick system review of the website and catalog with a problem map and priorities."
         },
         "3": {
-          "question": "Do you work alone?",
-          "answer": "While I personally handle all content creation and strategy, I can coordinate with additional specialists (designers, marketing professionals, product managers) when projects require expanded capabilities. Team assembly is managed on a project-specific basis."
+          "question": "Can it be team-based?",
+          "answer": "Yes, team format is useful for standards, roles and ownership."
         },
         "4": {
-          "question": "Can you guarantee the quality of the content you write?",
-          "answer": "Quality assurance is maintained through two key principles: professional content development standards and strict adherence to client specifications and brand requirements."
+          "question": "Do you teach AI tools?",
+          "answer": "Yes, as part of the workflow: prompts, templates, acceleration and quality control."
         }
       }
     }
   },
   "footer": {
     "copyright": "Armen Mkhitaryan",
-    "brandname": "E-commerce Content Lead",
-    "text": "Content Operations | AI for E-commerce Content | Product Content Standards"
+    "brandname": "Operational Content Leader",
+    "text": "Content Operations | Catalog Systems | SEO | UI/UX | Team Leadership"
   },
   "seo": {
     "meta": {
-      "title": "Armen Mkhitaryan | E-commerce Content Lead",
-      "description": "E-commerce Content Lead specializing in online catalog systems, product content standards, SEO content, AI tools, workflow automation and content team mentorship.",
-      "keywords": "e-commerce content lead, content operations, catalog content strategy, product content standards, AI for e-commerce content, content team mentorship"
+      "title": "Armen Mkhitaryan | Operational Content Leader",
+      "description": "Operational Content Leader: turning e-commerce content chaos into a system through catalog, SEO, filtering, UI/UX, visuals, standards and team leadership.",
+      "keywords": "operational content leader, content operations, e-commerce catalog, content team leadership, SEO, filtering, UI UX content, product visuals, content systems"
     },
     "og": {
-      "title": "Armen Mkhitaryan | Content Manager",
-      "description": "Content creation and management services"
+      "title": "Armen Mkhitaryan | Operational Content Leader",
+      "description": "A content leader who turns catalog, team and website chaos into a working system."
     },
     "twitter": {
-      "title": "Armen Mkhitaryan | Content Manager",
-      "description": "Content creation and management services"
+      "title": "Armen Mkhitaryan | Operational Content Leader",
+      "description": "E-commerce content systems: catalog, team, SEO, UI/UX and visuals."
     },
     "schema": {
-      "job_title": "E-commerce Content Lead",
-      "description": "Specialist in systematic e-commerce content, online catalogs, AI tools and content operations."
+      "job_title": "Operational Content Leader",
+      "description": "Operational leader in e-commerce content: catalog, team, standards, SEO, filtering, UI/UX, visuals and AI workflows."
     }
   },
   "common": {
