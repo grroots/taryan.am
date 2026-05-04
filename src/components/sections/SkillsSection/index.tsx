@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
 import { 
@@ -64,7 +64,10 @@ const SkillsSection: React.FC<SkillsSectionProps> = ({ className }) => {
   const shouldShowMentorship = locale === 'hy';
 
   // Фильтрация навыков по категории
-  const activeSkills = skills.find(category => category.id === activeCategory)?.skills || [];
+  const activeSkills = useMemo(
+    () => skills.find(category => category.id === activeCategory)?.skills || [],
+    [skills, activeCategory]
+  );
 
   // Intersection Observer для анимаций
   useEffect(() => {

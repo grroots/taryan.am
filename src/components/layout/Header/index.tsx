@@ -7,11 +7,8 @@ import { usePathname, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { 
   ChevronRight,
-  Pen,
-  Bolt,
   BriefcaseBusiness,
-  FolderCheck,
-  DollarSign,
+  LayoutList,
   NotebookTabs
 } from 'lucide-react';
 import LanguageSelector from '@/components/ui/LanguageSelector';
@@ -81,33 +78,15 @@ const Header: React.FC<HeaderProps> = ({ locale, className }) => {
   // Navigation items
   const navItems = [
     { 
-      key: 'about', 
-      href: `/${currentLocale}#about`, 
-      icon: Pen,
-      label: getSafeTranslation('about', 'About') 
-    },
-    { 
-      key: 'skills', 
-      href: `/${currentLocale}#skills`, 
-      icon: Bolt,
-      label: getSafeTranslation('skills', 'Skills') 
-    },
-    { 
       key: 'services', 
       href: `/${currentLocale}#services`, 
       icon: BriefcaseBusiness,
       label: getSafeTranslation('services', 'Services') 
     },
     { 
-      key: 'portfolio', 
-      href: `/${currentLocale}#portfolio`, 
-      icon: FolderCheck,
-      label: getSafeTranslation('portfolio', 'Portfolio') 
-    },
-    { 
       key: 'pricing', 
       href: `/${currentLocale}#pricing`, 
-      icon: DollarSign,
+      icon: LayoutList,
       label: getSafeTranslation('pricing', 'Pricing') 
     },
     { 

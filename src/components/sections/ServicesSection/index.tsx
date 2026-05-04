@@ -158,11 +158,6 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({ className }) => {
                     {service.title}
                   </h3>
 
-                  {/* Service Description */}
-                  <p className={styles.serviceDescription}>
-                    {service.description}
-                  </p>
-
                   {/* Features List */}
                   {service.features && service.features.length > 0 && (
                     <div className={styles.serviceFeatures}>

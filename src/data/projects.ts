@@ -107,19 +107,19 @@ export const useProjects = (): PortfolioItem[] => {
     hy: {
       innotek: {
         title: "ԻՆՆՈԹԵԿ",
-        description: "2023-2025․ ստանդարտների բացակայության և կատեգորիզացիայի քաոսի ուղղում թիմային ճշգրտումներով։"
+        description: "2023-2025 · 10 000 SKU · հայերեն, անգլերեն և ռուսերեն քոնթենթ։"
       },
       "anna-vartanova": {
         title: "ԱՁ Աննա Վարտանովա",
-        description: "«Վայլդբերրիս» մարքեթփլեյսում քարտերի ձևավորում, SEO-առաջխաղացում և վաճառք։"
+        description: "2023-2024 · 500 SKU · 2000+ ինֆոգրաֆիկա և տեքստեր Wildberries-ի համար։"
       },
       eyva: {
         title: "EYVA atelier & more",
-        description: "SMM (facebook, instagram), քոնթենթ-ստրատեգիա, Wildberries:"
+        description: "SMM · $20 բյուջե՝ 80+ լիդ · Wildberries՝ 10+ SKU տեղական արտադրողից։"
       },
       domus: {
         title: "ԴՈՄՈՒՍ",
-        description: "2025+․ քոնթենթ-լիդ, օպերացիոն համակարգում, շաբլոններ, արշավներ, լեյաութներ և ստանդարտիզացիա։"
+        description: "2025+ · 30 000+ SKU համակարգում · Bitrix24 ERP Smart Process ինտեգրում։"
       },
       "ozon-partner": {
         title: "Ozon տեխնիկական գործընկեր",
@@ -127,25 +127,25 @@ export const useProjects = (): PortfolioItem[] => {
       },
       "aec-ebay": {
         title: "Armenian Export Center eBay նախագիծ",
-        description: "eBay ուղղությամբ կատալոգի, ապրանքների քարտերի և քոնթենթային ներկայացման աշխատանքային նախագիծ։"
+        description: "2021-2022 · 30+ գործընկեր Հայաստանից · 3 վաճառք մեկնարկային 2 շաբաթում։"
       }
     },
     ru: {
       innotek: {
         title: "INNOTEK",
-        description: "2023-2025: исправление хаоса в стандартах и категоризации через командную настройку процессов."
+        description: "2023-2025 · 10 000 SKU · контент на армянском, английском и русском."
       },
       "anna-vartanova": {
         title: "ИП Анна Вартанова",
-        description: "Оформление карточек на маркетплейсе Wildberries, SEO-продвижение и продажи."
+        description: "2023-2024 · 500 SKU · 2000+ инфографик и текстов для Wildberries."
       },
       eyva: {
         title: "EYVA atelier & more",
-        description: "SMM (facebook, instagram), контент-стратегия, Wildberries."
+        description: "SMM · бюджет $20 принес 80+ лидов · Wildberries: 10+ SKU от локального производителя."
       },
       domus: {
         title: "DOMUS",
-        description: "2025+: контент-лид, операционная система, шаблоны, кампании, layouts и стандартизация."
+        description: "2025+ · 30 000+ SKU в системе · интеграция Bitrix24 ERP Smart Process."
       },
       "ozon-partner": {
         title: "Технический партнер Ozon",
@@ -153,25 +153,25 @@ export const useProjects = (): PortfolioItem[] => {
       },
       "aec-ebay": {
         title: "Armenian Export Center eBay project",
-        description: "Проект по каталогу, карточкам товаров и контентному представлению в eBay-направлении."
+        description: "2021-2022 · 30+ партнеров из Армении · 3 продажи за первые 2 недели."
       }
     },
     en: {
       innotek: {
         title: "INNOTEK",
-        description: "2023-2025: fixing standardization gaps and categorization chaos through team-level process alignment."
+        description: "2023-2025 · 10,000 SKU · content in Armenian, English and Russian."
       },
       "anna-vartanova": {
         title: "IE Anna Vartanova",
-        description: "Product card design on Wildberries marketplace, SEO promotion and sales."
+        description: "2023-2024 · 500 SKU · 2,000+ infographics and texts for Wildberries."
       },
       eyva: {
         title: "EYVA atelier & more",
-        description: "SMM (facebook, instagram), content strategy, Wildberries."
+        description: "SMM · $20 budget generated 80+ leads · Wildberries: 10+ SKU from a local producer."
       },
       domus: {
         title: "DOMUS",
-        description: "2025+: content lead role, operating system, templates, campaigns, layouts and standardization."
+        description: "2025+ · 30,000+ SKU in the system · Bitrix24 ERP Smart Process integration."
       },
       "ozon-partner": {
         title: "Ozon technical partner",
@@ -179,7 +179,7 @@ export const useProjects = (): PortfolioItem[] => {
       },
       "aec-ebay": {
         title: "Armenian Export Center eBay project",
-        description: "Project around catalog, product cards and content presentation for eBay."
+        description: "2021-2022 · 30+ partners from Armenia · 3 sales in the first 2 weeks."
       }
     }
   } as const;

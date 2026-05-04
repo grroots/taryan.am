@@ -33,7 +33,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
     <div
       className={cn(
         // Base Tailwind classes - заменен border на box-shadow + фиксированная высота
-        "relative bg-white rounded-3xl shadow-lg transition-all duration-300 h-96",
+        "relative bg-white rounded-3xl shadow-lg transition-all duration-300 h-[26rem]",
         "hover:shadow-2xl cursor-pointer overflow-hidden flex flex-col",
         // Featured styling
         featured && "ring-2 ring-accent",

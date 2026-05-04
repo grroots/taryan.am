@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { 
   Boxes,
   CalendarClock,
@@ -46,16 +47,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
       label: t('value_prop_ecommerce_desc')
     }
   ];
+  const storytellingLines = t.raw('storytelling_description') as string[];
 
-  // Логика кнопок как в старых файлах
-  const handlePrimaryCtaClick = () => {
-    const portfolioSection = document.getElementById('portfolio');
-    if (portfolioSection) {
-      portfolioSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleSecondaryCtaClick = () => {
+  const handleConsultationCtaClick = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -110,6 +104,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
               </h2>
             </div>
 
+            <p className={styles.heroStorytelling}>
+              {storytellingLines.map((line) => (
+                <span key={line}>
+                  {line}
+                </span>
+              ))}
+            </p>
+
             {/* Value Proposition Block */}
             <div className={styles.heroValueProps}>
               <div className={styles.valuePropsGrid}>
@@ -157,22 +159,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
             {/* Desktop Buttons */}
             <div className={styles.heroActions}>
               <button 
-                onClick={handlePrimaryCtaClick}
+                onClick={handleConsultationCtaClick}
                 className={cn(styles.heroCtaButton, styles.heroCtaPrimary)}
               >
                 <span className={styles.heroCtaContent}>
                   {t('cta_button')}
-                  <ArrowRight className={styles.heroCtaArrow} />
-                </span>
-                <div className={styles.heroCtaShine} aria-hidden="true"></div>
-              </button>
-
-              <button 
-                onClick={handleSecondaryCtaClick}
-                className={cn(styles.heroCtaButton, styles.heroCtaSecondary)}
-              >
-                <span className={styles.heroCtaContent}>
-                  {t('cta_button_secondary')}
                   <ArrowRight className={styles.heroCtaArrow} />
                 </span>
                 <div className={styles.heroCtaShine} aria-hidden="true"></div>
@@ -188,11 +179,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
             <div className={styles.heroImageBottomGradient} aria-hidden="true"></div>
           </div>
           <div className={styles.heroImageContainer}>
-            <img
+            <Image
               src="/assets/img/Armen-Mkhitaryan-Content.webp"
               alt={`${t('name')} - ${t('title')}`}
               className={styles.heroImage}
-              loading="eager"
+              fill
+              priority
+              fetchPriority="high"
+              sizes="(min-width: 768px) 50vw, 100vw"
             />
             {/* Image overlay effects */}
             <div className={styles.heroImageOverlay} aria-hidden="true"></div>
@@ -204,11 +198,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
       <div className={styles.heroMobile}>
         {/* Background Image */}
         <div className={styles.heroMobileBackground}>
-          <img
+          <Image
             src="/assets/img/Armen-Mkhitaryan-Content.webp"
             alt={`${t('name')} - ${t('title')}`}
             className={styles.heroMobileBackgroundImage}
-            loading="eager"
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
           />
           <div className={styles.heroMobileBackgroundOverlay} aria-hidden="true"></div>
         </div>
@@ -245,6 +242,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
                   </h2>
                 </div>
               </div>
+
+              <p className={styles.heroMobileStorytelling}>
+                {storytellingLines.map((line) => (
+                  <span key={line}>
+                    {line}
+                  </span>
+                ))}
+              </p>
 
               {/* Mobile Value Proposition */}
               <div className={styles.heroMobileValueProps}>
@@ -289,22 +294,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ className }) => {
               {/* Mobile Buttons */}
               <div className={styles.heroMobileButtons}>
                 <button 
-                  onClick={handlePrimaryCtaClick}
+                  onClick={handleConsultationCtaClick}
                   className={cn(styles.heroMobileButton, styles.heroMobileButtonPrimary)}
                 >
                   <span className={styles.heroMobileButtonContent}>
                     {t('cta_button')}
-                    <ArrowRight className={styles.heroMobileButtonArrow} />
-                  </span>
-                  <div className={styles.heroMobileButtonShine} aria-hidden="true"></div>
-                </button>
-
-                <button 
-                  onClick={handleSecondaryCtaClick}
-                  className={cn(styles.heroMobileButton, styles.heroMobileButtonSecondary)}
-                >
-                  <span className={styles.heroMobileButtonContent}>
-                    {t('cta_button_secondary')}
                     <ArrowRight className={styles.heroMobileButtonArrow} />
                   </span>
                   <div className={styles.heroMobileButtonShine} aria-hidden="true"></div>

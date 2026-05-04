@@ -187,7 +187,9 @@ export default async function RootLayout({
         <meta name="theme-color" content="#162032" />
         
         {/* Performance hints */}
+        <link rel="preload" href="/assets/img/Armen-Mkhitaryan-Content.webp" as="image" fetchPriority="high" />
         <link rel="preload" href="/assets/fonts/DejaVuSans.woff2" as="font" type="font/woff2" crossOrigin="" />
+        <link rel="preload" href="/assets/fonts/DejaVuSans-Bold.woff2" as="font" type="font/woff2" crossOrigin="" />
         <link rel="preload" href="/assets/fonts/DejaVuSerif.woff2" as="font" type="font/woff2" crossOrigin="" />
         
         {/* Hreflang links для SEO */}

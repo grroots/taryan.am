@@ -211,6 +211,28 @@
   letter-spacing: 0.05em;
 }
 
+.heroStorytelling {
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.heroStorytelling span {
+  display: block;
+}
+
+.heroStorytelling span + span {
+  margin-top: 0.45rem;
+}
+
+.heroStorytelling span:last-child {
+  color: var(--color-warm);
+  font-weight: 700;
+}
+
 /* === VALUE PROPOSITIONS === */
 .heroValueProps {
   margin-bottom: 2rem;
@@ -535,6 +557,27 @@
   color: var(--color-main);
   margin: 0;
   letter-spacing: 0.05em;
+}
+
+.heroMobileStorytelling {
+  margin: 0 0 1.5rem;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+.heroMobileStorytelling span {
+  display: block;
+}
+
+.heroMobileStorytelling span + span {
+  margin-top: 0.4rem;
+}
+
+.heroMobileStorytelling span:last-child {
+  color: var(--color-warm);
+  font-weight: 700;
 }
 
 /* === MOBILE VALUE PROPS === */
